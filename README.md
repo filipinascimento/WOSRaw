@@ -128,7 +128,7 @@ print("Loading the index dictionary")
 indexDictionary = dbgz.readIndicesDictionary(WOSIndexPath)
 wosUID = "WOS:000200919700142" # or any other UID
 with dbgz.DBGZReader(WOSArchivePath) as fd:
-    wosEntry = fd.readAt(indexDictionary[wosUID])[0]
+    wosEntry = fd.readAt(indexDictionary[wosUID][0])[0]
 ...
 ```
 
