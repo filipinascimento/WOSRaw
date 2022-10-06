@@ -496,6 +496,18 @@ def getCategoryResearchAreas(categoryInfoData):
     return getCategorySubjects(categoryInfoData, subjectTypes = {"extended"})
 
 
+def getContributors(wosEntry, roles = {"author"}):
+    contributorData = getFlat(wosEntry["data"],["static_data", "contributors","contributor"], forceList=True)
+    contributionsArray = []
+    for contributor in contributorData:
+        contributorEntries= getFlat(contributor,["name"], forceList=True)
+        for contributorEntry in contributorEntries:
+            contributionsArray.append(contributorEntry)
+    
+    contributionsArray = sorted(contributionsArray, key=lambda k: int(k['@seq_no']))
+
+    return contributionsArray
+
 def getWOSEditions(wosEntry):
     return [entry["@value"] for entry in getFlat(wosEntry["data"],["static_data","summary","EWUID","edition"], forceList=True)]
 

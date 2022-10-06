@@ -11,7 +11,7 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="WOSRaw",
-    version="0.1.0",
+    version="0.1.1",
     author="Filipi N. Silva",
     author_email="filipi@iu.edu",
     description="Collection of utilities to process raw XML data from the Web of Science",
