@@ -224,6 +224,29 @@ Files description:
  - `WoS_2022_abstract.tsv` contains the abstracts and respective `UID`
  - `WoS_2022_references.tsv` pairs of citing and cited UIDs
 
+## Loading the TSV files
+The TSV files can be loaded by chunks using pandas. The following example shows how to load the `WoS_2022.tsv` file in chunks of 5000 entries.
+
+```python
+chunksize = 5000
+length = 84162157
+
+uid2Year = {}
+with tqdm(total=length, desc="Reading file ") as bar:
+    for i, chunk in enumerate(pd.read_csv(WOSDataPath, chunksize=chunksize,sep="\t",encoding='utf-8',error_bad_lines=False, low_memory=False,
+    quoting=csv.QUOTE_NONE)):
+        for uid,year in zip(chunk["UT"].tolist(),chunk["PY"].tolist()):
+            # do something with the data UID and year
+        bar.update(chunksize)
+```
+
+## Paths in IUNI1
+The TSV files are located in :
+```bash
+/raw/WoSTables/
+```
 
 # Dehydrated DBGZ for fast access 
 (coming soon)
+
+
