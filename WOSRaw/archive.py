@@ -8,6 +8,7 @@ from pathlib import Path
 import dbgz
 from tqdm.auto import tqdm
 import multiprocessing as mp
+import xmltodict
 
 # Code to create a Web of Science dbgz archive from the 
 # raw XML files.
@@ -18,6 +19,18 @@ import multiprocessing as mp
 
 # #Path to the WoS dbgz archive
 # WOSSavePath = Path("/raw/WoS_2022_DBGZ/WoS_2022_All.dbgz")
+
+def parseWOSXML(arguments):
+    xmlFileName,WOSZipPath, = arguments
+    baseName = WOSZipPath.stem
+    with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
+        with zipfd.open(xmlFileName) as xmlgzfd:
+            with gzip.GzipFile(fileobj=xmlgzfd,mode="r") as xmlfd:
+                xmlData = xmlfd.read()
+    dataDict = xmltodict.parse(xmlData,dict_constructor=dict)["records"]["REC"]
+    for rec in dataDict:
+        rec["origin"] = baseName
+    return dataDict
 
 def create(WOSPath, WOSArchivePath):
     """
@@ -47,20 +60,9 @@ def create(WOSPath, WOSArchivePath):
         ("data", "a"),
     ]
 
-    def parseWOSXML(arguments):
-        import xmltodict
-        xmlFileName,WOSZipPath, = arguments
-        baseName = WOSZipPath.stem
-        with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
-            with zipfd.open(xmlFileName) as xmlgzfd:
-                with gzip.GzipFile(fileobj=xmlgzfd,mode="r") as xmlfd:
-                    xmlData = xmlfd.read()
-        dataDict = xmltodict.parse(xmlData,dict_constructor=dict)["records"]["REC"]
-        for rec in dataDict:
-            rec["origin"] = baseName
-        return dataDict
 
-    num_processors = mp.cpu_count()
+
+    num_processors = mp.cpu_count()//8
     pool = mp.Pool(processes=num_processors)
     
     with dbgz.DBGZWriter(WOSArchivePath.resolve(), scheme) as dbgzfd:
@@ -68,7 +70,7 @@ def create(WOSPath, WOSArchivePath):
             baseName = WOSZipPath.stem
             with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
                 xmlParameters = [(filename,WOSZipPath) for filename in zipfd.namelist() if filename.endswith(".xml.gz")]
-            for dataDict in tqdm(pool.imap_unordered(func=parseWOSXML, iterable=xmlParameters), total=len(xmlParameters), desc="Parsing %s"%baseName, leave=False):
+            for dataDict in tqdm(pool.imap_unordered(parseWOSXML, xmlParameters), total=len(xmlParameters), desc="Parsing %s"%baseName, leave=False):
             # for dataDict in pool.map(func=parseWOSXML, iterable=xmlParameters):
                 for entry in dataDict:
                     dbgzfd.write(UID=entry["UID"], data=entry)
