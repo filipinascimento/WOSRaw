@@ -81,6 +81,24 @@ UT: UID = wosEntry["UID"]
 """
 
 
+# Prohibited characters for strings: :;[]
+def removeProhibitedChars(string):
+    """
+    Remove prohibited characters from the string.
+
+    Parameters
+    ----------
+    string : str
+        String to remove prohibited characters from.
+
+    Returns
+    -------
+    string : str
+        String without prohibited characters.
+        
+    """
+    return string.replace(":", "_").replace(";","_").replace("[","_").replace("]","_")
+
 def getFlat(data, flatKey, forceList=False, forceString = False):
     """
     Get value for deep key(tuple of keys) or None if it does not exist.
@@ -370,8 +388,18 @@ def formatFundingWOS(fundingData):
         if(grants):
             grantName=str(grants[0])
         grantIDs = getFlat(fundingEntry,["grant_ids","grant_id"], forceList=True)
-        formattedFunding.append("%s [%s]"%(grantName, "; ".join(grantIDs)))
+        formattedFunding.append("%s:%s"%(removeProhibitedChars(grantName), "; ".join([removeProhibitedChars(entry) for entry in grantIDs])))
     return formattedFunding
+    
+def getFundingAgencies(fundingData):
+    formattedAgencyNames = []
+    for fundingEntry in fundingData:
+        grants = getFlat(fundingEntry,["grant_agency"], forceList=True)
+        grantName = ""
+        if(grants):
+            grantName=str(grants[0])
+        formattedAgencyNames.append(removeProhibitedChars(grantName))
+    return formattedAgencyNames
 
 def getFundingText(wosEntry):
     return getFlat(wosEntry["data"],["static_data","fullrecord_metadata","fund_ack","fund_text","p"], forceList=True)
@@ -514,6 +542,19 @@ def getWOSEditions(wosEntry):
 def getOpenAccess(wosEntry):
     return list(set([entry["@type"] for entry in getFlat(wosEntry["data"],["dynamic_data","ic_related","oases","oas"], forceList=True)]))
 
+def getDynamicData(wosEntry):
+    return  getFlat(wosEntry["data"],["dynamic_data"], forceList=False)
+
+def getCitationRelatedData(wosEntry):
+    return  getFlat(wosEntry["data"],["dynamic_data","citation_related"], forceList=False)
+
+def getCitationTopicsData(wosEntry):
+    return  getFlat(wosEntry["data"],["dynamic_data","citation_related","citation_topics","subj-group","subject","#text"], forceList=True)
+
+def getCitationSDGData(wosEntry):
+    return  getFlat(wosEntry["data"],["dynamic_data","citation_related","SDG", "sdg_category"], forceList=False)
+
+
 
 def getAllFields(wosEntry):
     fieldData = OrderedDict()
@@ -551,7 +592,12 @@ def getAllFields(wosEntry):
     # fieldData["OI"]  =  # orcid #TODO
     fieldData["FUR"] =  fundingData = getFunding(wosEntry)
     fieldData["FU"]  =  funding = formatFundingWOS(fundingData)
-    # fieldData["FP"]  =  # fundingAgencyName #TODO
+    fieldData["FP"]  =  fundingAgencyName = getFundingAgencies(fundingData)
+    fieldData["DYD"] =  dynamicData = getDynamicData(wosEntry)
+    fieldData["CRD"] =  citationRelatedData = getDynamicData(wosEntry)
+    fieldData["TS"]  =  citationTopicsData = getCitationTopicsData(wosEntry)
+    fieldData["SDG"] =  citationSDGData = getCitationSDGData(wosEntry)
+
     fieldData["FX"]  =  fundingText = getFundingText(wosEntry)
     fieldData["CRR"] =  referencesData = getReferences(wosEntry)
     fieldData["CI"]  =  referencesUIDs = getReferencesUIDs(referencesData)
@@ -622,6 +668,11 @@ def getScheme(valid=None,invalid=None):
     schemeFields["EM"] = ("emailAddresses","S")
     schemeFields["FUR"] = ("fundingData","a")
     schemeFields["FU"] = ("funding","S")
+    schemeFields["FP"] = ("fundingAgencyName","S")
+    schemeFields["DYD"] = ("dynamicData","a")
+    schemeFields["CRD"] = ("citationRelatedData","a")
+    schemeFields["TS"] = ("citationTopicsData","a")
+    schemeFields["SDG"] = ("citationSDGData","a")
     schemeFields["FX"] = ("fundingText","S")
     schemeFields["CRR"] = ("referencesData","a")
     schemeFields["CI"] = ("referencesUIDs","S")

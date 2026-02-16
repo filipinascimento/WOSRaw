@@ -1,4164 +1,2279 @@
-84162157 ENTRIES
+300001 ENTRIES
 @r_id_disclaimer
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84162157 (100.00%): ResearcherID data provided by Clarivate Analytics
+    300001 (100.00%): ResearcherID data provided by Clarivate Analytics
 UID
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    1 ( < 0.01%): WOS:000200919700142
-    1 ( < 0.01%): WOS:000201475400125
-    1 ( < 0.01%): WOS:000205881000005
-    1 ( < 0.01%): WOS:000201687800247
-    1 ( < 0.01%): WOS:000187822300002
+    1 ( < 0.01%): WOS:000201859700124
+    1 ( < 0.01%): WOS:000200115700515
+    1 ( < 0.01%): WOS:000203747000011
+    1 ( < 0.01%): WOS:000203594900003
+    1 ( < 0.01%): WOS:000206785500006
     ...
 static_data:summary:EWUID:WUID:@coll_id
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84162157 (100.00%): WOS
+    300001 (100.00%): WOS
 static_data:summary:EWUID:edition:@value
-  Count: 74002340 (87.93%)
+  Count: 276218 (92.07%)
   Types: string (100.00%)
   Samples:
-    50528550 (68.28%): WOS.SCI
-    6382626 (8.62%): WOS.ISTP
-    6275192 (8.48%): WOS.SSCI
-    4478806 (6.05%): WOS.AHCI
-    4095944 (5.53%): WOS.ESCI
-    ...
+    194597 (70.45%): WOS.SCI
+    81621 (29.55%): WOS.SSCI
 static_data:summary:pub_info:@sortdate
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    20249 (0.02%): 1930-01-01
-    19661 (0.02%): 1938-01-01
-    19626 (0.02%): 1936-01-01
-    19393 (0.02%): 1932-01-01
-    19357 (0.02%): 1939-01-01
+    4604 (1.53%): 1930-01-01
+    4377 (1.46%): 1938-01-01
+    4364 (1.45%): 1937-01-01
+    4340 (1.45%): 1933-01-01
+    4338 (1.45%): 1932-01-01
     ...
 static_data:summary:pub_info:@pubyear
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    1272361 (1.51%): 1996
-    1212329 (1.44%): 1995
-    1161625 (1.38%): 1994
-    1103615 (1.31%): 1993
-    1060780 (1.26%): 1992
+    10599 (3.53%): 1938
+    10513 (3.50%): 1936
+    10352 (3.45%): 1937
+    10177 (3.39%): 1939
+    10016 (3.34%): 1935
     ...
 static_data:summary:pub_info:@has_abstract
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    43971450 (52.25%): Y
-    40190707 (47.75%): N
+    299979 (99.99%): N
+    22 ( < 0.01%): Y
 static_data:summary:pub_info:@coverdate
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    14719 (0.02%): 1936
-    14606 (0.02%): 1930
-    14263 (0.02%): 1932
-    14214 (0.02%): 1938
-    14067 (0.02%): 1931
+    3338 (1.11%): 1930
+    3183 (1.06%): 1932
+    3137 (1.05%): 1937
+    3130 (1.04%): 1931
+    3081 (1.03%): 1933
     ...
 static_data:summary:pub_info:@pubmonth
-  Count: 52694563 (62.61%)
+  Count: 202461 (67.49%)
   Types: string (100.00%)
   Samples:
-    3306793 (6.28%): JUN
-    3192033 (6.06%): DEC
-    3190981 (6.06%): SEP
-    3159795 (6.00%): APR
-    3094038 (5.87%): OCT
+    21051 (10.40%): JUL-DEC
+    19461 (9.61%): JAN-JUN
+    13261 (6.55%): JAN
+    11908 (5.88%): MAR
+    11619 (5.74%): APR
     ...
 static_data:summary:pub_info:@vol
-  Count: 75467411 (89.67%)
+  Count: 297512 (99.17%)
   Types: string (100.00%)
   Samples:
-    1104908 (1.46%): 11
-    1093597 (1.45%): 9
-    1067050 (1.41%): 12
-    1061897 (1.41%): 8
-    1033262 (1.37%): 13
+    9547 (3.21%): 1
+    9537 (3.21%): 2
+    4323 (1.45%): 15
+    4210 (1.42%): 16
+    4192 (1.41%): 17
+    ...
+static_data:summary:pub_info:@issue
+  Count: 157854 (52.62%)
+  Types: string (100.00%)
+  Samples:
+    25225 (15.98%): 1
+    22933 (14.53%): 2
+    20548 (13.02%): 3
+    16944 (10.73%): 4
+    10376 (6.57%): 5
     ...
 static_data:summary:pub_info:@pubtype
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    74928601 (89.03%): Journal
-    5514466 (6.55%): Book in series
-    3719090 (4.42%): Book
+    300001 (100.00%): Journal
 static_data:summary:pub_info:page:@begin
-  Count: 76075499 (90.39%)
+  Count: 299679 (99.89%)
   Types: string (100.00%)
   Samples:
-    967361 (1.27%): 1
-    183348 (0.24%): 11
-    181990 (0.24%): 7
-    158064 (0.21%): 89
-    150567 (0.20%): 103
+    3093 (1.03%): 1
+    555 (0.19%): 161
+    548 (0.18%): 289
+    531 (0.18%): 113
+    511 (0.17%): 109
     ...
 static_data:summary:pub_info:page:@end
-  Count: 76075497 (90.39%)
+  Count: 299679 (99.89%)
   Types: string (100.00%)
   Samples:
-    144390 (0.19%): 15
-    141320 (0.19%): 23
-    138125 (0.18%): 11
-    129930 (0.17%): 41
-    126227 (0.17%): 78
+    472 (0.16%): 144
+    446 (0.15%): 80
+    446 (0.15%): 126
+    437 (0.15%): 78
+    435 (0.15%): 72
     ...
 static_data:summary:pub_info:page:@page_count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    12333696 (14.65%): 1
-    7903984 (9.39%): 2
-    6198499 (7.36%): 6
-    6034895 (7.17%): 4
-    5502186 (6.54%): 5
+    55317 (18.44%): 2
+    52859 (17.62%): 1
+    36084 (12.03%): 3
+    23303 (7.77%): 4
+    16445 (5.48%): 5
     ...
 static_data:summary:pub_info:page:#text
-  Count: 76075494 (90.39%)
+  Count: 299679 (99.89%)
   Types: string (100.00%)
   Samples:
-    30521 (0.04%): 1-3
-    12127 (0.02%): 111-112
-    12082 (0.02%): 113-114
-    10814 (0.01%): 153-154
-    10705 (0.01%): 103-108
+    81 (0.03%): 254-254
+    80 (0.03%): 234-234
+    77 (0.03%): 274-274
+    77 (0.03%): 296-296
+    76 (0.03%): 104-105
     ...
 static_data:summary:titles:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    69885387 (83.04%): 6
-    5059791 (6.01%): 5
-    4939116 (5.87%): 7
-    3402642 (4.04%): 2
-    546019 (0.65%): 8
-    ...
+    280063 (93.35%): 6
+    19938 (6.65%): 5
 static_data:summary:titles:title
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: list (100.00%)
   Schema Entry:
-    491548637 ENTRIES
+    1780068 ENTRIES
     @type
-      Count: 491548637 (100.00%)
+      Count: 1780068 (100.00%)
       Types: string (100.00%)
       Samples:
-        84162147 (17.12%): item
-        84161676 (17.12%): source
-        80461841 (16.37%): abbrev_11
-        80461405 (16.37%): source_abbrev
-        80461344 (16.37%): abbrev_29
+        300001 (16.85%): source
+        300001 (16.85%): source_abbrev
+        300001 (16.85%): abbrev_11
+        300001 (16.85%): abbrev_29
+        300001 (16.85%): item
         ...
     #text
-      Count: 491548637 (100.00%)
+      Count: 1780068 (100.00%)
       Types: string (100.00%)
       Samples:
-        1010952 (0.21%): LANCET
-        644614 (0.13%): SCIENCE
-        281332 (0.06%): J AM CHEM SOC
-        252739 (0.05%): Lancet
-        187897 (0.04%): JOURNAL OF THE AMERICAN CHEMICAL SOCIETY
+        46072 (2.59%): LANCET
+        31944 (1.79%): NATURE
+        19930 (1.12%): CR SOC BIOL
+        16772 (0.94%): J AMER MED ASSOC
+        11518 (0.65%): Lancet
         ...
-    @translated
-      Count: 5608407 (1.14%)
-      Types: string (100.00%)
-      Samples:
-        5522108 (98.46%): N
-        86299 (1.54%): Y
 static_data:summary:names:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    22398099 (26.61%): 1
-    14355982 (17.06%): 2
-    12502986 (14.86%): 3
-    10220036 (12.14%): 4
-    7570890 (9.00%): 5
+    239625 (79.87%): 1
+    48233 (16.08%): 2
+    9791 (3.26%): 3
+    1684 (0.56%): 4
+    387 (0.13%): 5
     ...
-static_data:summary:names:name
-  Count: 61764058 (73.39%)
-  Types: list (100.00%)
-  Schema Entry:
-    299841065 ENTRIES
-    @seq_no
-      Count: 299841065 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        61764058 (20.60%): 1
-        61764058 (20.60%): 2
-        47408076 (15.81%): 3
-        34905090 (11.64%): 4
-        24685054 (8.23%): 5
-        ...
-    @role
-      Count: 299841065 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        280067802 (93.41%): author
-        15076338 (5.03%): book_editor
-        3132409 (1.04%): book_corp
-        1198258 (0.40%): book
-        366258 (0.12%): corp
-    display_name
-      Count: 299831238 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        561 ( < 0.01%): Mayer, H
-        528 ( < 0.01%): Abderhalden, E
-        499 ( < 0.01%): Levene, PA
-        395 ( < 0.01%): Williams, RS
-        253 ( < 0.01%): Seidel, W
-        ...
-    full_name
-      Count: 299831238 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        561 ( < 0.01%): Mayer, H
-        528 ( < 0.01%): Abderhalden, E
-        499 ( < 0.01%): Levene, PA
-        395 ( < 0.01%): Williams, RS
-        253 ( < 0.01%): Seidel, W
-        ...
-    wos_standard
-      Count: 297653904 (99.27%)
-      Types: string (100.00%)
-      Samples:
-        2111 ( < 0.01%): Hall, D
-        1048 ( < 0.01%): Mayer, H
-        863 ( < 0.01%): Williams, RS
-        528 ( < 0.01%): Abderhalden, E
-        507 ( < 0.01%): Levene, PA
-        ...
-    first_name
-      Count: 288958230 (96.37%)
-      Types: string (100.00%)
-      Samples:
-        6025613 (2.09%): M
-        4841435 (1.68%): A
-        4457707 (1.54%): J
-        4100448 (1.42%): S
-        3215998 (1.11%): R
-        ...
-    last_name
-      Count: 294468925 (98.21%)
-      Types: string (100.00%)
-      Samples:
-        382367 (0.13%): Smith
-        222289 (0.08%): Jones
-        206074 (0.07%): Williams
-        192774 (0.07%): Miller
-        155743 (0.05%): Wilson
-        ...
-    suffix
-      Count: 3611747 (1.20%)
-      Types: string (100.00%)
-      Samples:
-        1210552 (33.52%): I
-        1193492 (33.04%): V
-        360949 (9.99%): JR
-        242204 (6.71%): X
-        184517 (5.11%): Jr.
-        ...
-    @reprint
-      Count: 47303949 (15.78%)
-      Types: string (100.00%)
-      Samples:
-        47303949 (100.00%): Y
-    @addr_no
-      Count: 168460043 (56.18%)
-      Types: string (100.00%)
-      Samples:
-        85116015 (50.53%): 1
-        24090167 (14.30%): 2
-        11711049 (6.95%): 3
-        10975314 (6.52%): 1 2
-        5775071 (3.43%): 4
-        ...
-    email_addr
-      Count: 50252443 (16.76%)
-      Types: string (100.00%)
-      Samples:
-        63 ( < 0.01%): rt@cs.brown.edu
-        44 ( < 0.01%): forrest@cs.unm.edu
-        36 ( < 0.01%): Dave.Bull@bristol.ac.uk
-        30 ( < 0.01%): winfried.hinrichs@uni-greifswald.de
-        27 ( < 0.01%): tseng@math.washington.edu
-        ...
-    @orcid_id_tr
-      Count: 4406215 (1.47%)
-      Types: string (100.00%)
-      Samples:
-        50 ( < 0.01%): 0000-0002-5039-4517
-        35 ( < 0.01%): 0000-0003-4315-8628
-        20 ( < 0.01%): 0000-0002-7893-524X
-        14 ( < 0.01%): 0000-0002-3631-0807
-        13 ( < 0.01%): 0000-0001-7376-4536
-        ...
-    @r_id_tr
-      Count: 2021 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        27 (1.34%): A-3561-2009
-        13 (0.64%): A-5525-2009
-        6 (0.30%): A-5085-2009
-        4 (0.20%): F-8816-2012
-        4 (0.20%): D-1066-2016
-        ...
+static_data:summary:names:name:@seq_no
+  Count: 239625 (79.87%)
+  Types: string (100.00%)
+  Samples:
+    239625 (100.00%): 1
+static_data:summary:names:name:@role
+  Count: 239625 (79.87%)
+  Types: string (100.00%)
+  Samples:
+    203069 (84.74%): author
+    36404 (15.19%): anon
+    152 (0.06%): corp
+static_data:summary:names:name:display_name
+  Count: 239625 (79.87%)
+  Types: string (100.00%)
+  Samples:
+    36404 (15.19%): [Anonymous]
+    96 (0.04%): Boule, M.
+    30 (0.01%): Wentscher, Else
+    25 (0.01%): Usher, Abbott Payson
+    21 ( < 0.01%): Keene, Charles H.
+    ...
+static_data:summary:names:name:full_name
+  Count: 239625 (79.87%)
+  Types: string (100.00%)
+  Samples:
+    36404 (15.19%): [Anonymous]
+    96 (0.04%): Boule, M.
+    30 (0.01%): Wentscher, Else
+    25 (0.01%): Usher, Abbott Payson
+    21 ( < 0.01%): Keene, Charles H.
+    ...
+static_data:summary:names:name:wos_standard
+  Count: 239625 (79.87%)
+  Types: string (100.00%)
+  Samples:
+    36404 (15.19%): [Anonymous]
+    102 (0.04%): Boule, M
+    32 (0.01%): Usher, AP
+    30 (0.01%): Wentscher, E
+    24 (0.01%): Swann, WFG
+    ...
+static_data:summary:names:name:first_name
+  Count: 195117 (65.04%)
+  Types: string (100.00%)
+  Samples:
+    6258 (3.21%): A
+    5785 (2.96%): H
+    4805 (2.46%): J
+    4750 (2.43%): E
+    3675 (1.88%): W
+    ...
+static_data:summary:names:name:last_name
+  Count: 200910 (66.97%)
+  Types: string (100.00%)
+  Samples:
+    637 (0.32%): Jones
+    518 (0.26%): Miller
+    393 (0.20%): Young
+    373 (0.19%): Lewis
+    343 (0.17%): Meyer
+    ...
 static_data:summary:doctypes:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    80049989 (95.11%): 1
-    4112039 (4.89%): 2
-    129 ( < 0.01%): 3
+    300001 (100.00%): 1
 static_data:summary:doctypes:doctype
-  Count: 84162157 (100.00%)
-  Types: string (95.11%), list (4.89%)
+  Count: 300001 (100.00%)
+  Types: string (100.00%)
   Samples:
-    47421195 (56.35%): Article
-    8816816 (10.48%): Meeting Abstract
-    7142627 (8.49%): Proceedings Paper
-    4602055 (5.47%): Book Review
-    3379463 (4.02%): Editorial Material
-    ...
-  List Samples:
-    3790146 (4.50%): Article
-    2042744 (2.43%): Proceedings Paper
-    1752014 (2.08%): Book Chapter
-    297655 (0.35%): Early Access
-    237567 (0.28%): Editorial Material
+    213720 (71.24%): Article
+    49351 (16.45%): Book Review
+    34459 (11.49%): Letter
+    2243 (0.75%): Review
+    158 (0.05%): Correction
     ...
 static_data:summary:publishers:publisher:address_spec:@addr_no
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    83866809 (100.00%): 1
+    298737 (100.00%): 1
 static_data:summary:publishers:publisher:address_spec:full_address
-  Count: 83332953 (99.01%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    3373600 (4.05%): 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
-    2500302 (3.00%): PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
-    1578244 (1.89%): THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
-    1418368 (1.70%): 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
-    1257624 (1.51%): 233 SPRING ST, NEW YORK, NY 10013 USA
+    13304 (4.45%): BRITISH MED ASSOC HOUSE, TAVISTOCK SQUARE, LONDON WC1H 9JR, ENGLAND
+    12980 (4.34%): 515 N STATE ST, CHICAGO, IL 60610 USA
+    11906 (3.99%): 21 STREET CAMILLE DESMOULINS, ISSY, 92789 MOULINEAUX CEDEX 9, FRANCE
+    10943 (3.66%): 84 THEOBALDS RD, LONDON WC1X 8RR, ENGLAND
+    9761 (3.27%): 233 SPRING STREET, NEW YORK, NY 10013 USA
     ...
 static_data:summary:publishers:publisher:address_spec:city
-  Count: 83866254 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    11197095 (13.35%): NEW YORK
-    5315451 (6.34%): OXFORD
-    5093142 (6.07%): LONDON
-    4505138 (5.37%): WASHINGTON
-    4289615 (5.11%): AMSTERDAM
+    38857 (13.01%): LONDON
+    32333 (10.82%): NEW YORK
+    31855 (10.66%): WASHINGTON
+    26501 (8.87%): CHICAGO
+    12138 (4.06%): PARIS
     ...
 static_data:summary:publishers:publisher:names:@count
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    83866809 (100.00%): 1
+    298737 (100.00%): 1
 static_data:summary:publishers:publisher:names:name:@role
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    83866809 (100.00%): publisher
+    298737 (100.00%): publisher
 static_data:summary:publishers:publisher:names:name:@seq_no
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    83866809 (100.00%): 1
+    298737 (100.00%): 1
 static_data:summary:publishers:publisher:names:name:@addr_no
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    83866809 (100.00%): 1
+    298737 (100.00%): 1
 static_data:summary:publishers:publisher:names:name:display_name
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    2741933 (3.27%): WILEY
-    2712401 (3.23%): ELSEVIER SCIENCE BV
-    2596131 (3.10%): SPRINGER
-    2194161 (2.62%): PERGAMON-ELSEVIER SCIENCE LTD
-    2037401 (2.43%): AMER CHEMICAL SOC
+    15172 (5.08%): SPRINGER
+    14012 (4.69%): AMER MEDICAL ASSOC
+    12382 (4.14%): B M J PUBLISHING GROUP
+    11906 (3.99%): MASSON EDITEUR
+    10943 (3.66%): LANCET LTD
     ...
 static_data:summary:publishers:publisher:names:name:full_name
-  Count: 83866809 (99.65%)
+  Count: 298737 (99.58%)
   Types: string (100.00%)
   Samples:
-    2741933 (3.27%): WILEY
-    2712401 (3.23%): ELSEVIER SCIENCE BV
-    2596131 (3.10%): SPRINGER
-    2194161 (2.62%): PERGAMON-ELSEVIER SCIENCE LTD
-    2037401 (2.43%): AMER CHEMICAL SOC
+    15172 (5.08%): SPRINGER
+    14012 (4.69%): AMER MEDICAL ASSOC
+    12382 (4.14%): B M J PUBLISHING GROUP
+    11906 (3.99%): MASSON EDITEUR
+    10943 (3.66%): LANCET LTD
     ...
 static_data:summary:publishers:publisher:names:name:unified_name
-  Count: 76504625 (90.90%)
+  Count: 266541 (88.85%)
   Types: string (100.00%)
   Samples:
-    13849186 (18.10%): Elsevier
-    6903957 (9.02%): Springer Nature
-    6404003 (8.37%): Wiley
-    2640848 (3.45%): Taylor & Francis
-    2063384 (2.70%): Lippincott Williams & Wilkins
+    29219 (10.96%): Elsevier
+    26498 (9.94%): Springer Nature
+    25777 (9.67%): Wiley
+    14012 (5.26%): Amer Medical Assoc
+    12382 (4.65%): BMJ Publishing Group
     ...
 static_data:fullrecord_metadata:languages:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84156588 (99.99%): 1
-    5284 ( < 0.01%): 2
-    213 ( < 0.01%): 3
-    58 ( < 0.01%): 4
-    8 ( < 0.01%): 5
-    ...
+    299982 (99.99%): 1
+    19 ( < 0.01%): 2
 static_data:fullrecord_metadata:languages:language:@type
-  Count: 84156588 (99.99%)
+  Count: 299982 (99.99%)
   Types: string (100.00%)
   Samples:
-    84156588 (100.00%): primary
+    299982 (100.00%): primary
 static_data:fullrecord_metadata:languages:language:#text
-  Count: 84156588 (99.99%)
+  Count: 299982 (99.99%)
   Types: string (100.00%)
   Samples:
-    77640423 (92.26%): English
-    1910457 (2.27%): German
-    1523390 (1.81%): French
-    921317 (1.09%): Russian
-    773568 (0.92%): Spanish
+    216033 (72.02%): English
+    57076 (19.03%): German
+    26146 (8.72%): French
+    174 (0.06%): Russian
+    162 (0.05%): Italian
     ...
 static_data:fullrecord_metadata:normalized_languages:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84156588 (99.99%): 1
-    5284 ( < 0.01%): 2
-    213 ( < 0.01%): 3
-    58 ( < 0.01%): 4
-    8 ( < 0.01%): 5
-    ...
+    299982 (99.99%): 1
+    19 ( < 0.01%): 2
 static_data:fullrecord_metadata:normalized_languages:language:@type
-  Count: 84156588 (99.99%)
+  Count: 299982 (99.99%)
   Types: string (100.00%)
   Samples:
-    84156588 (100.00%): primary
+    299982 (100.00%): primary
 static_data:fullrecord_metadata:normalized_languages:language:#text
-  Count: 84156588 (99.99%)
+  Count: 299982 (99.99%)
   Types: string (100.00%)
   Samples:
-    77640423 (92.26%): English
-    1910457 (2.27%): German
-    1523390 (1.81%): French
-    921317 (1.09%): Russian
-    773568 (0.92%): Spanish
+    216033 (72.02%): English
+    57076 (19.03%): German
+    26146 (8.72%): French
+    174 (0.06%): Russian
+    162 (0.05%): Italian
     ...
 static_data:fullrecord_metadata:normalized_doctypes:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    80049327 (95.11%): 1
-    4112701 (4.89%): 2
-    129 ( < 0.01%): 3
+    300001 (100.00%): 1
 static_data:fullrecord_metadata:normalized_doctypes:doctype
-  Count: 84162157 (100.00%)
-  Types: string (95.11%), list (4.89%)
+  Count: 300001 (100.00%)
+  Types: string (100.00%)
   Samples:
-    48899603 (58.10%): Article
-    8830243 (10.49%): Abstract
-    7374170 (8.76%): Review
-    7152228 (8.50%): Meeting
-    3459848 (4.11%): Editorial
-    ...
-  List Samples:
-    3833237 (4.55%): Article
-    2043479 (2.43%): Meeting
-    1753866 (2.08%): Book
-    297655 (0.35%): Early Access
-    229796 (0.27%): Editorial
+    213717 (71.24%): Article
+    51596 (17.20%): Review
+    34459 (11.49%): Letter
+    158 (0.05%): Correction
+    56 (0.02%): Editorial
     ...
 static_data:fullrecord_metadata:references:@count
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    16724701 (19.87%): 0
-    6373278 (7.57%): 1
-    1680423 (2.00%): 10
-    1591596 (1.89%): 5
-    1531350 (1.82%): 8
+    96029 (32.01%): 0
+    66958 (22.32%): 1
+    15618 (5.21%): 2
+    12449 (4.15%): 3
+    10512 (3.50%): 4
     ...
-static_data:fullrecord_metadata:references:reference
-  Count: 61064178 (72.56%)
-  Types: list (100.00%)
-  Schema Entry:
-    1877166532 ENTRIES
-    @occurenceOrder
-      Count: 1877166532 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        61021999 (3.25%): 2
-        61019010 (3.25%): 1
-        59687465 (3.18%): 3
-        58385166 (3.11%): 4
-        57007207 (3.04%): 5
-        ...
-    uid
-      Count: 1875796749 (99.93%)
-      Types: string (100.00%)
-      Samples:
-        35 ( < 0.01%): WOS:000201624600098
-        26 ( < 0.01%): WOS:000201624300022
-        15 ( < 0.01%): WOS:000188478400061
-        8 ( < 0.01%): WOS:000201760100002
-        7 ( < 0.01%): WOS:000200918400154
-        ...
-    year
-      Count: 1859052366 (99.04%)
-      Types: string (100.00%)
-      Samples:
-        1390959 (0.07%): 1938
-        1330534 (0.07%): 1939
-        1323949 (0.07%): 1937
-        1259650 (0.07%): 1936
-        1250666 (0.07%): 1941
-        ...
-    page
-      Count: 1594560344 (84.95%)
-      Types: string (100.00%), list ( < 0.01%)
-      Samples:
-        3805846 (0.24%): 5
-        3722023 (0.23%): 11
-        3610216 (0.23%): 25
-        3440104 (0.22%): 29
-        3212705 (0.20%): 65
-        ...
-      List Samples:
-        6 ( < 0.01%): 606
-        6 ( < 0.01%): 595
-        4 ( < 0.01%): 890
-        4 ( < 0.01%): 1524
-        4 ( < 0.01%): 1020
-        ...
-    volume
-      Count: 1499204607 (79.87%)
-      Types: string (100.00%)
-      Samples:
-        24234663 (1.62%): 2
-        22982032 (1.53%): 7
-        22787618 (1.52%): 1
-        22734421 (1.52%): 8
-        22656241 (1.51%): 6
-        ...
-    citedWork
-      Count: 1874122428 (99.84%)
-      Types: string (100.00%)
-      Samples:
-        761038 (0.04%): JOURNAL OF THE CHEMICAL SOCIETY
-        498772 (0.03%): HELVETICA CHIMICA ACTA
-        343198 (0.02%): ANATOMICAL RECORD
-        303243 (0.02%): COMPTES RENDUS HEBDOMADAIRES DES SEANCES DE L ACADEMIE DES SCIENCES
-        271405 (0.01%): AMERICAN JOURNAL OF DISEASES OF CHILDREN
-        ...
-    citedAuthor
-      Count: 1854167389 (98.77%)
-      Types: string (100.00%)
-      Samples:
-        24902 ( < 0.01%): DURKHEIM E
-        12551 ( < 0.01%): CLARK
-        4908 ( < 0.01%): Long, JA
-        4392 ( < 0.01%): GORDON
-        2855 ( < 0.01%): Fletcher, H
-        ...
-    citedTitle
-      Count: 1495403394 (79.66%)
-      Types: string (100.00%)
-      Samples:
-        124 ( < 0.01%): Articulation testing methods
-        116 ( < 0.01%): Deterioration and regression in schizophrenic thinking
-        112 ( < 0.01%): SCHIZOPHRENIC THINKING IN A PROBLEM-SOLVING SITUATION
-        104 ( < 0.01%): A CULTURE-FREE INTELLIGENCE TEST I
-        102 ( < 0.01%): Ionisation by collision in merculry vapour
-        ...
-    doi
-      Count: 608508062 (32.42%)
-      Types: string (100.00%)
-      Samples:
-        1097 ( < 0.01%): 10.1063/1.1749433
-        255 ( < 0.01%): 10.1080/14786441308635031
-        233 ( < 0.01%): 10.7326/0003-4819-11-9-1662
-        188 ( < 0.01%): 10.1002/mrdd.10035
-        140 ( < 0.01%): 10.1007/978-3-642-90639-8_1
-        ...
-    assignee
-      Count: 2589143 (0.14%)
-      Types: string (100.00%)
-      Samples:
-        415 (0.02%): I G FARBENINDUSTRIE
-        399 (0.02%): FARBENIND IG
-        188 ( < 0.01%): GOSS NP
-        108 ( < 0.01%): MEISTER
-        96 ( < 0.01%): KHARASCH MS
-        ...
-    patent_no
-      Count: 2951065 (0.16%)
-      Types: string (100.00%)
-      Samples:
-        35 ( < 0.01%): GE 250264
-        20 ( < 0.01%): US 1227113
-        9 ( < 0.01%): GE 172118
-        7 ( < 0.01%): US 1210725
-        6 ( < 0.01%): US 1247499
-        ...
-    citedTitle:i
-      Count: 946317 (0.05%)
-      Types: string (80.39%), list (19.61%)
-      Samples:
-        3226 (0.34%): Fusarium
-        1839 (0.19%): Carica papaya
-        1764 (0.19%): Vicia faba
-        1456 (0.15%): Solanum tuberosum
-        508 (0.05%): Allium
-        ...
-      List Samples:
-        10955 (1.16%): in vitro
-        2549 (0.27%): in vivo
-        1830 (0.19%): Zea mays
-        610 (0.06%): Fragaria
-        410 (0.04%): Arachis hypogaea
-        ...
-      Schema Entry:
-        378 ENTRIES
-        sub
-          Count: 250 (66.14%)
-          Types: string (98.80%), list (1.20%)
-          Samples:
-            56 (22.40%): 1
-            35 (14.00%): 2
-            19 (7.60%): s
-            15 (6.00%): x
-            15 (6.00%): 1-x
-            ...
-          List Samples:
-            2 (0.80%): 1
-            2 (0.80%): 3
-            2 (0.80%): H
-        #text
-          Count: 100 (26.46%)
-          Types: string (100.00%)
-          Samples:
-            35 (35.00%): H
-            20 (20.00%): rnu
-            10 (10.00%): B
-            4 (4.00%): y
-            3 (3.00%): F
-            ...
-        sup
-          Count: 127 (33.60%)
-          Types: string (100.00%)
-          Samples:
-            22 (17.32%): 2
-            20 (15.75%): N
-            15 (11.81%): f
-            14 (11.02%): y
-            11 (8.66%): i
-            ...
-        i
-          Count: 1 (0.26%)
-          Types: string (100.00%)
-          Samples:
-            1 (100.00%): Vigna unguiculata
-    citedTitle:#text
-      Count: 978011 (0.05%)
-      Types: string (100.00%)
-      Samples:
-        145 (0.01%): Chemical and Immuno-logical Studies on the Mechanism of Infection and Immunity in Anthrax. The Chemical Structure of the Capsular Substance of 
- and of the sero-logieally Identical Substance in 
-.
-        112 (0.01%): Naphthoquinones of the vitamin K
- type of structure.
-        83 ( < 0.01%): The experimental alteration of sex chromosomes into autosomes and 
-, as illustrated by 
-.
-        82 ( < 0.01%): Vitamin B
-.
-        78 ( < 0.01%): A Protective Action of Neurotropic against Viscerotropic Yellow. Fever Virus in 
-.
-        ...
-    citedTitle:sub
-      Count: 31198 ( < 0.01%)
-      Types: string (82.48%), list (17.52%)
-      Samples:
-        11896 (38.13%): 2
-        5198 (16.66%): 1
-        2547 (8.16%): 3
-        2209 (7.08%): 4
-        1084 (3.47%): 12
-        ...
-      List Samples:
-        5722 (18.34%): 2
-        2172 (6.96%): 4
-        2146 (6.88%): 3
-        1197 (3.84%): 1
-        188 (0.60%): 5
-        ...
-    art_no
-      Count: 23658 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        178 (0.75%): UNSP MR 0441965
-        102 (0.43%): ARTN 1
-        56 (0.24%): UNSP 01
-        30 (0.13%): UNSP C6-1264
-        28 (0.12%): UNSP MR0277381 (43:3114)
-        ...
-    citedTitle:sup
-      Count: 10931 ( < 0.01%)
-      Types: string (78.93%), list (21.07%)
-      Samples:
-        1349 (12.34%): 13
-        1243 (11.37%): 15
-        794 (7.26%): TM
-        789 (7.22%): 2+
-        770 (7.04%): 14
-        ...
-      List Samples:
-        1462 (13.37%): +
-        1116 (10.21%): 2+
-        294 (2.69%): -
-        289 (2.64%): 13
-        209 (1.91%): 15
-        ...
-    citedTitle:i:sub
-      Count: 50 ( < 0.01%)
-      Types: string (96.00%), list (4.00%)
-      Samples:
-        9 (18.00%): x
-        7 (14.00%): 4
-        6 (12.00%): 1
-        6 (12.00%): 3
-        6 (12.00%): h
-        ...
-      List Samples:
-        2 (4.00%): 1
-        2 (4.00%): 2
-    citedTitle:i:#text
-      Count: 100 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        44 (44.00%): x
-        14 (14.00%): mcr
-        7 (7.00%): Est
-        6 (6.00%): JM1
-        3 (3.00%): Bm
-        ...
-    citedTitle:i:sup
-      Count: 66 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        45 (68.18%): 2
-        14 (21.21%): -
-        2 (3.03%): v
-        2 (3.03%): n
-        1 (1.52%): 32
-        ...
-    physicalSection
-      Count: 12243419 (0.65%)
-      Types: list (100.00%)
-      Schema Entry:
-        36648606 ENTRIES
-        @physicalLocation
-          Count: 36648606 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            3 ( < 0.01%): 0.573941368
-            2 ( < 0.01%): 0.867764915
-            2 ( < 0.01%): 0.763134481
-            2 ( < 0.01%): 0.056693381
-            2 ( < 0.01%): 0.789254972
-            ...
-        #text
-          Count: 35850055 (97.82%)
-          Types: string (100.00%)
-          Samples:
-            6459664 (18.02%): Introduction
-            4225764 (11.79%): Discussion
-            2449459 (6.83%): 1. Introduction
-            1645677 (4.59%): INTRODUCTION
-            1106031 (3.09%): DISCUSSION
-            ...
-    physicalSection:@physicalLocation
-      Count: 32992750 (1.76%)
-      Types: string (100.00%)
-      Samples:
-        4 ( < 0.01%): 0.863843648
-        3 ( < 0.01%): 0.027687316
-        2 ( < 0.01%): 0.195570033
-        2 ( < 0.01%): 0.902443813
-        2 ( < 0.01%): 0.050896077
-        ...
-    physicalSection:#text
-      Count: 32213591 (1.72%)
-      Types: string (100.00%)
-      Samples:
-        7988846 (24.80%): Introduction
-        3612171 (11.21%): Discussion
-        3308791 (10.27%): 1. Introduction
-        1815200 (5.63%): INTRODUCTION
-        877650 (2.72%): DISCUSSION
-        ...
-    citedTitle:sup:i
-      Count: 3 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        2 (66.67%): B
-        1 (33.33%): n
-static_data:fullrecord_metadata:addresses:@count
-  Count: 84162157 (100.00%)
+static_data:fullrecord_metadata:references:reference:@occurenceOrder
+  Count: 66958 (22.32%)
   Types: string (100.00%)
   Samples:
-    29399852 (34.93%): 1
-    22616026 (26.87%): 0
-    15326956 (18.21%): 2
-    8050459 (9.57%): 3
-    3987282 (4.74%): 4
+    66952 (99.99%): 1
+    6 ( < 0.01%): 2
+static_data:fullrecord_metadata:references:reference:uid
+  Count: 66958 (22.32%)
+  Types: string (100.00%)
+  Samples:
+    1 ( < 0.01%): WOS:000201859700124.1
+    1 ( < 0.01%): WOS:000205076700004.1
+    1 ( < 0.01%): WOS:000203082400015.1
+    1 ( < 0.01%): WOS:000206223700023.1
+    1 ( < 0.01%): WOS:000206939800017.1
+    ...
+static_data:fullrecord_metadata:references:reference:year
+  Count: 57407 (19.14%)
+  Types: string (100.00%)
+  Samples:
+    2241 (3.90%): 1936
+    2223 (3.87%): 1938
+    2120 (3.69%): 1935
+    2100 (3.66%): 1937
+    1973 (3.44%): 1930
+    ...
+static_data:fullrecord_metadata:references:reference:page
+  Count: 12818 (4.27%)
+  Types: string (100.00%)
+  Samples:
+    223 (1.74%): 1
+    36 (0.28%): 53
+    33 (0.26%): 49
+    33 (0.26%): 28
+    32 (0.25%): 97
+    ...
+static_data:fullrecord_metadata:references:reference:volume
+  Count: 12820 (4.27%)
+  Types: string (100.00%)
+  Samples:
+    961 (7.50%): 1
+    734 (5.73%): 2
+    416 (3.24%): 3
+    314 (2.45%): 4
+    291 (2.27%): 5
+    ...
+static_data:fullrecord_metadata:references:reference:citedWork
+  Count: 66899 (22.30%)
+  Types: string (100.00%)
+  Samples:
+    688 (1.03%): COMPTES RENDUS
+    121 (0.18%): NATURE
+    37 (0.06%): SOC
+    17 (0.03%): CHILD PSYCHOL
+    14 (0.02%): Z ANORG ALLG CHEM
+    ...
+static_data:fullrecord_metadata:addresses:@count
+  Count: 300001 (100.00%)
+  Types: string (100.00%)
+  Samples:
+    240624 (80.21%): 0
+    52653 (17.55%): 1
+    5782 (1.93%): 2
+    741 (0.25%): 3
+    160 (0.05%): 4
+    ...
+static_data:fullrecord_metadata:addresses:address_name:address_spec:@addr_no
+  Count: 52653 (17.55%)
+  Types: string (100.00%)
+  Samples:
+    52653 (100.00%): 1
+static_data:fullrecord_metadata:addresses:address_name:address_spec:full_address
+  Count: 52653 (17.55%)
+  Types: string (100.00%)
+  Samples:
+    408 (0.77%): Univ Chicago, Chicago, IL USA
+    356 (0.68%): Harvard Univ, Cambridge, MA USA
+    339 (0.64%): Columbia Univ, New York, NY USA
+    257 (0.49%): Univ Michigan, Ann Arbor, MI USA
+    221 (0.42%): Stanford Univ, Stanford, CA USA
+    ...
+static_data:fullrecord_metadata:addresses:address_name:address_spec:organizations:@count
+  Count: 52653 (17.55%)
+  Types: string (100.00%)
+  Samples:
+    25906 (49.20%): 2
+    16243 (30.85%): 1
+    9798 (18.61%): 3
+    670 (1.27%): 4
+    36 (0.07%): 5
+static_data:fullrecord_metadata:addresses:address_name:address_spec:organizations:organization
+  Count: 52653 (17.55%)
+  Types: list (69.15%), string (30.85%)
+  Samples:
+    606 (1.15%): USMHS
+    132 (0.25%): Bur Chem & Soils
+    115 (0.22%): Univ Coll
+    90 (0.17%): Bur Plant Ind
+    86 (0.16%): Tufts Coll
+    ...
+  List Samples:
+    1963 (3.73%): Harvard Univ
+    1468 (2.79%): Univ Chicago
+    1455 (2.76%): Columbia Univ
+    1164 (2.21%): Cornell Univ
+    1162 (2.21%): Yale Univ
+    ...
+  Schema Entry:
+    47656 ENTRIES
+    @pref
+      Count: 47656 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        47656 (100.00%): Y
+    #text
+      Count: 47656 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        2437 (5.11%): Harvard University
+        1632 (3.42%): Johns Hopkins University
+        1484 (3.11%): University of Chicago
+        1457 (3.06%): Columbia University
+        1206 (2.53%): University of California System
+        ...
+static_data:fullrecord_metadata:addresses:address_name:address_spec:city
+  Count: 52653 (17.55%)
+  Types: string (100.00%)
+  Samples:
+    3253 (6.18%): New York
+    2453 (4.66%): Chicago
+    2387 (4.53%): Cambridge
+    2051 (3.90%): Washington
+    1876 (3.56%): Baltimore
+    ...
+static_data:fullrecord_metadata:addresses:address_name:address_spec:state
+  Count: 44265 (14.75%)
+  Types: string (100.00%)
+  Samples:
+    7418 (16.76%): NY
+    4302 (9.72%): MA
+    3631 (8.20%): IL
+    3185 (7.20%): CA
+    2632 (5.95%): PA
+    ...
+static_data:fullrecord_metadata:addresses:address_name:address_spec:country
+  Count: 52653 (17.55%)
+  Types: string (100.00%)
+  Samples:
+    43003 (81.67%): USA
+    2457 (4.67%): UK
+    1751 (3.33%): England
+    662 (1.26%): Germany
+    651 (1.24%): Canada
     ...
 static_data:fullrecord_metadata:category_info:headings:@count
-  Count: 84087580 (99.91%)
+  Count: 299880 (99.96%)
   Types: string (100.00%)
   Samples:
-    81209693 (96.58%): 1
-    2818047 (3.35%): 2
-    59840 (0.07%): 3
+    296927 (99.02%): 1
+    2953 (0.98%): 2
 static_data:fullrecord_metadata:category_info:headings:heading
-  Count: 84087580 (99.91%)
-  Types: string (96.58%), list (3.42%)
+  Count: 299880 (99.96%)
+  Types: string (99.02%), list (0.98%)
   Samples:
-    68398122 (81.34%): Science & Technology
-    7394542 (8.79%): Social Sciences
-    5417029 (6.44%): Arts & Humanities
+    222648 (74.25%): Science & Technology
+    74270 (24.77%): Social Sciences
+    9 ( < 0.01%): Arts & Humanities
   List Samples:
-    2780562 (3.31%): Social Sciences
-    2213174 (2.63%): Science & Technology
-    821878 (0.98%): Arts & Humanities
+    2953 (0.98%): Social Sciences
+    2720 (0.91%): Science & Technology
+    233 (0.08%): Arts & Humanities
 static_data:fullrecord_metadata:category_info:subjects:@count
-  Count: 84087580 (99.91%)
+  Count: 299880 (99.96%)
   Types: string (100.00%)
   Samples:
-    50729786 (60.33%): 2
-    18815513 (22.38%): 4
-    6062611 (7.21%): 6
-    3387234 (4.03%): 3
-    2532779 (3.01%): 5
+    272010 (90.71%): 2
+    20102 (6.70%): 4
+    2920 (0.97%): 3
+    2452 (0.82%): 7
+    2293 (0.76%): 6
     ...
 static_data:fullrecord_metadata:category_info:subjects:subject
-  Count: 84087580 (99.91%)
+  Count: 299880 (99.96%)
   Types: list (100.00%)
   Schema Entry:
-    256371508 ENTRIES
+    664625 ENTRIES
     @ascatype
-      Count: 256371508 (100.00%)
+      Count: 664625 (100.00%)
       Types: string (100.00%)
       Samples:
-        132626743 (51.73%): traditional
-        123744765 (48.27%): extended
+        335050 (50.41%): traditional
+        329575 (49.59%): extended
     #text
-      Count: 256371508 (100.00%)
+      Count: 664625 (100.00%)
       Types: string (100.00%)
       Samples:
-        9053872 (3.53%): Engineering
-        7024901 (2.74%): Chemistry
-        6331764 (2.47%): Biochemistry & Molecular Biology
-        5819113 (2.27%): Physics
-        4003665 (1.56%): Pharmacology & Pharmacy
+        47855 (7.20%): Medicine, General & Internal
+        47855 (7.20%): General & Internal Medicine
+        27991 (4.21%): Multidisciplinary Sciences
+        27991 (4.21%): Science & Technology - Other Topics
+        26055 (3.92%): Chemistry
         ...
 static_data:fullrecord_metadata:fund_ack
   Count: 0 ( < 0.01%)
   Types: 
 static_data:item:@xmlns_xsi
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84162157 (100.00%): http://www.w3.org/2001/XMLSchema-instance
+    300001 (100.00%): http://www.w3.org/2001/XMLSchema-instance
 static_data:item:@xsi_type
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    84162157 (100.00%): itemType_wos
+    300001 (100.00%): itemType_wos
 static_data:item:ids:@avail
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    45180103 (53.68%): Y
-    38982054 (46.32%): N
+    231935 (77.31%): Y
+    68066 (22.69%): N
 static_data:item:ids:#text
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    1026 ( < 0.01%): V31WA
-    978 ( < 0.01%): V24ZF
-    714 ( < 0.01%): V9629
-    664 ( < 0.01%): V24ZE
-    649 ( < 0.01%): V20YM
+    190 (0.06%): V38FO
+    175 (0.06%): V9639
+    165 (0.05%): V07XB
+    157 (0.05%): V9636
+    146 (0.05%): V9633
     ...
 static_data:item:bib_id
-  Count: 84162157 (100.00%)
+  Count: 300001 (100.00%)
   Types: string (100.00%)
   Samples:
-    5 ( < 0.01%): 15 (16): 918-918 Part 1 APR 20 1900
-    4 ( < 0.01%): 27: 111-112 Part 3 SEP 1942
-    4 ( < 0.01%): 24 (11): 913-913 AUG 1924
-    3 ( < 0.01%): 20 (12): 488-488 Part 1 MAR 24 1905
-    2 ( < 0.01%): 1: 805-805 1900
+    1 ( < 0.01%): 30 (1): 968-968 JUL-DEC 1909
+    1 ( < 0.01%): 144: 1016-1016 JUL-DEC 1939
+    1 ( < 0.01%): 29 (3): 482-487 JUN 1935
+    1 ( < 0.01%): 25 (99): 347-359 SEP 1915
+    1 ( < 0.01%): 19 (3): 167-168 MAY 1944
     ...
 dynamic_data:cluster_related:identifiers:identifier
-  Count: 83572148 (99.30%)
+  Count: 287791 (95.93%)
   Types: list (100.00%)
   Schema Entry:
-    291393187 ENTRIES
+    711350 ENTRIES
     @type
-      Count: 291393187 (100.00%)
+      Count: 711350 (100.00%)
       Types: string (100.00%)
       Samples:
-        83572148 (28.68%): accession_no
-        77086784 (26.45%): issn
-        31729714 (10.89%): doi
-        31527069 (10.82%): eissn
-        25485316 (8.75%): pmid
+        287791 (40.46%): accession_no
+        280378 (39.41%): issn
+        120236 (16.90%): xref_doi
+        15530 (2.18%): pmid
+        6554 (0.92%): eissn
         ...
     @value
-      Count: 291251615 (99.95%)
+      Count: 711350 (100.00%)
       Types: string (100.00%)
       Samples:
-        249579 (0.09%): 0140-6736
-        187897 (0.06%): 0002-7863
-        161150 (0.06%): 0036-8075
-        150415 (0.05%): 0027-8424
-        112679 (0.04%): 0028-4793
+        11649 (1.64%): 0959-535X
+        11518 (1.62%): 0140-6736
+        9965 (1.40%): 0037-9026
+        9534 (1.34%): 0001-4036
+        8386 (1.18%): 0002-9955
         ...
-origin
-  Count: 84162157 (100.00%)
-  Types: string (100.00%)
-  Samples:
-    3112982 (3.70%): 2019_CORE
-    3036353 (3.61%): 2020_CORE
-    2917144 (3.47%): 2018_CORE
-    2885872 (3.43%): 2017_CORE
-    2799419 (3.33%): 2016_CORE
-    ...
-static_data:summary:pub_info:@part_no
-  Count: 1831009 (2.18%)
-  Types: string (100.00%)
-  Samples:
-    649534 (35.47%): 2
-    603808 (32.98%): 1
-    113090 (6.18%): 3
-    58185 (3.18%): 4
-    54622 (2.98%): A
-    ...
-static_data:summary:names:name:@seq_no
-  Count: 22398099 (26.61%)
-  Types: string (100.00%)
-  Samples:
-    22398099 (100.00%): 1
-static_data:summary:names:name:@role
-  Count: 22398099 (26.61%)
-  Types: string (100.00%)
-  Samples:
-    20887032 (93.25%): author
-    1457545 (6.51%): anon
-    21361 (0.10%): book_editor
-    18097 (0.08%): book
-    11304 (0.05%): corp
-    ...
-static_data:summary:names:name:display_name
-  Count: 22398099 (26.61%)
-  Types: string (100.00%)
-  Samples:
-    1457545 (6.51%): [Anonymous]
-    947 ( < 0.01%): Pieron, Henri
-    183 ( < 0.01%): Meyer, E
-    140 ( < 0.01%): Thomas, A
-    115 ( < 0.01%): Cofer, L. E.
-    ...
-static_data:summary:names:name:full_name
-  Count: 22398099 (26.61%)
-  Types: string (100.00%)
-  Samples:
-    1457545 (6.51%): [Anonymous]
-    947 ( < 0.01%): Pieron, Henri
-    183 ( < 0.01%): Meyer, E
-    140 ( < 0.01%): Thomas, A
-    115 ( < 0.01%): Cofer, L. E.
-    ...
-static_data:summary:names:name:wos_standard
-  Count: 22395219 (26.61%)
-  Types: string (100.00%)
-  Samples:
-    1457545 (6.51%): [Anonymous]
-    1241 ( < 0.01%): Pieron, H
-    387 ( < 0.01%): Thomas, A
-    265 ( < 0.01%): Walter, M
-    262 ( < 0.01%): Keith, A
-    ...
-static_data:summary:names:name:first_name
-  Count: 20374419 (24.21%)
-  Types: string (100.00%)
-  Samples:
-    718251 (3.53%): J
-    646186 (3.17%): M
-    555370 (2.73%): A
-    507133 (2.49%): R
-    401083 (1.97%): P
-    ...
-static_data:summary:names:name:last_name
-  Count: 20737127 (24.64%)
-  Types: string (100.00%)
-  Samples:
-    15759 (0.08%): Anderson
-    12168 (0.06%): Thomas
-    10897 (0.05%): Hall
-    10511 (0.05%): Scott
-    7689 (0.04%): Murphy
-    ...
-static_data:fullrecord_metadata:category_info:subheadings:@count
-  Count: 68665022 (81.59%)
-  Types: string (100.00%)
-  Samples:
-    60825701 (88.58%): 1
-    7506704 (10.93%): 2
-    332617 (0.48%): 3
-static_data:fullrecord_metadata:category_info:subheadings:subheading
-  Count: 68665022 (81.59%)
-  Types: string (88.58%), list (11.42%)
-  Samples:
-    36762920 (53.54%): Life Sciences & Biomedicine
-    12304119 (17.92%): Physical Sciences
-    11758662 (17.12%): Technology
-  List Samples:
-    6772583 (9.86%): Physical Sciences
-    6353448 (9.25%): Technology
-    2885228 (4.20%): Life Sciences & Biomedicine
-static_data:summary:EWUID:edition
-  Count: 10159817 (12.07%)
-  Types: list (100.00%)
-  Schema Entry:
-    20768473 ENTRIES
-    @value
-      Count: 20768473 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        9045700 (43.55%): WOS.SCI
-        5212038 (25.10%): WOS.ISTP
-        4248217 (20.46%): WOS.SSCI
-        784801 (3.78%): WOS.AHCI
-        518185 (2.50%): WOS.IC
-        ...
-static_data:summary:pub_info:@issue
-  Count: 64026652 (76.08%)
-  Types: string (100.00%)
-  Samples:
-    9447444 (14.76%): 1
-    8862224 (13.84%): 2
-    8012346 (12.51%): 3
-    7341095 (11.47%): 4
-    4376615 (6.84%): 5
-    ...
-static_data:item:bib_pagecount:@type
-  Count: 53670271 (63.77%)
-  Types: string (100.00%)
-  Samples:
-    44558196 (83.02%): Journal
-    9112075 (16.98%): Book
-static_data:item:bib_pagecount:#text
-  Count: 53670271 (63.77%)
-  Types: string (100.00%)
-  Samples:
-    395492 (0.74%): 100
-    343385 (0.64%): 116
-    309810 (0.58%): 108
-    305800 (0.57%): 84
-    301333 (0.56%): 124
-    ...
 dynamic_data:ic_related:oases:@count
-  Count: 16448943 (19.54%)
+  Count: 33736 (11.25%)
   Types: string (100.00%)
   Samples:
-    8175335 (49.70%): 1
-    3581336 (21.77%): 2
-    2775971 (16.88%): 3
-    1256010 (7.64%): 4
-    413803 (2.52%): 5
+    24192 (71.71%): 1
+    6674 (19.78%): 2
+    1533 (4.54%): 3
+    1016 (3.01%): 4
+    115 (0.34%): 5
     ...
 dynamic_data:ic_related:oases:@is_OA
-  Count: 16448943 (19.54%)
+  Count: 33736 (11.25%)
   Types: string (100.00%)
   Samples:
-    16448943 (100.00%): Yes
+    33736 (100.00%): Yes
 dynamic_data:ic_related:oases:oas:@type
-  Count: 8175335 (9.71%)
+  Count: 24192 (8.06%)
   Types: string (100.00%)
   Samples:
-    3660769 (44.78%): bronze
-    1580437 (19.33%): gold
-    1429193 (17.48%): green_submitted
-    580211 (7.10%): hybrid
-    566144 (6.93%): green_published
+    14830 (61.30%): green_submitted
+    4622 (19.11%): bronze
+    3597 (14.87%): green_published
+    1020 (4.22%): gold
+    115 (0.48%): green_accepted
     ...
-static_data:fullrecord_metadata:addresses:address_name
-  Count: 32146279 (38.20%)
+origin
+  Count: 300001 (100.00%)
+  Types: string (100.00%)
+  Samples:
+    300001 (100.00%): 1900_CORE
+static_data:summary:names:name
+  Count: 60376 (20.13%)
   Types: list (100.00%)
   Schema Entry:
-    105748461 ENTRIES
-    address_spec:@addr_no
-      Count: 105748461 (100.00%)
+    136983 ENTRIES
+    @seq_no
+      Count: 136983 (100.00%)
       Types: string (100.00%)
       Samples:
-        32146253 (30.40%): 2
-        32146246 (30.40%): 1
-        16819326 (15.91%): 3
-        8768880 (8.29%): 4
-        4781592 (4.52%): 5
+        60376 (44.08%): 1
+        60376 (44.08%): 2
+        12143 (8.86%): 3
+        2352 (1.72%): 4
+        668 (0.49%): 5
         ...
-    address_spec:full_address
-      Count: 105748461 (100.00%)
+    @role
+      Count: 136983 (100.00%)
       Types: string (100.00%)
       Samples:
-        22159 (0.02%): Stanford Univ, Stanford, CA 94305 USA
-        16530 (0.02%): Univ Chicago, Chicago, IL 60637 USA
-        14459 (0.01%): Johns Hopkins Univ, Baltimore, MD USA
-        11019 (0.01%): Columbia Univ, New York, NY USA
-        9882 ( < 0.01%): Univ Wisconsin, Madison, WI 53706 USA
-        ...
-    address_spec:organizations:@count
-      Count: 105693862 (99.95%)
+        136909 (99.95%): author
+        74 (0.05%): corp
+    display_name
+      Count: 136983 (100.00%)
       Types: string (100.00%)
       Samples:
-        65078041 (61.57%): 2
-        20360271 (19.26%): 3
-        15939896 (15.08%): 1
-        3527344 (3.34%): 4
-        600458 (0.57%): 5
+        124 (0.09%): Levene, PA
+        55 (0.04%): Muller, E
+        55 (0.04%): Elvehjem, CA
+        44 (0.03%): Staudinger, H
+        43 (0.03%): von Auwers, K
         ...
-    address_spec:organizations:organization
-      Count: 105693862 (99.95%)
-      Types: list (84.92%), string (15.08%)
-      Samples:
-        4694 ( < 0.01%): Childrens Hosp
-        1459 ( < 0.01%): City Hosp
-        909 ( < 0.01%): St Vincents Hosp
-        795 ( < 0.01%): Univ Coll
-        742 ( < 0.01%): Mem Hosp
-        ...
-      List Samples:
-        378505 (0.36%): Harvard Univ
-        361099 (0.34%): Univ Toronto
-        313931 (0.30%): Univ Michigan
-        294927 (0.28%): Univ Washington
-        276656 (0.26%): Stanford Univ
-        ...
-      Schema Entry:
-        119802408 ENTRIES
-        @pref
-          Count: 119802408 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            119802408 (100.00%): Y
-        #text
-          Count: 119802408 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            1221155 (1.02%): Harvard University
-            783678 (0.65%): University of London
-            661036 (0.55%): University of Toronto
-            559155 (0.47%): Pennsylvania Commonwealth System of Higher Education (PCSHE)
-            429768 (0.36%): Johns Hopkins University
-            ...
-    address_spec:city
-      Count: 105748454 (100.00%)
+    full_name
+      Count: 136983 (100.00%)
       Types: string (100.00%)
       Samples:
-        1382109 (1.31%): London
-        1148022 (1.09%): Boston
-        1015229 (0.96%): New York
-        692690 (0.66%): Cambridge
-        674468 (0.64%): Toronto
+        124 (0.09%): Levene, PA
+        55 (0.04%): Muller, E
+        55 (0.04%): Elvehjem, CA
+        44 (0.03%): Staudinger, H
+        43 (0.03%): von Auwers, K
         ...
-    address_spec:state
-      Count: 48265407 (45.64%)
+    wos_standard
+      Count: 136983 (100.00%)
       Types: string (100.00%)
       Samples:
-        3594844 (7.45%): CA
-        2339977 (4.85%): NY
-        2274895 (4.71%): MA
-        1564124 (3.24%): TX
-        1487914 (3.08%): ON
+        125 (0.09%): Levene, PA
+        55 (0.04%): Muller, E
+        55 (0.04%): Elvehjem, CA
+        44 (0.03%): Staudinger, H
+        43 (0.03%): von Auwers, K
         ...
-    address_spec:country
-      Count: 105748461 (100.00%)
+    first_name
+      Count: 132530 (96.75%)
       Types: string (100.00%)
       Samples:
-        27661292 (26.16%): USA
-        10502934 (9.93%): Peoples R China
-        4803240 (4.54%): Germany
-        4723018 (4.47%): Japan
-        4315777 (4.08%): England
+        5925 (4.47%): A
+        5849 (4.41%): H
+        4604 (3.47%): E
+        4418 (3.33%): J
+        3720 (2.81%): M
         ...
-    address_spec:suborganizations:@count
-      Count: 78405276 (74.14%)
+    last_name
+      Count: 135129 (98.65%)
       Types: string (100.00%)
       Samples:
-        52393713 (66.82%): 1
-        20605360 (26.28%): 2
-        5406203 (6.90%): 3
-    address_spec:suborganizations:suborganization
-      Count: 78405276 (74.14%)
-      Types: string (66.82%), list (33.18%)
-      Samples:
-        880040 (1.12%): Dept Phys
-        842566 (1.07%): Dept Chem
-        437345 (0.56%): Sch Med
-        422241 (0.54%): Dept Math
-        388213 (0.50%): Dept Psychol
+        305 (0.23%): Fischer
+        260 (0.19%): Anderson
+        231 (0.17%): White
+        228 (0.17%): Davis
+        189 (0.14%): Muller
         ...
-      List Samples:
-        2258704 (2.88%): Sch Med
-        631984 (0.81%): Coll Med
-        605830 (0.77%): Dept Med
-        348501 (0.44%): Dept Pediat
-        337330 (0.43%): Dept Internal Med
-        ...
-    address_spec:zip:@location
-      Count: 62781375 (59.37%)
+    suffix
+      Count: 2243 (1.64%)
       Types: string (100.00%)
       Samples:
-        25913319 (41.28%): AP
-        21409911 (34.10%): AC
-        15456106 (24.62%): BC
-        913 ( < 0.01%): AP 
-        676 ( < 0.01%): BC 
+        729 (32.50%): I
+        680 (30.32%): V
+        512 (22.83%): JR
+        118 (5.26%): SR
+        108 (4.81%): Jr.
         ...
-    address_spec:zip:#text
-      Count: 62781375 (59.37%)
+    @reprint
+      Count: 128 (0.09%)
       Types: string (100.00%)
       Samples:
-        562725 (0.90%): 02115
-        396253 (0.63%): 19104
-        322300 (0.51%): 48109
-        273756 (0.44%): 94305
-        255117 (0.41%): 94720
-        ...
-    names:@count
-      Count: 79992111 (75.64%)
+        128 (100.00%): Y
+    @addr_no
+      Count: 102 (0.07%)
       Types: string (100.00%)
       Samples:
-        46729723 (58.42%): 1
-        14714248 (18.39%): 2
-        7559201 (9.45%): 3
-        4289412 (5.36%): 4
-        2534137 (3.17%): 5
-        ...
-    names:name:@seq_no
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        10237772 (21.91%): 1
-        9374904 (20.06%): 2
-        7310116 (15.64%): 3
-        5270311 (11.28%): 4
-        3732300 (7.99%): 5
-        ...
-    names:name:@role
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        46722254 (99.98%): author
-        7469 (0.02%): corp
-    names:name:@reprint
-      Count: 11028670 (10.43%)
-      Types: string (100.00%)
-      Samples:
-        11028670 (100.00%): Y
-    names:name:@addr_no
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        13869302 (29.68%): 2
-        9351502 (20.01%): 3
-        7382455 (15.80%): 1
-        5491632 (11.75%): 4
-        3209490 (6.87%): 5
-        ...
-    names:name:display_name
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        67 ( < 0.01%): Hobart, J.
-        34 ( < 0.01%): Brenner, Charles
-        33 ( < 0.01%): Huang, C. H.
-        21 ( < 0.01%): Jones, J. M.
-        18 ( < 0.01%): Weller, Daniel
-        ...
-    names:name:full_name
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        67 ( < 0.01%): Hobart, J.
-        34 ( < 0.01%): Brenner, Charles
-        33 ( < 0.01%): Huang, C. H.
-        21 ( < 0.01%): Jones, J. M.
-        18 ( < 0.01%): Weller, Daniel
-        ...
-    names:name:wos_standard
-      Count: 46729723 (44.19%)
-      Types: string (100.00%)
-      Samples:
-        1314 ( < 0.01%): Huang, CH
-        274 ( < 0.01%): Olsen, A
-        264 ( < 0.01%): Holmes, A
-        238 ( < 0.01%): Evans, JP
-        185 ( < 0.01%): White, JC
-        ...
-    names:name:first_name
-      Count: 46310628 (43.79%)
-      Types: string (100.00%)
-      Samples:
-        329863 (0.71%): J.
-        236916 (0.51%): C.
-        221670 (0.48%): P.
-        205897 (0.44%): D.
-        200400 (0.43%): G.
-        ...
-    names:name:last_name
-      Count: 46722254 (44.18%)
-      Types: string (100.00%)
-      Samples:
-        141017 (0.30%): Huang
-        74552 (0.16%): Smith
-        41948 (0.09%): Jones
-        31768 (0.07%): Taylor
-        31364 (0.07%): Thomas
-        ...
-    names:name
-      Count: 33262388 (31.45%)
-      Types: list (100.00%)
-      Schema Entry:
-        118336071 ENTRIES
-        @seq_no
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            20234169 (17.10%): 1
-            17416680 (14.72%): 2
-            15613534 (13.19%): 3
-            13245488 (11.19%): 4
-            10553936 (8.92%): 5
-            ...
-        @role
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            118325898 (99.99%): author
-            10173 ( < 0.01%): corp
-        @reprint
-          Count: 20087174 (16.97%)
-          Types: string (100.00%)
-          Samples:
-            20087174 (100.00%): Y
-        @addr_no
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            59693670 (50.44%): 1
-            27738884 (23.44%): 2
-            10512444 (8.88%): 3
-            4628050 (3.91%): 4
-            2286105 (1.93%): 5
-            ...
-        @r_id
-          Count: 17978210 (15.19%)
-          Types: string (100.00%)
-          Samples:
-            500 ( < 0.01%): E-7745-2012
-            315 ( < 0.01%): N-8122-2018
-            237 ( < 0.01%): AAJ-4139-2020
-            237 ( < 0.01%): ABD-5684-2021
-            184 ( < 0.01%): F-8140-2015
-            ...
-        display_name
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            1240 ( < 0.01%): Campbell, A.
-            334 ( < 0.01%): Berg, Robert A.
-            90 ( < 0.01%): Mastroianni, Claudio Maria
-            80 ( < 0.01%): Stefanelli, Paola
-            64 ( < 0.01%): Jones, O.
-            ...
-        full_name
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            1240 ( < 0.01%): Campbell, A.
-            334 ( < 0.01%): Berg, Robert A.
-            90 ( < 0.01%): Mastroianni, Claudio Maria
-            80 ( < 0.01%): Stefanelli, Paola
-            64 ( < 0.01%): Jones, O.
-            ...
-        wos_standard
-          Count: 118336071 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            2002 ( < 0.01%): Campbell, A
-            1401 ( < 0.01%): Russo, G
-            345 ( < 0.01%): Berg, RA
-            277 ( < 0.01%): Sherman, A
-            248 ( < 0.01%): Leone, P
-            ...
-        first_name
-          Count: 116942373 (98.82%)
-          Types: string (100.00%)
-          Samples:
-            2246179 (1.92%): M.
-            2142505 (1.83%): A.
-            1330287 (1.14%): J.
-            951693 (0.81%): R.
-            935331 (0.80%): D.
-            ...
-        last_name
-          Count: 118325898 (99.99%)
-          Types: string (100.00%)
-          Samples:
-            141744 (0.12%): Smith
-            85542 (0.07%): Jones
-            85450 (0.07%): Martin
-            59398 (0.05%): Taylor
-            48167 (0.04%): Thompson
-            ...
-        email_addr
-          Count: 27435715 (23.18%)
-          Types: string (100.00%)
-          Samples:
-            18 ( < 0.01%): forrest@cs.unm.edu
-            17 ( < 0.01%): ariel@ee.technion.ac.il
-            14 ( < 0.01%): deg@uiuc.edu
-            12 ( < 0.01%): giorgio.fedele@iss.it
-            11 ( < 0.01%): nishi@ecei.tohoku.ac.jp
-            ...
-        suffix
-          Count: 439135 (0.37%)
-          Types: string (100.00%)
-          Samples:
-            183669 (41.83%): V
-            123010 (28.01%): I
-            92902 (21.16%): Jr.
-            28441 (6.48%): III
-            8868 (2.02%): II
-            ...
-        @orcid_id_tr
-          Count: 3381519 (2.86%)
-          Types: string (100.00%)
-          Samples:
-            31 ( < 0.01%): 0000-0003-4315-8628
-            18 ( < 0.01%): 0000-0001-5588-4825
-            15 ( < 0.01%): 0000-0003-3269-7503
-            14 ( < 0.01%): 0000-0002-0676-2116
-            14 ( < 0.01%): 0000-0003-0858-7873
-            ...
-        @r_id_tr
-          Count: 652 ( < 0.01%)
-          Types: string (100.00%)
-          Samples:
-            21 (3.22%): A-3561-2009
-            12 (1.84%): A-5525-2009
-            3 (0.46%): A-5599-2009
-            3 (0.46%): C-3528-2018
-            3 (0.46%): C-3526-2018
-            ...
-    names:name:suffix
-      Count: 201494 (0.19%)
-      Types: string (100.00%)
-      Samples:
-        66736 (33.12%): Jr.
-        62873 (31.20%): V
-        44876 (22.27%): I
-        19274 (9.57%): III
-        6016 (2.99%): II
-        ...
-    address_spec:street
-      Count: 13889302 (13.13%)
-      Types: string (100.00%)
-      Samples:
-        66168 (0.48%): SCH MED
-        24859 (0.18%): DEPT PSYCHOL
-        19361 (0.14%): DEPT PSYCHIAT
-        17831 (0.13%): MED CTR
-        7948 (0.06%): SCH MED, DEPT PSYCHIAT
-        ...
-    names:name:@r_id
-      Count: 8417791 (7.96%)
-      Types: string (100.00%)
-      Samples:
-        832 ( < 0.01%): B-1487-2008
-        391 ( < 0.01%): E-7745-2012
-        261 ( < 0.01%): A-3772-2008
-        219 ( < 0.01%): A-2616-2008
-        203 ( < 0.01%): B-3134-2017
-        ...
-    address_spec:zip
-      Count: 784944 (0.74%)
-      Types: list (100.00%)
-      Schema Entry:
-        1569889 ENTRIES
-        @location
-          Count: 1569889 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            784717 (49.99%): AC
-            784510 (49.97%): BC
-            424 (0.03%): AP
-            91 ( < 0.01%): BC 
-            91 ( < 0.01%): AC 
-            ...
-        #text
-          Count: 1569889 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            77251 (4.92%): 05
-            62354 (3.97%): 9
-            61537 (3.92%): 1
-            53542 (3.41%): C
-            51319 (3.27%): CH-1211
-            ...
-    names:name:email_addr
-      Count: 14630253 (13.83%)
-      Types: string (100.00%)
-      Samples:
-        23 ( < 0.01%): whitley@cs.colostate.edu
-        16 ( < 0.01%): forrest@cs.unm.edu
-        9 ( < 0.01%): smm@eecs.umich.edu
-        6 ( < 0.01%): tseng@math.washington.edu
-        5 ( < 0.01%): milani@dm.unipi.it
-        ...
-    names:name:@orcid_id_tr
-      Count: 1626721 (1.54%)
-      Types: string (100.00%)
-      Samples:
-        106 ( < 0.01%): 0000-0002-8559-8640
-        14 ( < 0.01%): 0000-0001-5040-9080
-        13 ( < 0.01%): 0000-0001-8571-2469
-        11 ( < 0.01%): 0000-0003-1522-3955
-        9 ( < 0.01%): 0000-0002-2254-1962
-        ...
-    names:name:@r_id_tr
-      Count: 1044 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        14 (1.34%): D-6981-2014
-        9 (0.86%): A-5985-2013
-        9 (0.86%): U-2807-2017
-        8 (0.77%): A-3561-2009
-        6 (0.57%): H-9114-2016
-        ...
-static_data:fullrecord_metadata:references:reference:@occurenceOrder
-  Count: 6373278 (7.57%)
-  Types: string (100.00%)
-  Samples:
-    6344712 (99.55%): 1
-    28421 (0.45%): 2
-    96 ( < 0.01%): 3
-    21 ( < 0.01%): 4
-    11 ( < 0.01%): 5
-    ...
-static_data:fullrecord_metadata:references:reference:uid
-  Count: 6371153 (7.57%)
-  Types: string (100.00%)
-  Samples:
-    1 ( < 0.01%): WOS:000204619800021.1
-    1 ( < 0.01%): WOS:000202251300088.1
-    1 ( < 0.01%): WOS:000206528300007.1
-    1 ( < 0.01%): WOS:000206044100019.1
-    1 ( < 0.01%): WOS:000201198500106.1
-    ...
-static_data:fullrecord_metadata:references:reference:citedAuthor
-  Count: 6048157 (7.19%)
-  Types: string (100.00%)
-  Samples:
-    193 ( < 0.01%): STAMP LD
-    185 ( < 0.01%): MEADE JE
-    150 ( < 0.01%): MORISON SE
-    118 ( < 0.01%): WRIGHT P
-    110 ( < 0.01%): STRANG R
-    ...
-static_data:fullrecord_metadata:references:reference:year
-  Count: 5454594 (6.48%)
-  Types: string (100.00%)
-  Samples:
-    11465 (0.21%): 1936
-    11235 (0.21%): 1938
-    10865 (0.20%): 1937
-    10405 (0.19%): 1939
-    10313 (0.19%): 1935
-    ...
-static_data:fullrecord_metadata:references:reference:citedWork
-  Count: 6371315 (7.57%)
-  Types: string (100.00%)
-  Samples:
-    25195 (0.40%): NATURE
-    24665 (0.39%): LANCET
-    3833 (0.06%): COMPTES RENDUS
-    1188 (0.02%): JOURNAL OF EXPERIMENTAL MEDICINE
-    206 ( < 0.01%): PFLUGERS ARCH
-    ...
-static_data:item:reviewed_work:languages:@count
-  Count: 2349243 (2.79%)
-  Types: string (100.00%)
-  Samples:
-    2342375 (99.71%): 1
-    6152 (0.26%): 2
-    529 (0.02%): 3
-    150 ( < 0.01%): 4
-    29 ( < 0.01%): 5
-    ...
-static_data:item:reviewed_work:languages:language
-  Count: 2349243 (2.79%)
-  Types: string (99.71%), list (0.29%)
-  Samples:
-    1802649 (76.73%): English
-    175514 (7.47%): German
-    171420 (7.30%): French
-    76551 (3.26%): Spanish
-    59352 (2.53%): Italian
-    ...
-  List Samples:
-    3307 (0.14%): English
-    2438 (0.10%): Latin
-    2327 (0.10%): French
-    2029 (0.09%): German
-    1520 (0.06%): Italian
-    ...
-static_data:item:reviewed_work:rw_authors:@count
-  Count: 2310006 (2.74%)
-  Types: string (100.00%)
-  Samples:
-    1827615 (79.12%): 1
-    347186 (15.03%): 2
-    95566 (4.14%): 3
-    25928 (1.12%): 4
-    7790 (0.34%): 5
-    ...
-static_data:item:reviewed_work:rw_authors:rw_author
-  Count: 2310006 (2.74%)
-  Types: string (79.12%), list (20.88%)
-  Samples:
-    133 ( < 0.01%): Clark, G
-    90 ( < 0.01%): Morris, C
-    77 ( < 0.01%): Fairchild, HP
-    75 ( < 0.01%): Muller, J
-    70 ( < 0.01%): Wright, Q
-    ...
-  List Samples:
-    84 ( < 0.01%): Webb, S
-    60 ( < 0.01%): Warner, WL
-    54 ( < 0.01%): Barnes, HE
-    48 ( < 0.01%): Terman, LM
-    46 ( < 0.01%): Becker, H
-    ...
-static_data:item:reviewed_work:rw_year
-  Count: 2107825 (2.50%)
-  Types: string (100.00%)
-  Samples:
-    84730 (4.02%): 2009
-    70943 (3.37%): 1999
-    19807 (0.94%): 1995
-    8718 (0.41%): 1936
-    8413 (0.40%): 1952
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:@addr_no
-  Count: 29399852 (34.93%)
-  Types: string (100.00%)
-  Samples:
-    29399802 (100.00%): 1
-    50 ( < 0.01%): 2
-static_data:fullrecord_metadata:addresses:address_name:address_spec:full_address
-  Count: 29399852 (34.93%)
-  Types: string (100.00%)
-  Samples:
-    4810 (0.02%): Johns Hopkins Univ, Baltimore, MD USA
-    4306 (0.01%): Univ Minnesota, Minneapolis, MN USA
-    4012 (0.01%): Columbia Univ, New York, NY USA
-    3170 (0.01%): Cornell Univ, Ithaca, NY USA
-    2514 ( < 0.01%): Univ Iowa, Iowa City, IA USA
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:organizations:@count
-  Count: 29375919 (34.90%)
-  Types: string (100.00%)
-  Samples:
-    18835181 (64.12%): 2
-    5625441 (19.15%): 3
-    3949088 (13.44%): 1
-    829069 (2.82%): 4
-    109851 (0.37%): 5
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:organizations:organization
-  Count: 29375919 (34.90%)
-  Types: list (86.56%), string (13.44%)
-  Samples:
-    2815 ( < 0.01%): USMHS
-    739 ( < 0.01%): St Lukes Hosp
-    587 ( < 0.01%): Rockefeller Inst Med Res
-    547 ( < 0.01%): Bur Chem & Soils
-    391 ( < 0.01%): St Francis Hosp
-    ...
-  List Samples:
-    77401 (0.26%): Univ Illinois
-    75828 (0.26%): Univ Michigan
-    72454 (0.25%): Harvard Univ
-    69573 (0.24%): MIT
-    66170 (0.23%): Univ Wisconsin
-    ...
+        98 (96.08%): 1
+        3 (2.94%): 2
+        1 (0.98%): 1 2
+static_data:fullrecord_metadata:references:reference
+  Count: 137014 (45.67%)
+  Types: list (100.00%)
   Schema Entry:
-    33160732 ENTRIES
-    @pref
-      Count: 33160732 (100.00%)
+    2010934 ENTRIES
+    @occurenceOrder
+      Count: 2010934 (100.00%)
       Types: string (100.00%)
       Samples:
-        33160732 (100.00%): Y
+        136917 (6.81%): 2
+        136906 (6.81%): 1
+        121315 (6.03%): 3
+        108882 (5.41%): 4
+        98382 (4.89%): 5
+        ...
+    uid
+      Count: 2010844 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        21 ( < 0.01%): WOS:000200950200009
+        10 ( < 0.01%): WOS:000207547900006
+        7 ( < 0.01%): WOS:000201529200017
+        2 ( < 0.01%): WOS:000201593200022
+        2 ( < 0.01%): WOS:000200966400255
+        ...
+    citedAuthor
+      Count: 1737925 (86.42%)
+      Types: string (100.00%)
+      Samples:
+        363 (0.02%): BENEDICT
+        349 (0.02%): FOLIN O
+        295 (0.02%): HAHN
+        239 (0.01%): ELLIS
+        204 (0.01%): PERKIN
+        ...
+    year
+      Count: 1826212 (90.81%)
+      Types: string (100.00%)
+      Samples:
+        57814 (3.17%): 1930
+        56206 (3.08%): 1931
+        56154 (3.07%): 1928
+        55742 (3.05%): 1932
+        55632 (3.05%): 1929
+        ...
+    page
+      Count: 1574483 (78.30%)
+      Types: string (100.00%)
+      Samples:
+        38894 (2.47%): 1
+        4105 (0.26%): 161
+        3627 (0.23%): 13
+        3442 (0.22%): 225
+        3342 (0.21%): 41
+        ...
+    volume
+      Count: 1514979 (75.34%)
+      Types: string (100.00%)
+      Samples:
+        64280 (4.24%): 1
+        59127 (3.90%): 2
+        35775 (2.36%): 3
+        31969 (2.11%): 4
+        28958 (1.91%): 5
+        ...
+    citedWork
+      Count: 2003382 (99.62%)
+      Types: string (100.00%)
+      Samples:
+        13210 (0.66%): AMERICAN JOURNAL OF PHYSIOLOGY
+        9771 (0.49%): JOURNAL OF EXPERIMENTAL MEDICINE
+        9382 (0.47%): PHYSICAL REVIEW
+        9347 (0.47%): J BIOL CHEM
+        8388 (0.42%): ZEITSCHRIFT FUR PHYSIK
+        ...
+    citedTitle
+      Count: 456307 (22.69%)
+      Types: string (100.00%)
+      Samples:
+        27 ( < 0.01%): Viscosity, plasticity, and diffusion as examples of absolute reaction rates
+        24 ( < 0.01%): The influence of variations in temperature and blood-pressure on the performance of the isolated mammalian heart
+        21 ( < 0.01%): Artificial radioactivity produced by neutron bombardment - II
+        19 ( < 0.01%): The dispersal of molecular weight in high polymer mixtures and the determination of median molecular weights. 134 Announcement on high polymer bonding
+        18 ( < 0.01%): Fat-soluble vitamine. XIII. Light in its relation to ophthalmia and growth.
+        ...
+    doi
+      Count: 2992 (0.15%)
+      Types: string (100.00%)
+      Samples:
+        18 (0.60%): 10.7326/0003-4819-11-1-104
+        15 (0.50%): 10.1080/14786440508637080
+        14 (0.47%): 10.1063/1.1749433
+        14 (0.47%): 10.7326/0003-4819-7-2-209
+        11 (0.37%): 10.7326/0003-4819-13-12-2306
+        ...
+    patent_no
+      Count: 7231 (0.36%)
+      Types: string (100.00%)
+      Samples:
+        4 (0.06%): DE 506839
+        2 (0.03%): DE 41751
+        2 (0.03%): GE 579309
+        2 (0.03%): DE 116510
+        2 (0.03%): US 1931921
+        ...
+    citedTitle:i
+      Count: 641 (0.03%)
+      Types: string (80.34%), list (19.66%)
+      Samples:
+        14 (2.18%): in vitro
+        14 (2.18%): C. diphtheriae
+        12 (1.87%): Drosophila
+        9 (1.40%): Brucella abortus
+        7 (1.09%): Br. abortus
+        ...
+      List Samples:
+        6 (0.94%): Euchlaena
+        4 (0.62%): Zea
+        4 (0.62%): of Euchlaena and
+        4 (0.62%): Euchlaena mexicana
+        4 (0.62%): Zea mays
+        ...
+    citedTitle:#text
+      Count: 835 (0.04%)
+      Types: string (100.00%)
+      Samples:
+        8 (0.96%): Crystalline vitamin D
+.
+        7 (0.84%): A note on the use of vitamin B
+ in human nutrition.
+        4 (0.48%): Infection in Man : the Intradermal Reaction as an Aid in Diagnosis.
+        4 (0.48%): Comparative histogenesis of vegetative and floral apices in 
+ with special reference to the carpel.
+        4 (0.48%): Studies 
+ its hybrids with Zea. I. Chromosome behavior in 
+ and its hybrids with 
+.
+        ...
+    assignee
+      Count: 4208 (0.21%)
+      Types: string (100.00%)
+      Samples:
+        8 (0.19%): CAHILL
+        7 (0.17%): HUGONIOT E
+        6 (0.14%): GROLL
+        6 (0.14%): DEFOREST L
+        5 (0.12%): SCHIMMEL
+        ...
+    citedTitle:sub
+      Count: 192 ( < 0.01%)
+      Types: string (87.50%), list (12.50%)
+      Samples:
+        103 (53.65%): 1
+        34 (17.71%): 2
+        12 (6.25%): 6
+        11 (5.73%): 3
+        3 (1.56%): H
+        ...
+      List Samples:
+        25 (13.02%): 1
+        14 (7.29%): 2
+        8 (4.17%): 3
+        1 (0.52%): l
+    art_no
+      Count: 3 ( < 0.01%)
+      Types: string (100.00%)
+      Samples:
+        3 (100.00%): ARTN 23
+    citedTitle:sup
+      Count: 2 ( < 0.01%)
+      Types: string (100.00%)
+      Samples:
+        1 (50.00%): 15
+        1 (50.00%): 2
+static_data:item:bib_pagecount:@type
+  Count: 119595 (39.86%)
+  Types: string (100.00%)
+  Samples:
+    119595 (100.00%): Journal
+static_data:item:bib_pagecount:#text
+  Count: 119595 (39.86%)
+  Types: string (100.00%)
+  Samples:
+    3065 (2.56%): 66
+    2818 (2.36%): 82
+    2179 (1.82%): 98
+    2083 (1.74%): 50
+    1902 (1.59%): 34
+    ...
+dynamic_data:citation_related:citation_topics:subj-group:subject
+  Count: 68678 (22.89%)
+  Types: list (100.00%)
+  Schema Entry:
+    206034 ENTRIES
+    @content-id
+      Count: 206034 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        24041 (11.67%): 1
+        12544 (6.09%): 2
+        9808 (4.76%): 3
+        7135 (3.46%): 6
+        3972 (1.93%): 5
+        ...
+    @content-type
+      Count: 206034 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        68678 (33.33%): macro
+        68678 (33.33%): meso
+        68678 (33.33%): micro
     #text
-      Count: 33160732 (100.00%)
+      Count: 206034 (100.00%)
       Types: string (100.00%)
       Samples:
-        514302 (1.55%): University of California System
-        277144 (0.84%): University of London
-        188581 (0.57%): Harvard University
-        178845 (0.54%): Pennsylvania Commonwealth System of Higher Education (PCSHE)
-        165537 (0.50%): State University System of Florida
+        24041 (11.67%): Clinical & Life Sciences
+        12544 (6.09%): Chemistry
+        9808 (4.76%): Agriculture, Environment & Ecology
+        7135 (3.46%): Social Sciences
+        3972 (1.93%): Physics
         ...
 static_data:fullrecord_metadata:addresses:address_name:address_spec:suborganizations:@count
-  Count: 16969594 (20.16%)
+  Count: 28892 (9.63%)
   Types: string (100.00%)
   Samples:
-    11950839 (70.43%): 1
-    3934929 (23.19%): 2
-    1083826 (6.39%): 3
+    22321 (77.26%): 1
+    6265 (21.68%): 2
+    306 (1.06%): 3
 static_data:fullrecord_metadata:addresses:address_name:address_spec:suborganizations:suborganization
-  Count: 16969594 (20.16%)
-  Types: string (70.43%), list (29.57%)
+  Count: 28892 (9.63%)
+  Types: string (77.26%), list (22.74%)
   Samples:
-    341940 (2.02%): Dept Chem
-    163734 (0.96%): Dept Math
-    155698 (0.92%): Dept Phys
-    73869 (0.44%): Sch Med
-    72832 (0.43%): Dept Chem Engn
+    1216 (4.21%): Chem Lab
+    956 (3.31%): Dept Chem
+    533 (1.84%): Med Sch
+    415 (1.44%): Dept Phys
+    346 (1.20%): Dept Physiol
     ...
   List Samples:
-    330604 (1.95%): Sch Med
-    76919 (0.45%): Coll Med
-    64647 (0.38%): Dept Med
-    60859 (0.36%): Dept Surg
-    38533 (0.23%): Dept Internal Med
+    1691 (5.85%): Sch Med
+    1547 (5.35%): Med Sch
+    453 (1.57%): Coll Med
+    435 (1.51%): Dept Pathol
+    408 (1.41%): Coll Phys & Surg
     ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:city
-  Count: 29399851 (34.93%)
+static_data:fullrecord_metadata:category_info:subheadings:@count
+  Count: 197377 (65.79%)
   Types: string (100.00%)
   Samples:
-    380151 (1.29%): London
-    237599 (0.81%): New York
-    195484 (0.66%): Cambridge
-    189614 (0.64%): Tokyo
-    185579 (0.63%): Shanghai
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:state
-  Count: 15091926 (17.93%)
+    194762 (98.68%): 1
+    2615 (1.32%): 2
+static_data:fullrecord_metadata:category_info:subheadings:subheading
+  Count: 197377 (65.79%)
+  Types: string (98.68%), list (1.32%)
+  Samples:
+    141897 (71.89%): Life Sciences & Biomedicine
+    43375 (21.98%): Physical Sciences
+    9490 (4.81%): Technology
+  List Samples:
+    2452 (1.24%): Physical Sciences
+    2421 (1.23%): Technology
+    357 (0.18%): Life Sciences & Biomedicine
+static_data:fullrecord_metadata:references:reference:citedAuthor
+  Count: 56922 (18.97%)
   Types: string (100.00%)
   Samples:
-    1157454 (7.67%): CA
-    894730 (5.93%): NY
-    566993 (3.76%): MA
-    513590 (3.40%): PA
-    507418 (3.36%): TX
+    38 (0.07%): MONTGOMERY RH
+    17 (0.03%): *INT LAB OFF
+    16 (0.03%): PIGOU AC
+    15 (0.03%): BUROS OK
+    15 (0.03%): WEBB S
     ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:country
-  Count: 29399849 (34.93%)
+static_data:item:reviewed_work:languages:@count
+  Count: 49237 (16.41%)
   Types: string (100.00%)
   Samples:
-    9420227 (32.04%): USA
-    2248069 (7.65%): Peoples R China
-    1391457 (4.73%): England
-    1118248 (3.80%): Germany
-    1000186 (3.40%): Japan
+    49236 (100.00%): 1
+    1 ( < 0.01%): 2
+static_data:item:reviewed_work:languages:language
+  Count: 49237 (16.41%)
+  Types: string (100.00%), list ( < 0.01%)
+  Samples:
+    36843 (74.83%): English
+    8074 (16.40%): German
+    3216 (6.53%): French
+    561 (1.14%): Italian
+    263 (0.53%): Spanish
     ...
-dynamic_data:cluster_related:identifiers:identifier:@type
-  Count: 590009 (0.70%)
+  List Samples:
+    1 ( < 0.01%): Danish
+    1 ( < 0.01%): German
+static_data:item:reviewed_work:rw_authors:@count
+  Count: 46319 (15.44%)
   Types: string (100.00%)
   Samples:
-    590009 (100.00%): accession_no
-dynamic_data:cluster_related:identifiers:identifier:@value
-  Count: 590009 (0.70%)
+    40984 (88.48%): 1
+    4404 (9.51%): 2
+    651 (1.41%): 3
+    147 (0.32%): 4
+    61 (0.13%): 5
+    ...
+static_data:item:reviewed_work:rw_authors:rw_author
+  Count: 46319 (15.44%)
+  Types: string (88.48%), list (11.52%)
+  Samples:
+    40 (0.09%): Montgomery, RH
+    15 (0.03%): Buros, OK
+    14 (0.03%): Pigou, AC
+    12 (0.03%): Freund, E
+    10 (0.02%): Ogg, FA
+    ...
+  List Samples:
+    9 (0.02%): Webb, S
+    9 (0.02%): Webb, B
+    7 (0.02%): Becker, H
+    6 (0.01%): Skinner, CE
+    5 (0.01%): Ballantine, HW
+    ...
+static_data:item:reviewed_work:rw_year
+  Count: 43023 (14.34%)
   Types: string (100.00%)
   Samples:
-    182 (0.03%): V7482
-    178 (0.03%): V18UJ
-    136 (0.02%): V20WX
-    134 (0.02%): V18VU
-    129 (0.02%): V18UK
+    1916 (4.45%): 1936
+    1888 (4.39%): 1938
+    1753 (4.07%): 1937
+    1744 (4.05%): 1935
+    1645 (3.82%): 1939
     ...
-static_data:fullrecord_metadata:references:reference:page
-  Count: 1436041 (1.71%)
+static_data:summary:pub_info:@part_no
+  Count: 41549 (13.85%)
   Types: string (100.00%)
   Samples:
-    3294 (0.23%): 15
-    3148 (0.22%): 21
-    2878 (0.20%): 33
-    2779 (0.19%): 12
-    2667 (0.19%): 49
+    19765 (47.57%): 1
+    18303 (44.05%): 2
+    2423 (5.83%): 3
+    660 (1.59%): 4
+    64 (0.15%): 5
     ...
-static_data:fullrecord_metadata:references:reference:volume
-  Count: 1411366 (1.68%)
-  Types: string (100.00%)
-  Samples:
-    66771 (4.73%): 1
-    54214 (3.84%): 2
-    28552 (2.02%): 3
-    23996 (1.70%): 4
-    21036 (1.49%): 5
-    ...
+static_data:summary:EWUID:edition
+  Count: 23783 (7.93%)
+  Types: list (100.00%)
+  Schema Entry:
+    47566 ENTRIES
+    @value
+      Count: 47566 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        23783 (50.00%): WOS.SCI
+        23783 (50.00%): WOS.SSCI
 dynamic_data:ic_related:oases:oas
-  Count: 8273608 (9.83%)
+  Count: 9544 (3.18%)
   Types: list (100.00%)
   Schema Entry:
-    24302024 ENTRIES
+    24216 ENTRIES
     @type
-      Count: 24302024 (100.00%)
+      Count: 24216 (100.00%)
       Types: string (100.00%)
       Samples:
-        11206704 (46.11%): green_published
-        4603171 (18.94%): green_submitted
-        3724856 (15.33%): gold
-        2162402 (8.90%): green_accepted
-        1722777 (7.09%): bronze
+        13856 (57.22%): green_published
+        6631 (27.38%): green_submitted
+        3363 (13.89%): bronze
+        177 (0.73%): hybrid
+        108 (0.45%): green_accepted
         ...
-static_data:summary:names:name:suffix
-  Count: 351520 (0.42%)
-  Types: string (100.00%)
-  Samples:
-    117091 (33.31%): I
-    104189 (29.64%): V
-    61476 (17.49%): JR
-    20650 (5.87%): Jr.
-    16821 (4.79%): SR
-    ...
-static_data:summary:pub_info:@special_issue
-  Count: 2009374 (2.39%)
-  Types: string (100.00%)
-  Samples:
-    1907927 (94.95%): SI
-    23220 (1.16%): 1
-    12826 (0.64%): B
-    11535 (0.57%): 2
-    8925 (0.44%): A
-    ...
-static_data:summary:pub_info:@supplement
-  Count: 5037582 (5.99%)
-  Types: string (100.00%)
-  Samples:
-    1968024 (39.07%): 1
-    1468377 (29.15%): S
-    239909 (4.76%): 3
-    67788 (1.35%): 5
-    42877 (0.85%): 6
-    ...
-static_data:item:keywords_plus:@count
-  Count: 35749008 (42.48%)
-  Types: string (100.00%)
-  Samples:
-    12757167 (35.69%): 10
-    4367423 (12.22%): 1
-    3551168 (9.93%): 2
-    3003021 (8.40%): 3
-    2617308 (7.32%): 4
-    ...
-static_data:item:keywords_plus:keyword
-  Count: 35749008 (42.48%)
-  Types: list (87.78%), string (12.22%)
-  Samples:
-    12740 (0.04%): GROWTH
-    11585 (0.03%): CHILDREN
-    3373 ( < 0.01%): MEMORY
-    3038 ( < 0.01%): CRYSTAL-STRUCTURE
-    2751 ( < 0.01%): PARTICLES
-    ...
-  List Samples:
-    407144 (1.14%): SYSTEMS
-    391634 (1.10%): THERAPY
-    358206 (1.00%): WATER
-    347452 (0.97%): DIAGNOSIS
-    269795 (0.75%): INFECTION
-    ...
-static_data:fullrecord_metadata:references:reference:citedTitle
-  Count: 984580 (1.17%)
-  Types: string (100.00%)
-  Samples:
-    4 ( < 0.01%): Dialysis with stirring.
-    3 ( < 0.01%): Methods for testing crazing of glazes caused by increases in size of ceramic bodies
-    3 ( < 0.01%): Experimental diagnosis of epizootic abortion of bovidae by means of research on allergy reactions
-    3 ( < 0.01%): The theory of electrolytes I. The lowering of the freezing point and related occurrences
-    2 ( < 0.01%): Studies in the Start of the Sprint I. AN APPARATUS FOR MEASURING STARTING TIME IN FOOT RACES
-    ...
-static_data:summary:names:name:@reprint
-  Count: 10306356 (12.25%)
-  Types: string (100.00%)
-  Samples:
-    10306356 (100.00%): Y
-static_data:fullrecord_metadata:reprint_addresses:@count
-  Count: 55941474 (66.47%)
-  Types: string (100.00%)
-  Samples:
-    52922901 (94.60%): 1
-    2278782 (4.07%): 2
-    519643 (0.93%): 3
-    146676 (0.26%): 4
-    46438 (0.08%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:@addr_no
-  Count: 52922901 (62.88%)
-  Types: string (100.00%)
-  Samples:
-    52851488 (99.87%): 1
-    48383 (0.09%): 2
-    13831 (0.03%): 3
-    4917 ( < 0.01%): 4
-    2092 ( < 0.01%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:full_address
-  Count: 52922901 (62.88%)
-  Types: string (100.00%)
-  Samples:
-    11237 (0.02%): Harvard Univ, Cambridge, MA 02138 USA
-    9725 (0.02%): Princeton Univ, Princeton, NJ 08544 USA
-    9420 (0.02%): Univ Washington, Seattle, WA 98195 USA
-    7158 (0.01%): Univ Calif Los Angeles, Los Angeles, CA 90024 USA
-    6897 (0.01%): Univ Manchester, Manchester M13 9PL, Lancs, England
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:@count
-  Count: 52151727 (61.97%)
-  Types: string (100.00%)
-  Samples:
-    33912979 (65.03%): 2
-    9810528 (18.81%): 3
-    6567211 (12.59%): 1
-    1552926 (2.98%): 4
-    236926 (0.45%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:organization
-  Count: 52137469 (61.95%)
-  Types: list (87.43%), string (12.57%)
-  Samples:
-    945 ( < 0.01%): Minist Agr
-    773 ( < 0.01%): Inst Phys
-    377 ( < 0.01%): Univ Coll
-    319 ( < 0.01%): Univ Berlin
-    225 ( < 0.01%): Kings Coll
-    ...
-  List Samples:
-    120511 (0.23%): Univ Michigan
-    116765 (0.22%): Harvard Univ
-    108521 (0.21%): Univ Toronto
-    102630 (0.20%): MIT
-    102253 (0.20%): Stanford Univ
-    ...
-  Schema Entry:
-    59529581 ENTRIES
-    @pref
-      Count: 59529581 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        59529581 (100.00%): Y
-    #text
-      Count: 59529581 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        767096 (1.29%): University of California System
-        495111 (0.83%): Russian Academy of Sciences
-        433520 (0.73%): University of London
-        332318 (0.56%): Harvard University
-        217715 (0.37%): University of Toronto
-        ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:suborganizations:@count
-  Count: 34541284 (41.04%)
-  Types: string (100.00%)
-  Samples:
-    22505724 (65.16%): 1
-    9280232 (26.87%): 2
-    2755328 (7.98%): 3
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:suborganizations:suborganization
-  Count: 34541284 (41.04%)
-  Types: string (65.16%), list (34.84%)
-  Samples:
-    531504 (1.54%): Dept Chem
-    378494 (1.10%): Dept Phys
-    119956 (0.35%): Dept Biol
-    67177 (0.19%): Dept Neurol
-    58389 (0.17%): Sch Med
-    ...
-  List Samples:
-    764144 (2.21%): Sch Med
-    229024 (0.66%): Dept Chem
-    198239 (0.57%): Coll Med
-    177651 (0.51%): Dept Med
-    141938 (0.41%): Dept Phys
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:city
-  Count: 52922900 (62.88%)
-  Types: string (100.00%)
-  Samples:
-    608792 (1.15%): London
-    368071 (0.70%): Tokyo
-    367007 (0.69%): New York
-    337803 (0.64%): Moscow
-    305740 (0.58%): Cambridge
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:state
-  Count: 25250175 (30.00%)
-  Types: string (100.00%)
-  Samples:
-    1745849 (6.91%): CA
-    1241678 (4.92%): NY
-    898293 (3.56%): MA
-    780117 (3.09%): TX
-    739785 (2.93%): PA
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:country
-  Count: 52922901 (62.88%)
-  Types: string (100.00%)
-  Samples:
-    14058477 (26.56%): USA
-    4861542 (9.19%): Peoples R China
-    2210537 (4.18%): England
-    2088839 (3.95%): Germany
-    2041561 (3.86%): Japan
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:@count
-  Count: 52921333 (62.88%)
-  Types: string (100.00%)
-  Samples:
-    52455288 (99.12%): 1
-    440508 (0.83%): 2
-    22492 (0.04%): 3
-    2105 ( < 0.01%): 4
-    597 ( < 0.01%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@seq_no
-  Count: 52455288 (62.33%)
-  Types: string (100.00%)
-  Samples:
-    51531062 (98.24%): 1
-    336989 (0.64%): 2
-    184172 (0.35%): 3
-    132902 (0.25%): 4
-    95226 (0.18%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@role
-  Count: 52455288 (62.33%)
-  Types: string (100.00%)
-  Samples:
-    52455010 (100.00%): author
-    278 ( < 0.01%): corp
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@reprint
-  Count: 52417865 (62.28%)
-  Types: string (100.00%)
-  Samples:
-    52417865 (100.00%): Y
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@addr_no
-  Count: 47703071 (56.68%)
-  Types: string (100.00%)
-  Samples:
-    47631662 (99.85%): 1
-    48381 (0.10%): 2
-    13830 (0.03%): 3
-    4917 (0.01%): 4
-    2092 ( < 0.01%): 5
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:display_name
-  Count: 52452938 (62.32%)
-  Types: string (100.00%)
-  Samples:
-    128 ( < 0.01%): Taylor, Hugh S.
-    67 ( < 0.01%): Freundlich, H
-    43 ( < 0.01%): Tait, J
-    41 ( < 0.01%): Brenner, Charles
-    41 ( < 0.01%): Anderson, A.
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:full_name
-  Count: 52452938 (62.32%)
-  Types: string (100.00%)
-  Samples:
-    128 ( < 0.01%): Taylor, Hugh S.
-    67 ( < 0.01%): Freundlich, H
-    43 ( < 0.01%): Tait, J
-    41 ( < 0.01%): Brenner, Charles
-    41 ( < 0.01%): Anderson, A.
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:wos_standard
-  Count: 52455288 (62.33%)
-  Types: string (100.00%)
-  Samples:
-    1305 ( < 0.01%): Huang, CH
-    528 ( < 0.01%): Anderson, A
-    281 ( < 0.01%): Kinoshita, S
-    214 ( < 0.01%): Campbell, N
-    191 ( < 0.01%): Taylor, HS
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:first_name
-  Count: 51505326 (61.20%)
-  Types: string (100.00%)
-  Samples:
-    1005331 (1.95%): M
-    803463 (1.56%): A
-    766203 (1.49%): J
-    669398 (1.30%): S
-    556717 (1.08%): R
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:last_name
-  Count: 52412302 (62.28%)
-  Types: string (100.00%)
-  Samples:
-    125420 (0.24%): Huang
-    41744 (0.08%): Johnson
-    40105 (0.08%): Miller
-    30605 (0.06%): Taylor
-    30439 (0.06%): Anderson
-    ...
-static_data:fullrecord_metadata:languages:language
-  Count: 5569 ( < 0.01%)
+static_data:fullrecord_metadata:addresses:address_name
+  Count: 6724 (2.24%)
   Types: list (100.00%)
   Schema Entry:
-    11517 ENTRIES
-    @type
-      Count: 11517 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        5948 (51.65%): alt
-        5569 (48.35%): primary
-    #text
-      Count: 11517 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        5212 (45.25%): English
-        1756 (15.25%): French
-        923 (8.01%): German
-        672 (5.83%): Spanish
-        613 (5.32%): Estonian
-        ...
-static_data:fullrecord_metadata:normalized_languages:language
-  Count: 5569 ( < 0.01%)
-  Types: list (100.00%)
-  Schema Entry:
-    11517 ENTRIES
-    @type
-      Count: 11517 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        5948 (51.65%): alt
-        5569 (48.35%): primary
-    #text
-      Count: 11517 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        5212 (45.25%): English
-        1756 (15.25%): French
-        923 (8.01%): German
-        672 (5.83%): Spanish
-        613 (5.32%): Estonian
-        ...
-    @status
-      Count: 71 (0.62%)
-      Types: string (100.00%)
-      Samples:
-        71 (100.00%): U
-static_data:contributors:@count
-  Count: 30463980 (36.20%)
-  Types: string (100.00%)
-  Samples:
-    14872990 (48.82%): 1
-    7403575 (24.30%): 2
-    3794234 (12.45%): 3
-    1980785 (6.50%): 4
-    1052094 (3.45%): 5
-    ...
-static_data:contributors:contributor:name:@seq_no
-  Count: 14872990 (17.67%)
-  Types: string (100.00%)
-  Samples:
-    14872990 (100.00%): 1
-static_data:contributors:contributor:name:@role
-  Count: 14872990 (17.67%)
-  Types: string (100.00%)
-  Samples:
-    14872990 (100.00%): researcher_id
-static_data:contributors:contributor:name:@r_id
-  Count: 9444368 (11.22%)
-  Types: string (100.00%)
-  Samples:
-    908 ( < 0.01%): B-6630-2011
-    762 ( < 0.01%): E-8131-2013
-    721 ( < 0.01%): G-1960-2018
-    544 ( < 0.01%): N-7858-2017
-    475 ( < 0.01%): J-8404-2016
-    ...
-static_data:contributors:contributor:name:display_name
-  Count: 14843604 (17.64%)
-  Types: string (100.00%)
-  Samples:
-    908 ( < 0.01%): Sanguansri, Luz
-    762 ( < 0.01%): Meltzer, Herbert Y
-    719 ( < 0.01%): Ibrahim, Essam H.
-    544 ( < 0.01%): PATTANAYAK, MANORANJAN
-    453 ( < 0.01%): Thompson, Lester D. R.
-    ...
-static_data:contributors:contributor:name:full_name
-  Count: 14843604 (17.64%)
-  Types: string (100.00%)
-  Samples:
-    908 ( < 0.01%): Sanguansri, Luz
-    762 ( < 0.01%): Meltzer, Herbert Y
-    719 ( < 0.01%): Ibrahim, Essam H.
-    544 ( < 0.01%): PATTANAYAK, MANORANJAN
-    453 ( < 0.01%): Thompson, Lester D. R.
-    ...
-static_data:contributors:contributor:name:first_name
-  Count: 14806824 (17.59%)
-  Types: string (100.00%)
-  Samples:
-    122650 (0.83%): Michael
-    91695 (0.62%): Peter
-    89692 (0.61%): John
-    66133 (0.45%): Thomas
-    49660 (0.34%): James
-    ...
-static_data:contributors:contributor:name:last_name
-  Count: 14745560 (17.52%)
-  Types: string (100.00%)
-  Samples:
-    11990 (0.08%): Miller
-    9185 (0.06%): Taylor
-    7623 (0.05%): Thompson
-    7531 (0.05%): Peng
-    7315 (0.05%): Schmidt
-    ...
-static_data:contributors:contributor:name:@orcid_id
-  Count: 11454947 (13.61%)
-  Types: string (100.00%)
-  Samples:
-    1923 (0.02%): 0000-0001-8486-7469
-    993 ( < 0.01%): 0000-0001-8855-8647
-    915 ( < 0.01%): 0000-0001-9612-8508
-    908 ( < 0.01%): 0000-0003-1908-7604
-    871 ( < 0.01%): 0000-0003-2538-2845
-    ...
-static_data:fullrecord_metadata:references:reference:patent_no
-  Count: 1861 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    2 (0.11%): GE 250264
-    2 (0.11%): DE 578007
-    1 (0.05%): DE 275047
-    1 (0.05%): DE 477640
-    1 (0.05%): DE 107501
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:zip:@location
-  Count: 20752031 (24.66%)
-  Types: string (100.00%)
-  Samples:
-    9390265 (45.25%): AP
-    6592553 (31.77%): AC
-    4459819 (21.49%): BC
-    164284 (0.79%): AP 
-    79134 (0.38%): BC 
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:zip:#text
-  Count: 20752031 (24.66%)
-  Types: string (100.00%)
-  Samples:
-    102420 (0.49%): 19104
-    94972 (0.46%): 48109
-    90645 (0.44%): 94720
-    86943 (0.42%): 94305
-    74290 (0.36%): 53706
-    ...
-static_data:fullrecord_metadata:references:reference:assignee
-  Count: 1267 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    2 (0.16%): HERSTELLER
-    2 (0.16%): BROADBRIDGE
-    2 (0.16%): BRITTON EC
-    2 (0.16%): FISCHER W
-    1 (0.08%): LAUTENSCHLAGER M
-    ...
-static_data:fullrecord_metadata:references:reference:citedTitle:i
-  Count: 174 ( < 0.01%)
-  Types: string (82.76%), list (17.24%)
-  Samples:
-    3 (1.72%): Glossina morsitans
-    3 (1.72%): Bordetella pertussis
-    2 (1.15%): in vitro
-    2 (1.15%): Candida albicans
-    1 (0.57%): Bact. alkalescens
-    ...
-  List Samples:
-    2 (1.15%): Potyviruses
-    2 (1.15%): Carlavirus
-    2 (1.15%): Varroa
-    1 (0.57%): E. typhi
-    1 (0.57%): Coli aerogenes
-    ...
-static_data:fullrecord_metadata:references:reference:citedTitle:#text
-  Count: 185 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    2 (1.08%): Reactions to combined vaccines containing killed 
-.
-    1 (0.54%): Factor Inhibiting the Agglutination of 
- by Homologous Serum.
-    1 (0.54%): Some New Methods in the Study of 
-.
-    1 (0.54%): Resistance of Various Strains of 
- and 
- to Chlorine and Chloramine.
-    1 (0.54%): New Species of 
- with explanatory Notes.
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:zip:@location
-  Count: 41697749 (49.54%)
-  Types: string (100.00%)
-  Samples:
-    16851616 (40.41%): AP
-    14261084 (34.20%): AC
-    10423765 (25.00%): BC
-    79553 (0.19%): AP 
-    47384 (0.11%): BC 
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:zip:#text
-  Count: 41697749 (49.54%)
-  Types: string (100.00%)
-  Samples:
-    169423 (0.41%): 19104
-    161031 (0.39%): 48109
-    154274 (0.37%): 02115
-    142108 (0.34%): 94720
-    135611 (0.33%): 94305
-    ...
-static_data:fullrecord_metadata:abstracts:@count
-  Count: 43549565 (51.74%)
-  Types: string (100.00%)
-  Samples:
-    43549565 (100.00%): 1
-static_data:fullrecord_metadata:abstracts:abstract:abstract_text
-  Count: 43549565 (51.74%)
-  Types: string (100.00%)
-  Samples:
-    43549565 (100.00%): <ABSTRACT>
-static_data:fullrecord_metadata:fund_ack:fund_text:p
-  Count: 16056694 (19.08%)
-  Types: string (98.48%), list (1.52%)
-  Samples:
-    4 ( < 0.01%): The work described in this paper was done under a contract, recommended by the Committee on Medical Research, between the Office of Scientific Research and Development and The Rockefeller Institute for Medical Research.
-    2 ( < 0.01%): Aided by a grant from The John and Mary R. Markle Foundation, The Ophthalmological Foundation, Inc., and the Dazian Foundation for Medical Research.
-    2 ( < 0.01%): This investigation was carried out during the tenure of a scholarship from the Gloucestershire County Council. I am indebted to Dr C. J. Hickman for suggesting the problem and for his advice and interest during the course of the work.
-    2 ( < 0.01%): Aided by research grant HD-00534 from the United States Public Health Service.
-    2 ( < 0.01%): Supported by the Office of Naval Research.
-    ...
-  List Samples:
-    154 ( < 0.01%): The National Center for Atmospheric Research is sponsored by the National Science Foundation.
-    2 ( < 0.01%): Dr. O'Brien is the recipient of an International Postdoctoral Research Fellowship from the National Institutes of Health, Public Health Service.
-    2 ( < 0.01%): This work was supported by a grant from the Medical Research Council.
-    2 ( < 0.01%): We acknowledge the financial support provided by the Agricultural Research Council.
-    2 ( < 0.01%): We thank the Science Research Council for a studentship, the University of London for financial support and Mr. J. R. Moffatt for expert technical assistance.
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:@count
-  Count: 17924088 (21.30%)
-  Types: string (100.00%)
-  Samples:
-    6446075 (35.96%): 1
-    5131681 (28.63%): 2
-    2637623 (14.72%): 3
-    1671190 (9.32%): 4
-    820870 (4.58%): 5
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:grant:grant_agency
-  Count: 6392510 (7.60%)
-  Types: list (53.45%), string (46.55%)
-  Samples:
-    1514 (0.02%): ODCDC CDC HHS
-    664 (0.01%): NIOSH CDC HHS
-    339 ( < 0.01%): Commonwealth Fund
-    217 ( < 0.01%): University of Manchester
-    193 ( < 0.01%): National Research Council of Canada
-    ...
-  List Samples:
-    77899 (1.22%): National Science Foundation
-    49500 (0.77%): Wellcome Trust
-    48017 (0.75%): NSF
-    30273 (0.47%): PHS HHS
-    27110 (0.42%): Deutsche Forschungsgemeinschaft
-    ...
-  Schema Entry:
-    4582593 ENTRIES
-    @pref
-      Count: 4582593 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        4582593 (100.00%): Y
-    #text
-      Count: 4582593 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        327792 (7.15%): United States Department of Health & Human Services
-        282501 (6.16%): National Institutes of Health (NIH) - USA
-        233715 (5.10%): European Commission
-        191400 (4.18%): Ministry of Education, Culture, Sports, Science and Technology, Japan (MEXT)
-        180619 (3.94%): National Science Foundation (NSF)
-        ...
-static_data:contributors:contributor
-  Count: 15590990 (18.52%)
-  Types: list (100.00%)
-  Schema Entry:
-    51808648 ENTRIES
-    name:@seq_no
-      Count: 51808648 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        15590990 (30.09%): 1
-        15590990 (30.09%): 2
-        8187415 (15.80%): 3
-        4393181 (8.48%): 4
-        2412396 (4.66%): 5
-        ...
-    name:@role
-      Count: 51808648 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        51808648 (100.00%): researcher_id
-    name:@r_id
-      Count: 34044630 (65.71%)
-      Types: string (100.00%)
-      Samples:
-        1467 ( < 0.01%): M-7891-2013
-        1426 ( < 0.01%): F-6495-2012
-        1256 ( < 0.01%): M-3585-2019
-        970 ( < 0.01%): S-1300-2019
-        779 ( < 0.01%): L-8102-2013
-        ...
-    name:display_name
-      Count: 51709191 (99.81%)
-      Types: string (100.00%)
-      Samples:
-        2724 ( < 0.01%): Berk, Michael
-        2071 ( < 0.01%): O'Brien, Terence
-        1979 ( < 0.01%): Moreau, Richard
-        1426 ( < 0.01%): Young, Richard A
-        1300 ( < 0.01%): Ducreux, Michel
-        ...
-    name:full_name
-      Count: 51709191 (99.81%)
-      Types: string (100.00%)
-      Samples:
-        2724 ( < 0.01%): Berk, Michael
-        2071 ( < 0.01%): O'Brien, Terence
-        1979 ( < 0.01%): Moreau, Richard
-        1426 ( < 0.01%): Young, Richard A
-        1300 ( < 0.01%): Ducreux, Michel
-        ...
-    name:first_name
-      Count: 51609948 (99.62%)
-      Types: string (100.00%)
-      Samples:
-        298595 (0.58%): Michael
-        237261 (0.46%): Peter
-        165750 (0.32%): Robert
-        158182 (0.31%): Alexander
-        155637 (0.30%): Antonio
-        ...
-    name:last_name
-      Count: 51433835 (99.28%)
-      Types: string (100.00%)
-      Samples:
-        34039 (0.07%): Pereira
-        21294 (0.04%): Martinez
-        19348 (0.04%): Young
-        18075 (0.04%): Rossi
-        16508 (0.03%): Ho
-        ...
-    name:@orcid_id
-      Count: 40711222 (78.58%)
-      Types: string (100.00%)
-      Samples:
-        2723 ( < 0.01%): 0000-0002-5554-6946
-        1931 ( < 0.01%): 0000-0003-0862-403X
-        1506 ( < 0.01%): 0000-0003-0130-2257
-        1434 ( < 0.01%): 0000-0001-8855-8647
-        1075 ( < 0.01%): 0000-0002-1513-8104
-        ...
-static_data:fullrecord_metadata:addresses:address_name:names:@count
-  Count: 13434295 (15.96%)
-  Types: string (100.00%)
-  Samples:
-    3987937 (29.68%): 1
-    3168395 (23.58%): 2
-    2429539 (18.08%): 3
-    1567455 (11.67%): 4
-    945698 (7.04%): 5
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name
-  Count: 9446358 (11.22%)
-  Types: list (100.00%)
-  Schema Entry:
-    34693445 ENTRIES
-    @seq_no
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        9428371 (27.18%): 1
-        9395151 (27.08%): 2
-        6283428 (18.11%): 3
-        3865489 (11.14%): 4
-        2296090 (6.62%): 5
-        ...
-    @role
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        34673790 (99.94%): author
-        19655 (0.06%): corp
-    @reprint
-      Count: 8212918 (23.67%)
-      Types: string (100.00%)
-      Samples:
-        8212918 (100.00%): Y
-    @addr_no
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        34693409 (100.00%): 1
-        36 ( < 0.01%): 2
-    display_name
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        160 ( < 0.01%): Taylor, Hugh S.
-        38 ( < 0.01%): Kinoshita, S.
-        19 ( < 0.01%): Rutherford, E.
-        19 ( < 0.01%): Kurz, T.
-        18 ( < 0.01%): Franck, J.
-        ...
-    full_name
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        160 ( < 0.01%): Taylor, Hugh S.
-        38 ( < 0.01%): Kinoshita, S.
-        19 ( < 0.01%): Rutherford, E.
-        19 ( < 0.01%): Kurz, T.
-        18 ( < 0.01%): Franck, J.
-        ...
-    wos_standard
-      Count: 34693445 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        197 ( < 0.01%): Kinoshita, S
-        181 ( < 0.01%): Taylor, HS
-        115 ( < 0.01%): Farkas, A
-        55 ( < 0.01%): Kurz, T
-        54 ( < 0.01%): Adel, A
-        ...
-    first_name
-      Count: 33800920 (97.43%)
-      Types: string (100.00%)
-      Samples:
-        488444 (1.45%): A.
-        408332 (1.21%): S.
-        319247 (0.94%): J.
-        242657 (0.72%): R.
-        201131 (0.60%): K.
-        ...
-    last_name
-      Count: 34673790 (99.94%)
-      Types: string (100.00%)
-      Samples:
-        23451 (0.07%): Jones
-        20776 (0.06%): Miller
-        15335 (0.04%): Anderson
-        15141 (0.04%): Taylor
-        13331 (0.04%): Long
-        ...
-    suffix
-      Count: 125282 (0.36%)
-      Types: string (100.00%)
-      Samples:
-        52607 (41.99%): V
-        30489 (24.34%): I
-        28819 (23.00%): Jr.
-        9091 (7.26%): III
-        3240 (2.59%): II
-        ...
-    @r_id
-      Count: 4738338 (13.66%)
-      Types: string (100.00%)
-      Samples:
-        62 ( < 0.01%): Y-4038-2019
-        59 ( < 0.01%): B-8265-2014
-        52 ( < 0.01%): F-6864-2011
-        44 ( < 0.01%): B-5527-2013
-        41 ( < 0.01%): ABD-7677-2021
-        ...
-    email_addr
-      Count: 11364560 (32.76%)
-      Types: string (100.00%)
-      Samples:
-        35 ( < 0.01%): ghan@essex.ac.uk
-        11 ( < 0.01%): pasquale@cs.ucsd.edu
-        7 ( < 0.01%): rt@cs.brown.edu
-        7 ( < 0.01%): greg@sce.carleton.ca
-        4 ( < 0.01%): wrf@ecse.rpi.edu
-        ...
-    @r_id_tr
-      Count: 677 ( < 0.01%)
-      Types: string (100.00%)
-      Samples:
-        4 (0.59%): K-3408-2017
-        3 (0.44%): M-6329-2014
-        3 (0.44%): M-7089-2014
-        3 (0.44%): B-3603-2018
-        3 (0.44%): A-8650-2017
-        ...
-    @orcid_id_tr
-      Count: 696707 (2.01%)
-      Types: string (100.00%)
-      Samples:
-        5 ( < 0.01%): 0000-0002-4073-9681
-        4 ( < 0.01%): 0000-0002-6174-2986
-        4 ( < 0.01%): 0000-0002-9422-0367
-        4 ( < 0.01%): 0000-0003-3723-7434
-        3 ( < 0.01%): 0000-0002-9245-9251
-        ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:@seq_no
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    3898650 (97.76%): 1
-    54135 (1.36%): 2
-    14391 (0.36%): 3
-    7385 (0.19%): 4
-    4591 (0.12%): 5
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:@role
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    3984724 (99.92%): author
-    3213 (0.08%): corp
-static_data:fullrecord_metadata:addresses:address_name:names:name:@reprint
-  Count: 3525789 (4.19%)
-  Types: string (100.00%)
-  Samples:
-    3525789 (100.00%): Y
-static_data:fullrecord_metadata:addresses:address_name:names:name:@addr_no
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    3987909 (100.00%): 1
-    28 ( < 0.01%): 2
-static_data:fullrecord_metadata:addresses:address_name:names:name:display_name
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    13 ( < 0.01%): Crystal, David
-    12 ( < 0.01%): Shapiro, Michael
-    6 ( < 0.01%): Allerton, D. J.
-    4 ( < 0.01%): Sabet, K. A.
-    4 ( < 0.01%): Harrison, B. D.
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:full_name
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    13 ( < 0.01%): Crystal, David
-    12 ( < 0.01%): Shapiro, Michael
-    6 ( < 0.01%): Allerton, D. J.
-    4 ( < 0.01%): Sabet, K. A.
-    4 ( < 0.01%): Harrison, B. D.
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:wos_standard
-  Count: 3987937 (4.74%)
-  Types: string (100.00%)
-  Samples:
-    109 ( < 0.01%): Cole, M
-    87 ( < 0.01%): Ellis, J
-    43 ( < 0.01%): Hansen, K
-    37 ( < 0.01%): Shapiro, M
-    29 ( < 0.01%): Fleck, A
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:first_name
-  Count: 3942452 (4.68%)
-  Types: string (100.00%)
-  Samples:
-    31195 (0.79%): David
-    25324 (0.64%): Michael
-    22122 (0.56%): John
-    21739 (0.55%): M.
-    19551 (0.50%): Peter
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:last_name
-  Count: 3984724 (4.73%)
-  Types: string (100.00%)
-  Samples:
-    11463 (0.29%): Smith
-    6427 (0.16%): Jones
-    4451 (0.11%): Taylor
-    4048 (0.10%): Wilson
-    2440 (0.06%): Baker
-    ...
-static_data:summary:names:name:@addr_no
-  Count: 3613186 (4.29%)
-  Types: string (100.00%)
-  Samples:
-    3118549 (86.31%): 1
-    404495 (11.19%): 1 2
-    62179 (1.72%): 1 2 3
-    14035 (0.39%): 1 2 3 4
-    4338 (0.12%): 1 2 3 4 5
-    ...
-static_data:fullrecord_metadata:normalized_languages:language:@status
-  Count: 10637 (0.01%)
-  Types: string (100.00%)
-  Samples:
-    10637 (100.00%): U
-static_data:fullrecord_metadata:references:reference:doi
-  Count: 399777 (0.48%)
-  Types: string (100.00%)
-  Samples:
-    3 ( < 0.01%): 10.7326/0003-4819-16-1-113
-    2 ( < 0.01%): 10.1063/1.1749497
-    2 ( < 0.01%): 10.1063/1.1749478
-    2 ( < 0.01%): 10.7326/0003-4819-11-1-69
-    2 ( < 0.01%): 10.6028/jres.026.040
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:grant
-  Count: 11478013 (13.64%)
-  Types: list (100.00%)
-  Schema Entry:
-    39350704 ENTRIES
-    grant_agency
-      Count: 38926825 (98.92%)
-      Types: list (57.15%), string (42.85%)
-      Samples:
-        3019 ( < 0.01%): Harvard University
-        3018 ( < 0.01%): Pennsylvania State University
-        1439 ( < 0.01%): Ford Foundation
-        1379 ( < 0.01%): National Research Council of Canada
-        1279 ( < 0.01%): University of Birmingham
-        ...
-      List Samples:
-        361698 (0.93%): NATIONAL INSTITUTE OF GENERAL MEDICAL SCIENCES
-        270504 (0.69%): National Science Foundation
-        269359 (0.69%): NIH
-        266427 (0.68%): National Institutes of Health
-        260176 (0.67%): NCI NIH HHS
-        ...
-      Schema Entry:
-        38119461 ENTRIES
-        @pref
-          Count: 38119461 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            38119461 (100.00%): Y
-        #text
-          Count: 38119461 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            6605819 (17.33%): United States Department of Health & Human Services
-            6480963 (17.00%): National Institutes of Health (NIH) - USA
-            1307617 (3.43%): European Commission
-            1110964 (2.91%): UK Research & Innovation (UKRI)
-            873904 (2.29%): National Science Foundation (NSF)
-            ...
-    grant_ids:@count
-      Count: 24830864 (63.10%)
-      Types: string (100.00%)
-      Samples:
-        20077307 (80.86%): 1
-        3109590 (12.52%): 2
-        979654 (3.95%): 3
-        354435 (1.43%): 4
-        143907 (0.58%): 5
-        ...
-    grant_ids:grant_id
-      Count: 24830864 (63.10%)
-      Types: string (80.86%), list (19.14%)
-      Samples:
-        696 ( < 0.01%): R01 DK029961-19
-        329 ( < 0.01%): R01 AM007772
-        34 ( < 0.01%): CA-05388
-        16 ( < 0.01%): AM-03612
-        8 ( < 0.01%): GM07446
-        ...
-      List Samples:
-        723 ( < 0.01%): CA-08748
-        579 ( < 0.01%): CA-06927
-        431 ( < 0.01%): R01 DK029961-19
-        221 ( < 0.01%): M01 RR000051
-        199 ( < 0.01%): M01 RR000069
-        ...
-    @grant_source
-      Count: 6257928 (15.90%)
-      Types: string (100.00%)
-      Samples:
-        3265285 (52.18%): NIH RePORTER
-        1960543 (31.33%): Medline
-        394072 (6.30%): researchfish
-        376459 (6.02%): UKRI
-        154292 (2.47%): National Science Foundation
-        ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:street
-  Count: 27350025 (32.50%)
-  Types: string (100.00%)
-  Samples:
-    24591 (0.09%): 77 Massachusetts Ave
-    23919 (0.09%): 200 1st St SW
-    14329 (0.05%): S Parks Rd
-    13025 (0.05%): Gower St
-    12397 (0.05%): Univ Pk
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:suffix
-  Count: 501975 (0.60%)
-  Types: string (100.00%)
-  Samples:
-    150375 (29.96%): I
-    147900 (29.46%): V
-    61036 (12.16%): JR
-    49149 (9.79%): Jr.
-    23955 (4.77%): SR
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:email_addr
-  Count: 27880984 (33.13%)
-  Types: string (100.00%)
-  Samples:
-    23 ( < 0.01%): olvi@cs.wisc.edu
-    15 ( < 0.01%): hsu@iis.sinica.edu.tw
-    14 ( < 0.01%): ecj@cs.gmu.edu
-    10 ( < 0.01%): giorgio.fedele@iss.it
-    9 ( < 0.01%): ajmone@polito.it
-    ...
-static_data:fullrecord_metadata:keywords:@count
-  Count: 30504070 (36.24%)
-  Types: string (100.00%)
-  Samples:
-    9564594 (31.36%): 5
-    7696015 (25.23%): 4
-    4745603 (15.56%): 6
-    4434916 (14.54%): 3
-    1567648 (5.14%): 7
-    ...
-static_data:fullrecord_metadata:keywords:keyword
-  Count: 30504070 (36.24%)
-  Types: list (99.73%), string (0.27%)
-  Samples:
-    9 ( < 0.01%): Radiation
-    9 ( < 0.01%): WAVE-GUIDES AND WAVE-GUIDE COMPONENTS
-    8 ( < 0.01%): ASTEROIDS
-    8 ( < 0.01%): ANTENNAS (MICROSTRIP)
-    7 ( < 0.01%): COSMOLOGY
-    ...
-  List Samples:
-    85424 (0.28%): COVID-19
-    61464 (0.20%): epidemiology
-    42951 (0.14%): hypertension
-    25169 (0.08%): SARS-CoV-2
-    18769 (0.06%): cardiovascular disease
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:grant:@grant_source
-  Count: 405184 (0.48%)
-  Types: string (100.00%)
-  Samples:
-    279693 (69.03%): Medline
-    33879 (8.36%): researchfish
-    31471 (7.77%): NIH RePORTER
-    20877 (5.15%): KAKEN
-    19229 (4.75%): UKRI
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:grant:grant_ids:@count
-  Count: 4124376 (4.90%)
-  Types: string (100.00%)
-  Samples:
-    3359037 (81.44%): 1
-    559158 (13.56%): 2
-    141796 (3.44%): 3
-    41045 (1.00%): 4
-    13597 (0.33%): 5
-    ...
-static_data:fullrecord_metadata:fund_ack:grants:grant:grant_ids:grant_id
-  Count: 4124375 (4.90%)
-  Types: string (81.44%), list (18.56%)
-  Samples:
-    100 ( < 0.01%): R01 HD017013
-    39 ( < 0.01%): A-3176
-    34 ( < 0.01%): R01 HL019139-23
-    16 ( < 0.01%): 097945
-    10 ( < 0.01%): U18HS009453
-    ...
-  List Samples:
-    22 ( < 0.01%): A-3176
-    20 ( < 0.01%): A-6283
-    3 ( < 0.01%): A-6344
-    2 ( < 0.01%): HE00735-01
-    2 ( < 0.01%): 5-T1-GM 57-08
-    ...
-static_data:fullrecord_metadata:references:reference:citedTitle:sub
-  Count: 10 ( < 0.01%)
-  Types: string (70.00%), list (30.00%)
-  Samples:
-    4 (40.00%): 2
-    2 (20.00%): 12
-    1 (10.00%): 6
-  List Samples:
-    5 (50.00%): 2
-    1 (10.00%): 5
-    1 (10.00%): 3
-    1 (10.00%): 4
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@display
-  Count: 10242901 (12.17%)
-  Types: string (100.00%)
-  Samples:
-    10242901 (100.00%): N
-static_data:fullrecord_metadata:addresses:address_name:address_spec:street
-  Count: 6348141 (7.54%)
-  Types: string (100.00%)
-  Samples:
-    44652 (0.70%): SCH MED
-    35024 (0.55%): DEPT PSYCHOL
-    6803 (0.11%): DEPT ECON
-    6430 (0.10%): DEPT SOCIOL
-    4933 (0.08%): SCH LAW
-    ...
-static_data:fullrecord_metadata:addresses:address_name:address_spec:zip
-  Count: 371247 (0.44%)
-  Types: list (100.00%)
-  Schema Entry:
-    742494 ENTRIES
-    @location
-      Count: 742494 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        363983 (49.02%): AC
-        363621 (48.97%): BC
-        7142 (0.96%): BC 
-        7142 (0.96%): AC 
-        430 (0.06%): AP
-        ...
-    #text
-      Count: 742494 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        54217 (7.30%): 1
-        25954 (3.50%): 2
-        21371 (2.88%): CH-1211
-        19805 (2.67%): 4
-        14839 (2.00%): 9
-        ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:zip
-  Count: 803148 (0.95%)
-  Types: list (100.00%)
-  Schema Entry:
-    1606297 ENTRIES
-    @location
-      Count: 1606297 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        797708 (49.66%): AC
-        797494 (49.65%): BC
-        5285 (0.33%): BC 
-        5285 (0.33%): AC 
-        395 (0.02%): AP
-        ...
-    #text
-      Count: 1606297 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        104404 (6.50%): 1
-        74236 (4.62%): 05
-        49980 (3.11%): 2
-        44189 (2.75%): CH-1211
-        38797 (2.42%): 4
-        ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:suffix
-  Count: 23357 (0.03%)
-  Types: string (100.00%)
-  Samples:
-    8243 (35.29%): Jr.
-    8202 (35.12%): V
-    3722 (15.94%): I
-    2078 (8.90%): III
-    861 (3.69%): II
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:@r_id
-  Count: 449889 (0.53%)
-  Types: string (100.00%)
-  Samples:
-    25 ( < 0.01%): Z-2269-2019
-    16 ( < 0.01%): P-8205-2017
-    13 ( < 0.01%): AAB-7369-2020
-    10 ( < 0.01%): J-8115-2012
-    8 ( < 0.01%): Q-9490-2016
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name
-  Count: 3018573 (3.59%)
-  Types: list (100.00%)
-  Schema Entry:
-    7119669 ENTRIES
+    14810 ENTRIES
     address_spec:@addr_no
-      Count: 7119669 (100.00%)
+      Count: 14810 (100.00%)
       Types: string (100.00%)
       Samples:
-        3018573 (42.40%): 1
-        3018573 (42.40%): 2
-        739791 (10.39%): 3
-        220148 (3.09%): 4
-        73472 (1.03%): 5
+        6724 (45.40%): 1
+        6724 (45.40%): 2
+        942 (6.36%): 3
+        201 (1.36%): 4
+        41 (0.28%): 5
         ...
     address_spec:full_address
-      Count: 7119669 (100.00%)
+      Count: 14810 (100.00%)
       Types: string (100.00%)
       Samples:
-        1455 (0.02%): Univ Calif Berkeley, Dept Chem, Berkeley, CA 94720 USA
-        408 ( < 0.01%): Univ Wisconsin, Dept Chem, 1101 Univ Ave, Madison, WI 53706 USA
-        354 ( < 0.01%): MIT, Dept Elect Engn & Comp Sci, Cambridge, MA 02139 USA
-        344 ( < 0.01%): Univ Calif Berkeley, Dept Elect Engn & Comp Sci, Berkeley, CA 94720 USA
-        333 ( < 0.01%): Univ Chicago, Chicago, IL 60637 USA
+        36 (0.24%): Johns Hopkins Univ, Baltimore, MD USA
+        34 (0.23%): New York Hosp, New York, NY USA
+        26 (0.18%): Princeton Univ, Princeton, NJ USA
+        23 (0.16%): Johns Hopkins Hosp, Baltimore, MD USA
+        19 (0.13%): Harvard Univ, Med Sch, Cambridge, MA USA
         ...
     address_spec:organizations:@count
-      Count: 7094285 (99.64%)
+      Count: 14810 (100.00%)
       Types: string (100.00%)
       Samples:
-        4686862 (66.07%): 2
-        1235316 (17.41%): 3
-        942314 (13.28%): 1
-        186967 (2.64%): 4
-        30934 (0.44%): 5
-        ...
+        7541 (50.92%): 2
+        3909 (26.39%): 1
+        2982 (20.14%): 3
+        349 (2.36%): 4
+        29 (0.20%): 5
     address_spec:organizations:organization
-      Count: 7094285 (99.64%)
-      Types: list (86.72%), string (13.28%)
+      Count: 14810 (100.00%)
+      Types: list (73.61%), string (26.39%)
       Samples:
-        102 ( < 0.01%): Childrens Hosp
-        80 ( < 0.01%): Barnard Coll
-        69 ( < 0.01%): Inst Child Hlth
-        45 ( < 0.01%): McDaniel Coll
-        40 ( < 0.01%): Univ Nacl Tres Febrero
+        41 (0.28%): City Hosp
+        37 (0.25%): Lakeside Hosp
+        35 (0.24%): Jewish Hosp
+        32 (0.22%): Royal Arsenal
+        31 (0.21%): Tufts Coll
         ...
       List Samples:
-        32354 (0.46%): Peking Univ
-        32329 (0.46%): Russian Acad Sci
-        28600 (0.40%): Seoul Natl Univ
-        25156 (0.35%): Univ Toronto
-        22420 (0.32%): Harvard Med Sch
+        883 (5.96%): Harvard Univ
+        537 (3.63%): Columbia Univ
+        398 (2.69%): Univ Chicago
+        385 (2.60%): Univ Penn
+        385 (2.60%): Yale Univ
         ...
       Schema Entry:
-        7907157 ENTRIES
+        14668 ENTRIES
         @pref
-          Count: 7907157 (100.00%)
+          Count: 14668 (100.00%)
           Types: string (100.00%)
           Samples:
-            7907157 (100.00%): Y
+            14668 (100.00%): Y
         #text
-          Count: 7907157 (100.00%)
+          Count: 14668 (100.00%)
           Types: string (100.00%)
           Samples:
-            90369 (1.14%): University of California System
-            69109 (0.87%): Centre National de la Recherche Scientifique (CNRS)
-            67043 (0.85%): Harvard University
-            47593 (0.60%): Russian Academy of Sciences
-            39867 (0.50%): University of London
+            1197 (8.16%): Harvard University
+            540 (3.68%): Columbia University
+            525 (3.58%): Johns Hopkins University
+            477 (3.25%): University of Pennsylvania
+            465 (3.17%): Harvard Medical School
             ...
     address_spec:suborganizations:@count
-      Count: 5966852 (83.81%)
+      Count: 10422 (70.37%)
       Types: string (100.00%)
       Samples:
-        3785376 (63.44%): 1
-        1667488 (27.95%): 2
-        513988 (8.61%): 3
+        6242 (59.89%): 1
+        3861 (37.05%): 2
+        319 (3.06%): 3
     address_spec:suborganizations:suborganization
-      Count: 5966852 (83.81%)
-      Types: string (63.44%), list (36.56%)
+      Count: 10422 (70.37%)
+      Types: string (59.89%), list (40.11%)
       Samples:
-        83018 (1.39%): Dept Chem
-        58196 (0.98%): Dept Phys
-        18515 (0.31%): Dept Math
-        16135 (0.27%): Dept Chem Engn
-        15891 (0.27%): Dept Psychol
+        243 (2.33%): Dept Pathol
+        236 (2.26%): Dept Med
+        233 (2.24%): Med Sch
+        157 (1.51%): Dept Pediat
+        155 (1.49%): Dept Surg
         ...
       List Samples:
-        120899 (2.03%): Sch Med
-        48258 (0.81%): Coll Med
-        40802 (0.68%): Fac Med
-        33233 (0.56%): CNRS
-        11784 (0.20%): Sch Life Sci
+        1237 (11.87%): Sch Med
+        903 (8.66%): Med Sch
+        510 (4.89%): Dept Med
+        406 (3.90%): Coll Med
+        336 (3.22%): Coll Phys & Surg
         ...
     address_spec:city
-      Count: 7119669 (100.00%)
+      Count: 14810 (100.00%)
       Types: string (100.00%)
       Samples:
-        348242 (4.89%): Beijing
-        117360 (1.65%): Nanjing
-        94524 (1.33%): Seoul
-        86047 (1.21%): London
-        65969 (0.93%): Boston
+        1333 (9.00%): New York
+        1289 (8.70%): Boston
+        977 (6.60%): Chicago
+        665 (4.49%): Philadelphia
+        611 (4.13%): Baltimore
         ...
     address_spec:state
-      Count: 2916073 (40.96%)
+      Count: 13254 (89.49%)
       Types: string (100.00%)
       Samples:
-        176171 (6.04%): CA
-        120769 (4.14%): MA
-        116949 (4.01%): Jiangsu
-        113046 (3.88%): NY
-        92793 (3.18%): ON
+        2604 (19.65%): NY
+        1871 (14.12%): MA
+        1174 (8.86%): IL
+        897 (6.77%): PA
+        722 (5.45%): CA
         ...
     address_spec:country
-      Count: 7119669 (100.00%)
+      Count: 14810 (100.00%)
       Types: string (100.00%)
       Samples:
-        1924630 (27.03%): Peoples R China
-        1244389 (17.48%): USA
-        294042 (4.13%): Germany
-        247696 (3.48%): England
-        226810 (3.19%): France
-        ...
-    names:@count
-      Count: 7119663 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        6621731 (93.01%): 1
-        462453 (6.50%): 2
-        31250 (0.44%): 3
-        2977 (0.04%): 4
-        752 (0.01%): 5
-        ...
-    names:name:@seq_no
-      Count: 6621731 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        5513348 (83.26%): 1
-        968935 (14.63%): 2
-        117568 (1.78%): 3
-        15480 (0.23%): 4
-        3582 (0.05%): 5
-        ...
-    names:name:@role
-      Count: 6621731 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        6621731 (100.00%): author
-    names:name:@reprint
-      Count: 6621687 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        6621687 (100.00%): Y
-    names:name:display_name
-      Count: 6621687 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        53 ( < 0.01%): Connell, John
-        48 ( < 0.01%): Firoozabadi, Abbas
-        46 ( < 0.01%): Bullen, Margaret
-        26 ( < 0.01%): Napoli, Claudio
-        19 ( < 0.01%): Levitt, Peggy
-        ...
-    names:name:full_name
-      Count: 6621687 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        53 ( < 0.01%): Connell, John
-        48 ( < 0.01%): Firoozabadi, Abbas
-        46 ( < 0.01%): Bullen, Margaret
-        26 ( < 0.01%): Napoli, Claudio
-        19 ( < 0.01%): Levitt, Peggy
-        ...
-    names:name:wos_standard
-      Count: 6621731 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        314 ( < 0.01%): Zhu, X
-        217 ( < 0.01%): Sun, GY
-        99 ( < 0.01%): Kamm, RD
-        97 ( < 0.01%): Park, MH
-        83 ( < 0.01%): Zhang, MS
-        ...
-    names:name:first_name
-      Count: 6540683 (91.87%)
-      Types: string (100.00%)
-      Samples:
-        27690 (0.42%): M.
-        27413 (0.42%): A.
-        11662 (0.18%): R.
-        10768 (0.16%): C.
-        10013 (0.15%): D.
-        ...
-    names:name:last_name
-      Count: 6621687 (93.01%)
-      Types: string (100.00%)
-      Samples:
-        45061 (0.68%): Lee
-        33519 (0.51%): Sun
-        27762 (0.42%): Zhu
-        18941 (0.29%): Park
-        14055 (0.21%): Chang
+        12963 (87.53%): USA
+        727 (4.91%): UK
+        392 (2.65%): England
+        186 (1.26%): Canada
+        87 (0.59%): Scotland
         ...
     address_spec:zip:@location
-      Count: 4893368 (68.73%)
+      Count: 54 (0.36%)
       Types: string (100.00%)
       Samples:
-        2560995 (52.34%): AC
-        1497061 (30.59%): AP
-        835312 (17.07%): BC
+        33 (61.11%): AC
+        19 (35.19%): AP
+        2 (3.70%): BC
     address_spec:zip:#text
-      Count: 4893368 (68.73%)
+      Count: 54 (0.36%)
       Types: string (100.00%)
       Samples:
-        35030 (0.72%): 02115
-        21777 (0.45%): 94720
-        20533 (0.42%): 94305
-        19557 (0.40%): 19104
-        18462 (0.38%): 48109
+        5 (9.26%): SW
+        4 (7.41%): 10027
+        3 (5.56%): SW19
+        3 (5.56%): SW7
+        2 (3.70%): EC4
         ...
-    names:name:@addr_no
-      Count: 6621664 (93.01%)
+    names:@count
+      Count: 26 (0.18%)
       Types: string (100.00%)
       Samples:
-        2856477 (43.14%): 2
-        2741879 (41.41%): 1
-        697917 (10.54%): 3
-        208173 (3.14%): 4
-        69934 (1.06%): 5
+        24 (92.31%): 1
+        2 (7.69%): 2
+    names:name:@seq_no
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        20 (83.33%): 1
+        4 (16.67%): 2
+    names:name:@role
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        24 (100.00%): author
+    names:name:@reprint
+      Count: 20 (0.14%)
+      Types: string (100.00%)
+      Samples:
+        20 (100.00%): Y
+    names:name:@addr_no
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        15 (62.50%): 1
+        9 (37.50%): 2
+    names:name:@r_id
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): EGT-6751-2022
+        2 (8.33%): CIT-0260-2022
+        2 (8.33%): CVL-6577-2022
+        2 (8.33%): DAF-1096-2022
+        1 (4.17%): CGS-8160-2022
+        ...
+    names:name:display_name
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): Wood, R. W.
+        2 (8.33%): Wills, R. L.
+        2 (8.33%): Jacot, E.
+        2 (8.33%): Laws, S. C.
+        1 (4.17%): Blattner, Russell J.
+        ...
+    names:name:full_name
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): Wood, R. W.
+        2 (8.33%): Wills, R. L.
+        2 (8.33%): Jacot, E.
+        2 (8.33%): Laws, S. C.
+        1 (4.17%): Blattner, Russell J.
+        ...
+    names:name:wos_standard
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): Wood, RW
+        2 (8.33%): Wills, RL
+        2 (8.33%): Jacot, E
+        2 (8.33%): Laws, SC
+        1 (4.17%): Blattner, RJ
+        ...
+    names:name:first_name
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): R. W.
+        2 (8.33%): R. L.
+        2 (8.33%): E.
+        2 (8.33%): S. C.
+        1 (4.17%): Russell J.
+        ...
+    names:name:last_name
+      Count: 24 (0.16%)
+      Types: string (100.00%)
+      Samples:
+        2 (8.33%): Wood
+        2 (8.33%): Wills
+        2 (8.33%): Jacot
+        2 (8.33%): Laws
+        1 (4.17%): Blattner
         ...
     address_spec:street
-      Count: 1658889 (23.30%)
+      Count: 1 ( < 0.01%)
       Types: string (100.00%)
       Samples:
-        6079 (0.37%): 77 Massachusetts Ave
-        1454 (0.09%): 4-1-8 Honcho
-        756 (0.05%): 118 Route Narbonne
-        487 (0.03%): Queen Sq
-        484 (0.03%): 3-4-1 Okubo
-        ...
-    address_spec:zip
-      Count: 24558 (0.34%)
-      Types: list (100.00%)
-      Schema Entry:
-        49116 ENTRIES
-        @location
-          Count: 49116 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            24552 (49.99%): AC
-            24550 (49.98%): BC
-            14 (0.03%): AP
-        #text
-          Count: 49116 (100.00%)
-          Types: string (100.00%)
-          Samples:
-            3484 (7.09%): C
-            2507 (5.10%): 9
-            2229 (4.54%): DK-8000
-            2127 (4.33%): CH-1211
-            2126 (4.33%): 05
-            ...
-    names:name:suffix
-      Count: 33658 (0.47%)
-      Types: string (100.00%)
-      Samples:
-        15693 (46.62%): V
-        9383 (27.88%): I
-        6239 (18.54%): Jr.
-        1668 (4.96%): III
-        624 (1.85%): II
-        ...
-    names:name:email_addr
-      Count: 5120801 (71.92%)
-      Types: string (100.00%)
-      Samples:
-        104 ( < 0.01%): thwang@jhu.edu
-        44 ( < 0.01%): saylee@pnu.edu
-        28 ( < 0.01%): edney@usm.maine.edu
-        16 ( < 0.01%): jwkim@uark.edu
-        16 ( < 0.01%): d.b.panagiotakos@usa.net
-        ...
+        1 (100.00%): 722 W 168Th St
     names:name
-      Count: 497932 (6.99%)
+      Count: 2 (0.01%)
       Types: list (100.00%)
       Schema Entry:
-        1037804 ENTRIES
+        4 ENTRIES
         @seq_no
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            457937 (44.13%): 1
-            440620 (42.46%): 2
-            111524 (10.75%): 3
-            17861 (1.72%): 4
-            5097 (0.49%): 5
-            ...
+            2 (50.00%): 1
+            2 (50.00%): 2
         @role
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            1037804 (100.00%): author
+            4 (100.00%): author
         @reprint
-          Count: 1037804 (100.00%)
+          Count: 2 (50.00%)
           Types: string (100.00%)
           Samples:
-            1037804 (100.00%): Y
+            2 (100.00%): Y
         @addr_no
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            579332 (55.82%): 1
-            335661 (32.34%): 2
-            86721 (8.36%): 3
-            24872 (2.40%): 4
-            7328 (0.71%): 5
-            ...
+            4 (100.00%): 1
+        @r_id
+          Count: 4 (100.00%)
+          Types: string (100.00%)
+          Samples:
+            1 (25.00%): CMV-4143-2022
+            1 (25.00%): DNN-7272-2022
+            1 (25.00%): DFB-1001-2022
+            1 (25.00%): HIG-5286-2022
         display_name
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            229 (0.02%): Zhang, Hui
-            158 (0.02%): Liu, Yi
-            107 (0.01%): Zhang, Xiang
-            107 (0.01%): Feng, Xinliang
-            45 ( < 0.01%): Mai, Hai-Qiang
-            ...
+            1 (25.00%): Compton, Karl T.
+            1 (25.00%): Richardson, O. W.
+            1 (25.00%): Magee, John L.
+            1 (25.00%): Ri, Taikei
         full_name
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            229 (0.02%): Zhang, Hui
-            158 (0.02%): Liu, Yi
-            107 (0.01%): Zhang, Xiang
-            107 (0.01%): Feng, Xinliang
-            45 ( < 0.01%): Mai, Hai-Qiang
-            ...
+            1 (25.00%): Compton, Karl T.
+            1 (25.00%): Richardson, O. W.
+            1 (25.00%): Magee, John L.
+            1 (25.00%): Ri, Taikei
         wos_standard
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            1661 (0.16%): Liu, Y
-            1075 (0.10%): Zhang, H
-            866 (0.08%): Zhang, X
-            809 (0.08%): Wang, X
-            317 (0.03%): Wang, XF
-            ...
+            1 (25.00%): Compton, KT
+            1 (25.00%): Richardson, OW
+            1 (25.00%): Magee, JL
+            1 (25.00%): Ri, T
         first_name
-          Count: 1026732 (98.93%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            3483 (0.34%): Yi
-            2871 (0.28%): Hui
-            2416 (0.24%): Bo
-            2196 (0.21%): Liang
-            1738 (0.17%): David
-            ...
+            1 (25.00%): Karl T.
+            1 (25.00%): O. W.
+            1 (25.00%): John L.
+            1 (25.00%): Taikei
         last_name
-          Count: 1037804 (100.00%)
+          Count: 4 (100.00%)
           Types: string (100.00%)
           Samples:
-            46664 (4.50%): Wang
-            39847 (3.84%): Zhang
-            31644 (3.05%): Liu
-            13673 (1.32%): Wu
-            11375 (1.10%): Zhou
-            ...
-        email_addr
-          Count: 566405 (54.58%)
-          Types: string (100.00%)
-          Samples:
-            11 ( < 0.01%): maihq@sysucc.org.cn
-            11 ( < 0.01%): akhter.hossain@florey.edu.au
-            9 ( < 0.01%): 00007962@whu.edu.cn
-            6 ( < 0.01%): yiliuchem@whu.edu.cn
-            6 ( < 0.01%): kimsw1@skku.edu
-            ...
-        suffix
-          Count: 2743 (0.26%)
-          Types: string (100.00%)
-          Samples:
-            1211 (44.15%): V
-            875 (31.90%): I
-            488 (17.79%): Jr.
-            141 (5.14%): III
-            27 (0.98%): II
-            ...
-static_data:summary:conferences:@count
-  Count: 12345401 (14.67%)
+            1 (25.00%): Compton
+            1 (25.00%): Richardson
+            1 (25.00%): Magee
+            1 (25.00%): Ri
+static_data:summary:pub_info:@special_issue
+  Count: 2174 (0.72%)
   Types: string (100.00%)
   Samples:
-    12338179 (99.94%): 1
-    7200 (0.06%): 2
-    22 ( < 0.01%): 3
-static_data:summary:conferences:conference:conf_infos:@count
-  Count: 12338179 (14.66%)
-  Types: string (100.00%)
-  Samples:
-    12338179 (100.00%): 1
-static_data:summary:conferences:conference:conf_infos:conf_info
-  Count: 12338179 (14.66%)
-  Types: string (100.00%)
-  Samples:
-    621 ( < 0.01%): 9TH EUROPEAN CONGRESS ON ELECTRON MICROSCOPY, SEP 04-09, 1988, YORK, ENGLAND
-    207 ( < 0.01%): 1ST INTERNATIONAL CONGRESS OF THE INTERNATIONAL UNION OF TESTING AND RESEARCH LABORATORIES FOR MATERIALS AND STRUCTURES, SEP 07-11, 1987, VERSAILLES, FRANCE
-    191 ( < 0.01%): 4TH CONGRESS OF THE INTERNATIONAL SOC FOR BIOMEDICAL RESEARCH ON ALCOHOLISM : BIOMEDICAL AND SOCIAL ASPECTS OF ALCOHOL AND ALCOHOLISM, JUN 26-JUL 02, 1988, KYOTO, JAPAN
-    182 ( < 0.01%): 7TH INTERNATIONAL CONGRESS FOR STEREOLOGY ( 7-ICS ), SEP 02-09, 1987, CAEN, FRANCE
-    153 ( < 0.01%): INTERNATIONAL SYMP ON PYROTECHNICS AND EXPLOSIVES, OCT 12-15, 1987, BEIJING, PEOPLES R CHINA
+    654 (30.08%): 7TH SERIES
+    324 (14.90%): 6TH SERIES
+    237 (10.90%): S
+    91 (4.19%): SI
+    73 (3.36%): YRS 1902/3
     ...
-static_data:summary:conferences:conference:conf_titles:@count
-  Count: 12338179 (14.66%)
+dynamic_data:cluster_related:identifiers:identifier:@type
+  Count: 12210 (4.07%)
   Types: string (100.00%)
   Samples:
-    12338179 (100.00%): 1
-static_data:summary:conferences:conference:conf_titles:conf_title
-  Count: 12338179 (14.66%)
+    12210 (100.00%): accession_no
+dynamic_data:cluster_related:identifiers:identifier:@value
+  Count: 12210 (4.07%)
   Types: string (100.00%)
   Samples:
-    621 ( < 0.01%): 9TH EUROPEAN CONGRESS ON ELECTRON MICROSCOPY
-    555 ( < 0.01%): INTERNATIONAL SYMP ON CROP PROTECTION
-    207 ( < 0.01%): 1ST INTERNATIONAL CONGRESS OF THE INTERNATIONAL UNION OF TESTING AND RESEARCH LABORATORIES FOR MATERIALS AND STRUCTURES
-    191 ( < 0.01%): 4TH CONGRESS OF THE INTERNATIONAL SOC FOR BIOMEDICAL RESEARCH ON ALCOHOLISM : BIOMEDICAL AND SOCIAL ASPECTS OF ALCOHOL AND ALCOHOLISM
-    182 ( < 0.01%): 7TH INTERNATIONAL CONGRESS FOR STEREOLOGY ( 7-ICS )
+    59 (0.48%): V15HO
+    46 (0.38%): V15HT
+    38 (0.31%): V7482
+    35 (0.29%): V18UJ
+    29 (0.24%): V20WX
     ...
-static_data:summary:conferences:conference:conf_dates:@count
-  Count: 12338178 (14.66%)
+static_data:summary:pub_info:@supplement
+  Count: 1272 (0.42%)
   Types: string (100.00%)
   Samples:
-    12338178 (100.00%): 1
-static_data:summary:conferences:conference:conf_dates:conf_date:@conf_start
-  Count: 12338178 (14.66%)
-  Types: string (100.00%)
-  Samples:
-    1024 ( < 0.01%): 19880904
-    896 ( < 0.01%): 1987
-    655 ( < 0.01%): 19880710
-    639 ( < 0.01%): 198806
-    602 ( < 0.01%): 198804
+    892 (70.13%): S
+    74 (5.82%): SUPPLEMENT
+    44 (3.46%): 1/2
+    21 (1.65%): S78
+    20 (1.57%): FEB
     ...
-static_data:summary:conferences:conference:conf_dates:conf_date:@conf_end
-  Count: 11624838 (13.81%)
+static_data:summary:names:name:suffix
+  Count: 2588 (0.86%)
   Types: string (100.00%)
   Samples:
-    2127 (0.02%): 19891112
-    1437 (0.01%): 19880930
-    1401 (0.01%): 19880909
-    1068 ( < 0.01%): 19880708
-    1043 ( < 0.01%): 19880715
+    683 (26.39%): V
+    681 (26.31%): Jr.
+    561 (21.68%): I
+    433 (16.73%): JR
+    126 (4.87%): SR
     ...
-static_data:summary:conferences:conference:conf_dates:conf_date:#text
-  Count: 12338178 (14.66%)
+static_data:fullrecord_metadata:addresses:address_name:address_spec:zip:@location
+  Count: 422 (0.14%)
   Types: string (100.00%)
   Samples:
-    856 ( < 0.01%): SEP 04-09, 1988
-    836 ( < 0.01%): 1987
-    637 ( < 0.01%): JUN, 1988
-    602 ( < 0.01%): APR, 1988
-    386 ( < 0.01%): SEP 07-11, 1987
+    323 (76.54%): AC
+    86 (20.38%): AP
+    13 (3.08%): BC
+static_data:fullrecord_metadata:addresses:address_name:address_spec:zip:#text
+  Count: 422 (0.14%)
+  Types: string (100.00%)
+  Samples:
+    83 (19.67%): SW7
+    20 (4.74%): SW11
+    17 (4.03%): WC1
+    13 (3.08%): NW3
+    11 (2.61%): EC3
     ...
-static_data:summary:conferences:conference:conf_locations:@count
-  Count: 12338179 (14.66%)
+static_data:item:keywords_plus:@count
+  Count: 245 (0.08%)
   Types: string (100.00%)
   Samples:
-    12338179 (100.00%): 1
-static_data:summary:conferences:conference:conf_locations:conf_location:conf_city
-  Count: 11993427 (14.25%)
-  Types: string (100.00%)
-  Samples:
-    61550 (0.51%): WASHINGTON
-    58709 (0.49%): SAN FRANCISCO
-    48667 (0.41%): PARIS
-    46247 (0.39%): NEW ORLEANS
-    40143 (0.33%): LONDON
+    69 (28.16%): 1
+    49 (20.00%): 2
+    33 (13.47%): 3
+    32 (13.06%): 10
+    19 (7.76%): 5
     ...
-static_data:summary:conferences:conference:conf_locations:conf_location:conf_state
-  Count: 12338178 (14.66%)
-  Types: string (100.00%)
+static_data:item:keywords_plus:keyword
+  Count: 245 (0.08%)
+  Types: list (71.84%), string (28.16%)
   Samples:
-    1168626 (9.47%): PEOPLES R CHINA
-    1071333 (8.68%): CA
-    461745 (3.74%): ITALY
-    449410 (3.64%): FRANCE
-    430962 (3.49%): JAPAN
-    ...
-static_data:summary:conferences:conference:sponsors:@count
-  Count: 9697740 (11.52%)
-  Types: string (100.00%)
-  Samples:
-    4680697 (48.27%): 1
-    1344887 (13.87%): 2
-    766603 (7.90%): 3
-    535518 (5.52%): 4
-    437023 (4.51%): 5
-    ...
-static_data:summary:conferences:conference:sponsors:sponsor
-  Count: 9697740 (11.52%)
-  Types: list (51.73%), string (48.27%)
-  Samples:
-    5349 (0.06%): IEEE, ENGN MED & BIOL SOC
-    1854 (0.02%): IEEE, ELECTRON DEVICES SOC
-    1420 (0.01%): COMMISS EUROPEAN COMMUNITIES
-    997 (0.01%): AMER MKT ASSOC
-    564 ( < 0.01%): PACIFIC TELECOMMUN COUNCIL
+    2 (0.82%): CHROMOSOMES
+    1 (0.41%): RATS
+    1 (0.41%): VARIANTS
+    1 (0.41%): SKIN SENSITIVITY
+    1 (0.41%): COLUMBIA VALLEY
     ...
   List Samples:
-    47595 (0.49%): CNRS
-    22441 (0.23%): NATL SCI FDN
-    15855 (0.16%): COMMISS EUROPEAN COMMUNITIES
-    15591 (0.16%): UNESCO
-    14508 (0.15%): US EPA
+    8 (3.27%): BLOOD
+    5 (2.04%): INFECTION
+    4 (1.63%): MECHANISM
+    4 (1.63%): DISPERSION
+    3 (1.22%): SUSCEPTIBILITY
     ...
-static_data:item:book_pages
-  Count: 9112502 (10.83%)
+static_data:fullrecord_metadata:references:reference:citedTitle
+  Count: 2348 (0.78%)
   Types: string (100.00%)
   Samples:
-    18259 (0.20%): 250
-    16791 (0.18%): 288
-    14459 (0.16%): 200
-    14276 (0.16%): 266
-    14121 (0.15%): 440
+    2 (0.09%): A NEUROTIC INVENTORY
+    2 (0.09%): Results with the skin test for susceptibility to scarlet fever - Preventive immunization with scarlet fever toxin
+    2 (0.09%): The structure of potassium-osmiamate
+    1 (0.04%): Epidemic myositis, with neuritis, erythema and meningeal symptoms
+    1 (0.04%): A case of uterus unicornis with rudimentary left uterus and right ectopic pregnancy
     ...
-static_data:item:book_desc:bk_binding
-  Count: 7617563 (9.05%)
+static_data:fullrecord_metadata:reprint_addresses:@count
+  Count: 255 (0.08%)
   Types: string (100.00%)
   Samples:
-    3237852 (42.51%): P
-    2766537 (36.32%): S
-    1613066 (21.18%): H
-    56 ( < 0.01%): X
-    44 ( < 0.01%): U
+    255 (100.00%): 1
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:@addr_no
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    255 (100.00%): 1
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:full_address
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    120 (47.06%): Kaiser Wilhelm Inst Phys Chem & Elektrochem, Berlin, Germany
+    5 (1.96%): Rockefeller Inst Med Res, Dept Anim & Plant Pathol, Princeton, NJ USA
+    5 (1.96%): Washington Univ, St Louis, MO 63130 USA
+    4 (1.57%): Univ N Carolina, Chapel Hill, NC 27515 USA
+    3 (1.18%): Johns Hopkins Univ, Baltimore, MD 21218 USA
     ...
-static_data:item:book_desc:bk_publisher
-  Count: 7617570 (9.05%)
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:@count
+  Count: 255 (0.08%)
   Types: string (100.00%)
   Samples:
-    2132420 (27.99%): IEEE SERVICE CENTER, 445 HOES LANE, PO BOX 1331, PISCATAWAY, NJ 08855-1331 USA
-    42169 (0.55%): KLUWER ACADEMIC PUBL, 101 PHILIP DRIVE, NORWELL, MA 02061
-    37631 (0.49%): PLENUM PRESS DIV PLENUM PUBLISHING CORP, 233 SPRING ST, NEW YORK, NY 10013
-    34874 (0.46%): ELSEVIER SCIENCE PUBL CO INC CUSTOMER RELATIONS DEPT, PO BOX 945, MADISON SQUARE STATION, NEW YORK, NY 10160-0757
-    31256 (0.41%): IEEE COMPUTER SOC PRESS, CUSTOMER SERVICE CENTER, PO BOX 3014, 10662 LOS VAQUEROS CIRCLE, LOS ALAMITOS, CA 90720-1264
-    ...
-static_data:item:book_desc:bk_prepay
-  Count: 7592678 (9.02%)
-  Types: string (100.00%)
+    135 (52.94%): 3
+    85 (33.33%): 2
+    32 (12.55%): 1
+    3 (1.18%): 4
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:organization
+  Count: 255 (0.08%)
+  Types: list (87.45%), string (12.55%)
   Samples:
-    3875674 (51.04%): Y
-    3716948 (48.95%): N
-    56 ( < 0.01%): Q
-static_data:item:book_notes:@count
-  Count: 8756851 (10.40%)
-  Types: string (100.00%)
-  Samples:
-    3751544 (42.84%): 2
-    2956739 (33.76%): 1
-    2042125 (23.32%): 3
-    6443 (0.07%): 4
-static_data:item:book_notes:book_note
-  Count: 8756851 (10.40%)
-  Types: list (66.24%), string (33.76%)
-  Samples:
-    2883825 (32.93%): Figures
-    61370 (0.70%): Plates
-    8091 (0.09%): Color plates
-    2242 (0.03%): Translation
-    780 ( < 0.01%): Bibliography
+    5 (1.96%): Rockefeller Inst Med Res
+    2 (0.78%): Univ Coll
+    2 (0.78%): Univ Berlin
+    1 (0.39%): Univ Upsala
+    1 (0.39%): Tech Hsch
     ...
   List Samples:
-    5791721 (66.14%): Figures
-    4780993 (54.60%): Plates
-    2969716 (33.91%): Color plates
-    87278 (1.00%): Disk
-    19563 (0.22%): Translation
+    120 (47.06%): Kaiser Wilhelm Inst Phys Chem & Elektrochem
+    6 (2.35%): Washington Univ
+    5 (1.96%): Univ Manchester
+    5 (1.96%): Univ N Carolina
+    4 (1.57%): Johns Hopkins Univ
     ...
-static_data:summary:conferences:conference:conf_locations:conf_location:conf_host
-  Count: 1430160 (1.70%)
-  Types: string (100.00%)
-  Samples:
-    2591 (0.18%): STANFORD UNIV
-    2006 (0.14%): UNIV WARWICK
-    1313 (0.09%): UNIV NOTTINGHAM
-    1291 (0.09%): NIH
-    1198 (0.08%): UNIV READING
-    ...
-static_data:summary:conferences:conference:@conf_id
-  Count: 11817385 (14.04%)
-  Types: string (100.00%)
-  Samples:
-    1003 ( < 0.01%): 47361
-    805 ( < 0.01%): 65624
-    767 ( < 0.01%): 57055
-    717 ( < 0.01%): 10483
-    604 ( < 0.01%): 3596
-    ...
-static_data:item:book_desc:bk_price:@volumes
-  Count: 257191 (0.31%)
-  Types: string (100.00%)
-  Samples:
-    91404 (35.54%): 2
-    47476 (18.46%): 3
-    29400 (11.43%): 5
-    26954 (10.48%): 4
-    14557 (5.66%): 6
-    ...
-static_data:item:book_desc:bk_price:@amount
-  Count: 369399 (0.44%)
-  Types: string (100.00%)
-  Samples:
-    6936 (1.88%): 129.00
-    5620 (1.52%): 119.00
-    5560 (1.51%): 150.00
-    5258 (1.42%): 99.00
-    5077 (1.37%): 95.00
-    ...
-static_data:item:book_desc:bk_ordering
-  Count: 1027316 (1.22%)
-  Types: string (100.00%)
-  Samples:
-    367084 (35.73%): US, CANADA & MEXICO ORDER FROM SPRINGER-VERLAG NEW YORK INC., P.O. BOX 2485, SECAUCUS, N.J. 07094. ELSEWHERE ORDER FROM SPRINGER-VERLAG, P.O. BOX 31 13 40, 10643 BERLIN, GERMANY.
-    187306 (18.23%): ORDER FROM ELSEVIER SCIENCE, REGIONAL SALES OFFICE, CUSTOMER SUPPORT DEPARTMENT, P.O.BOX 945, NEW YORK, N.Y. 10159-0945 (US/CANADA) P.O. BOX 211, 1000 AE AMSTERDAM, THE NETHERLANDS (OUTSIDE THE AMERICAS).
-    94193 (9.17%): MAKE CHECK PAYABLE TO CAMBRIDGE UNIVERSITY PRESS, 40 W. 20TH ST., NEW YORK, NY 10011 (N0. AMER. ORDERS) OR CAMBRIDGE UNIVERSITY PRESS, THE EDINBURGH BUILDING, SHAFTESBURY RD., CAMBRIDGE CB2 2RU, ENGLAND (ALL OTHER ORDERS).
-    76955 (7.49%): PREPAYMENT REQUIRED. US, CANADA AND MEXICO ORDER FROM SPRINGER-VERLAG NEW YORK, INC., P.O. BOX 2485, SECAUCUS, N.J. 07094. ELSEWHERE ORDER FROM SPRINGER-VERLAG VIENNA, P.O. BOX 89, A-1201 VIENNA, AUSTRIA
-    26830 (2.61%): MAKE CHECK PAYABLE TO A A BALKEMA INTERNATIONAL PUBLISHERS. ORDER FROM A A BALKEMA PUBLISHERS, 2252 RIDGE RD, BROOKFIELD, VT 05036-9704 USA
-    ...
-static_data:item:book_desc:bk_price:@currency
-  Count: 438990 (0.52%)
-  Types: string (100.00%)
-  Samples:
-    328355 (74.80%): PRICE NOT AVAILABLE
-    62706 (14.28%): EUROPEAN CURRENCY
-    16996 (3.87%): BRITISH POUND
-    11034 (2.51%): EUROPEAN CURRENCY UNIT
-    6844 (1.56%): NETHERLANDS/GUILDER
-    ...
-static_data:summary:names:name:email_addr
-  Count: 3910556 (4.65%)
-  Types: string (100.00%)
-  Samples:
-    23 ( < 0.01%): popa@math.ucla.edu
-    19 ( < 0.01%): olvi@cs.wisc.edu
-    16 ( < 0.01%): igstepanov@yahoo.com
-    14 ( < 0.01%): ecj@cs.gmu.edu
-    14 ( < 0.01%): voloch@math.utexas.edu
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:email_addr
-  Count: 2290498 (2.72%)
-  Types: string (100.00%)
-  Samples:
-    11 ( < 0.01%): jawolf@math.berkeley.edu
-    7 ( < 0.01%): snowden@cardiff.ac.uk
-    3 ( < 0.01%): ineeman@math.ucla.edu
-    3 ( < 0.01%): foley@psych.ucsb.edu
-    3 ( < 0.01%): chtaubes@math.harvard.edu
-    ...
-static_data:item:book_desc
-  Count: 1599796 (1.90%)
-  Types: list (100.00%)
   Schema Entry:
-    3301704 ENTRIES
-    bk_binding
-      Count: 3301704 (100.00%)
+    364 ENTRIES
+    @pref
+      Count: 364 (100.00%)
       Types: string (100.00%)
       Samples:
-        1566461 (47.44%): P
-        1532186 (46.41%): H
-        202917 (6.15%): S
-        88 ( < 0.01%): X
-        52 ( < 0.01%): U
-    bk_publisher
-      Count: 3301704 (100.00%)
+        364 (100.00%): Y
+    #text
+      Count: 364 (100.00%)
       Types: string (100.00%)
       Samples:
-        377116 (11.42%): ROUTLEDGE, 11 NEW FETTER LANE, LONDON EC4P 4EE, ENGLAND
-        190264 (5.76%): IEEE SERVICE CENTER, 445 HOES LANE, PO BOX 1331, PISCATAWAY, NJ 08855-1331 USA
-        67479 (2.04%): CAMBRIDGE UNIV PRESS, THE PITT BUILDING, TRUMPINGTON ST, CAMBRIDGE CB2 1RP, CAMBS, ENGLAND
-        54716 (1.66%): ACADEMIC PRESS LTD, 24-28 OVAL ROAD, LONDON NW1 7DX, ENGLAND
-        52114 (1.58%): ELSEVIER SCIENCE, REG SALES OFF, CUSTOMER SUPPORT DEPT, 655 AVE OF THE AMERICAS, NEW YORK, NY 10010 USA
+        122 (33.52%): Max Planck Society
+        122 (33.52%): Fritz Haber Institute of the Max Planck Society
+        6 (1.65%): Washington University (WUSTL)
+        6 (1.65%): University of Cambridge
+        6 (1.65%): University of Manchester
         ...
-    bk_prepay
-      Count: 3244113 (98.26%)
-      Types: string (100.00%)
-      Samples:
-        1908357 (58.83%): Y
-        1335756 (41.17%): N
-    bk_ordering
-      Count: 747332 (22.63%)
-      Types: string (100.00%)
-      Samples:
-        224063 (29.98%): US, CANADA & MEXICO ORDER FROM SPRINGER-VERLAG NEW YORK INC., P.O. BOX 2485, SECAUCUS, N.J. 07094. ELSEWHERE ORDER FROM SPRINGER-VERLAG, P.O. BOX 31 13 40, 10643 BERLIN, GERMANY.
-        72514 (9.70%): PREPAYMENT REQUIRED. US, CANADA AND MEXICO ORDER FROM SPRINGER-VERLAG NEW YORK, INC., P.O. BOX 2485, SECAUCUS, N.J. 07094. ELSEWHERE ORDER FROM SPRINGER-VERLAG VIENNA, P.O. BOX 89, A-1201 VIENNA, AUSTRIA
-        67479 (9.03%): MAKE CHECK PAYABLE TO CAMBRIDGE UNIVERSITY PRESS, 40 W. 20TH ST., NEW YORK, NY 10011 (N0. AMER. ORDERS) OR CAMBRIDGE UNIVERSITY PRESS, THE EDINBURGH BUILDING, SHAFTESBURY RD., CAMBRIDGE CB2 2RU, ENGLAND (ALL OTHER ORDERS).
-        63674 (8.52%): ORDER FROM HUMANA PRESS, 999 RIVERVIEW DRIVE, SUITE 208, TOTOWA, NJ 07512; OR CALL (973) 256-1699, FAX (973) 256-8341, E-MAIL: HUMANA@HUMANAPR.COM, OR ORDER ON THE WEB: HTTP://HUMANAPRESS.COM
-        54716 (7.32%): MAKE CHECK PAYABLE TO ACADEMIC PRESS INC. ORDER FROM ACADEMIC PRESS ORDER DEPT, 465 S. LINCOLN DR, TROY MO 63379, OR PHONE 800-321-5068. CUSTOMERS IN EUROPE ORDER FROM ACADEMIC PRESS LTD, 24-28 OVAL RD, LONDON NW1 7DX, UK. VISA, AMEX, MASTERCARD, PURCHASE ORDER. NO POSTAGE WHEN PREPAID.
-        ...
-    bk_price:@currency
-      Count: 6674 (0.20%)
-      Types: string (100.00%)
-      Samples:
-        5396 (80.85%): PRICE NOT AVAILABLE
-        442 (6.62%): EUROPEAN CURRENCY
-        362 (5.42%): BRITISH POUND
-        293 (4.39%): EUROPEAN CURRENCY UNIT
-        81 (1.21%): NETHERLANDS/GUILDER
-        ...
-    bk_price:@amount
-      Count: 15481 (0.47%)
-      Types: string (100.00%)
-      Samples:
-        661 (4.27%): 145.00
-        622 (4.02%): 187.00
-        605 (3.91%): 65.00
-        584 (3.77%): 135.00
-        572 (3.69%): 140.00
-        ...
-    bk_price:@desc
-      Count: 8958 (0.27%)
-      Types: string (100.00%)
-      Samples:
-        8794 (98.17%): H MEMBER PRICE
-        87 (0.97%): M SET PRICE
-        56 (0.63%): 0 COMPLIMENTARY
-        12 (0.13%): D PRICE OUTSIDE US
-        7 (0.08%): E PRICE OUTSIDE N AMER
-        ...
-    bk_price:@volumes
-      Count: 5908 (0.18%)
-      Types: string (100.00%)
-      Samples:
-        2082 (35.24%): 4
-        1885 (31.91%): 3
-        936 (15.84%): 2
-        738 (12.49%): 6
-        244 (4.13%): 5
-        ...
-static_data:item:book_desc:bk_price:@desc
-  Count: 90732 (0.11%)
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:suborganizations:@count
+  Count: 69 (0.02%)
   Types: string (100.00%)
   Samples:
-    74707 (82.34%): H MEMBER PRICE
-    12410 (13.68%): M SET PRICE
-    1597 (1.76%): C US PRICE APPROX
-    1461 (1.61%): D PRICE OUTSIDE US
-    346 (0.38%): E PRICE OUTSIDE N AMER
+    62 (89.86%): 1
+    7 (10.14%): 2
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:suborganizations:suborganization
+  Count: 69 (0.02%)
+  Types: string (89.86%), list (10.14%)
+  Samples:
+    7 (10.14%): Dept Chem
+    5 (7.25%): Phys Lab
+    5 (7.25%): Dept Anim & Plant Pathol
+    3 (4.35%): Gates Chem Lab
+    3 (4.35%): Chem Lab
     ...
-static_data:item:book_chapters
-  Count: 122470 (0.15%)
-  Types: string (100.00%)
-  Samples:
-    11070 (9.04%): 8
-    10804 (8.82%): 9
-    9959 (8.13%): 10
-    9908 (8.09%): 7
-    9228 (7.53%): 11
-    ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:organization:@pref
-  Count: 3280 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    3280 (100.00%): Y
-static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:organizations:organization:#text
-  Count: 3280 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    382 (11.65%): University of Toronto
-    190 (5.79%): Baylor College of Medicine
-    175 (5.34%): University of Veterinary Medicine Vienna
-    166 (5.06%): Cleveland Clinic Foundation
-    165 (5.03%): University of Oxford
-    ...
-static_data:summary:conferences:conference
-  Count: 7222 ( < 0.01%)
-  Types: list (100.00%)
-  Schema Entry:
-    14466 ENTRIES
-    @conf_id
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        69 (0.48%): 201976
-        69 (0.48%): 213810
-        63 (0.44%): 229321
-        63 (0.44%): 229375
-        22 (0.15%): 216041
-        ...
-    conf_infos:@count
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        14466 (100.00%): 1
-    conf_infos:conf_info
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        69 (0.48%): 21st International Symposium on Lepton and Photon Interactions at High Energies, AUG 11-16, 2003, Batavia, IL
-        69 (0.48%): IEEE-Computer-Society Annual Symposium on VLSI, MAY 11-12, 2005, Tampa, FL
-        63 (0.44%): ASME International Design Engineering Technical Conference/Computers and Information in Engineering Conference, SEP 24-28, 2005-2006, Long Beach, CA
-        63 (0.44%): 31st Design Automation Conference, SEP 24-28, 2005, Long Beach, CA
-        22 (0.15%): 12th Advanced Laser Technoloies 2004 Conference, SEP 10-15, 2004, Rome, ITALY
-        ...
-    conf_titles:@count
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        14466 (100.00%): 1
-    conf_titles:conf_title
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        69 (0.48%): 21st International Symposium on Lepton and Photon Interactions at High Energies
-        69 (0.48%): IEEE-Computer-Society Annual Symposium on VLSI
-        63 (0.44%): ASME International Design Engineering Technical Conference/Computers and Information in Engineering Conference
-        63 (0.44%): 31st Design Automation Conference
-        44 (0.30%): 12th Advanced Laser Technoloies 2004 Conference
-        ...
-    conf_dates:@count
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        14466 (100.00%): 1
-    conf_dates:conf_date:@conf_start
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        126 (0.87%): 20050924
-        69 (0.48%): 20030811
-        69 (0.48%): 20050511
-        45 (0.31%): 20040910
-        41 (0.28%): 20050602
-        ...
-    conf_dates:conf_date:@conf_end
-      Count: 12930 (89.38%)
-      Types: string (100.00%)
-      Samples:
-        69 (0.53%): 20030816
-        69 (0.53%): 20050512
-        63 (0.49%): 20060928
-        63 (0.49%): 20050928
-        44 (0.34%): 20040915
-        ...
-    conf_dates:conf_date:#text
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        69 (0.48%): AUG 11-16, 2003
-        69 (0.48%): MAY 11-12, 2005
-        63 (0.44%): SEP 24-28, 2005-2006
-        63 (0.44%): SEP 24-28, 2005
-        44 (0.30%): SEP 10-15, 2004
-        ...
-    conf_locations:@count
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        14466 (100.00%): 1
-    conf_locations:conf_location:conf_city
-      Count: 14125 (97.64%)
-      Types: string (100.00%)
-      Samples:
-        266 (1.88%): Seoul
-        236 (1.67%): London
-        191 (1.35%): San Francisco
-        136 (0.96%): Lisbon
-        129 (0.91%): Beijing
-        ...
-    conf_locations:conf_location:conf_state
-      Count: 14466 (100.00%)
-      Types: string (100.00%)
-      Samples:
-        3252 (22.48%): PEOPLES R CHINA
-        2515 (17.39%): SPAIN
-        1587 (10.97%): CA
-        452 (3.12%): TX
-        437 (3.02%): ENGLAND
-        ...
-    sponsors:@count
-      Count: 10061 (69.55%)
-      Types: string (100.00%)
-      Samples:
-        5086 (50.55%): 1
-        2391 (23.77%): 2
-        808 (8.03%): 4
-        706 (7.02%): 3
-        213 (2.12%): 5
-        ...
-    sponsors:sponsor
-      Count: 10061 (69.55%)
-      Types: string (50.55%), list (49.45%)
-      Samples:
-        90 (0.89%): IEEE
-        80 (0.80%): ISAC
-        80 (0.80%): Italian Soc Cytometry GIC
-        69 (0.69%): Fermi Natl Accelerator Lab
-        69 (0.69%): IEEE Comp Soc, TC VLSI
-        ...
-      List Samples:
-        299 (2.97%): IEEE
-        63 (0.63%): ASME, Design Engn Div
-        63 (0.63%): ASME, Comp & Informat Engn Div
-        48 (0.48%): Natl Sci Fdn
-        44 (0.44%): Gen Phys Inst
-        ...
-    conf_locations:conf_location:conf_host
-      Count: 1261 (8.72%)
-      Types: string (100.00%)
-      Samples:
-        159 (12.61%): Kyushu Univ Sch Med
-        71 (5.63%): Natl Taiwan Univ
-        71 (5.63%): Natl Kaohsiung Univ Appl Sci
-        60 (4.76%): Univ Aveiro
-        58 (4.60%): Inst Syst & Technol Informat, Control & Commun
-        ...
-static_data:fullrecord_metadata:references:reference:citedTitle:sup
-  Count: 2 ( < 0.01%)
-  Types: string (50.00%), list (50.00%)
-  Samples:
-    1 (50.00%): 15
   List Samples:
-    2 (100.00%): 2+
-    1 (50.00%): 45
-    1 (50.00%): 3+
-static_data:fullrecord_metadata:references:reference:art_no
-  Count: 159 ( < 0.01%)
+    3 (4.35%): Sch Med
+    2 (2.90%): Dept Pathol
+    1 (1.45%): Dept Pediat
+    1 (1.45%): Coll Phys & Surg
+    1 (1.45%): Dept Biol Chem
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:city
+  Count: 255 (0.08%)
   Types: string (100.00%)
   Samples:
-    2 (1.26%): UNSP 133115
-    2 (1.26%): UNSP 201111
-    2 (1.26%): UNSP 111117
-    2 (1.26%): UNSP 013104
-    1 (0.63%): ARTN 2
+    124 (48.63%): Berlin
+    10 (3.92%): Cambridge
+    9 (3.53%): Princeton
+    8 (3.14%): New York
+    6 (2.35%): St Louis
     ...
-static_data:fullrecord_metadata:reprint_addresses:address_name:names:name
-  Count: 466045 (0.55%)
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:state
+  Count: 107 (0.04%)
+  Types: string (100.00%)
+  Samples:
+    11 (10.28%): CA
+    10 (9.35%): NY
+    9 (8.41%): NJ
+    7 (6.54%): PA
+    6 (5.61%): MO
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:country
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    125 (49.02%): Germany
+    78 (30.59%): USA
+    32 (12.55%): England
+    6 (2.35%): Canada
+    3 (1.18%): Scotland
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:zip:@location
+  Count: 79 (0.03%)
+  Types: string (100.00%)
+  Samples:
+    59 (74.68%): AP
+    19 (24.05%): AC
+    1 (1.27%): BC
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:zip:#text
+  Count: 79 (0.03%)
+  Types: string (100.00%)
+  Samples:
+    5 (6.33%): M13 9PL
+    5 (6.33%): 27515
+    5 (6.33%): 63130
+    4 (5.06%): 21218
+    4 (5.06%): 08544
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:@count
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    255 (100.00%): 1
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@seq_no
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    255 (100.00%): 1
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@role
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    255 (100.00%): author
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@reprint
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    255 (100.00%): Y
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:@addr_no
+  Count: 138 (0.05%)
+  Types: string (100.00%)
+  Samples:
+    138 (100.00%): 1
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:display_name
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    17 (6.67%): Freundlich, H
+    7 (2.75%): Ettisch, G
+    5 (1.96%): Farkas, L
+    4 (1.57%): Haber, F
+    3 (1.18%): Wood, R. W.
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:full_name
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    17 (6.67%): Freundlich, H
+    7 (2.75%): Ettisch, G
+    5 (1.96%): Farkas, L
+    4 (1.57%): Haber, F
+    3 (1.18%): Wood, R. W.
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:wos_standard
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    17 (6.67%): Freundlich, H
+    7 (2.75%): Ettisch, G
+    5 (1.96%): Ladenburg, R
+    5 (1.96%): Farkas, L
+    4 (1.57%): Kallmann, H
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:first_name
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    29 (11.37%): H
+    10 (3.92%): G
+    9 (3.53%): L
+    6 (2.35%): W
+    5 (1.96%): A
+    ...
+static_data:fullrecord_metadata:reprint_addresses:address_name:names:name:last_name
+  Count: 255 (0.08%)
+  Types: string (100.00%)
+  Samples:
+    17 (6.67%): Freundlich
+    7 (2.75%): Ettisch
+    5 (1.96%): Ladenburg
+    5 (1.96%): Farkas
+    4 (1.57%): Wood
+    ...
+static_data:contributors:@count
+  Count: 536 (0.18%)
+  Types: string (100.00%)
+  Samples:
+    521 (97.20%): 1
+    15 (2.80%): 2
+static_data:contributors:contributor:name:@seq_no
+  Count: 521 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    521 (100.00%): 1
+static_data:contributors:contributor:name:@role
+  Count: 521 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    521 (100.00%): researcher_id
+static_data:contributors:contributor:name:@orcid_id
+  Count: 204 (0.07%)
+  Types: string (100.00%)
+  Samples:
+    10 (4.90%): 0000-0002-5366-472X
+    8 (3.92%): 0000-0003-4506-7260
+    8 (3.92%): 0000-0003-2967-866X
+    8 (3.92%): 0000-0003-2493-656X
+    6 (2.94%): 0000-0001-7601-7464
+    ...
+static_data:contributors:contributor:name:display_name
+  Count: 521 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    14 (2.69%): Holmes, Edward
+    14 (2.69%): Bennett, George
+    13 (2.50%): Dawson, John
+    12 (2.30%): SAHA, MEGHNAD
+    12 (2.30%): Hart, James
+    ...
+static_data:contributors:contributor:name:full_name
+  Count: 521 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    14 (2.69%): Holmes, Edward
+    14 (2.69%): Bennett, George
+    13 (2.50%): Dawson, John
+    12 (2.30%): SAHA, MEGHNAD
+    12 (2.30%): Hart, James
+    ...
+static_data:contributors:contributor:name:first_name
+  Count: 513 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    18 (3.51%): John
+    17 (3.31%): George
+    15 (2.92%): Edward
+    13 (2.53%): David
+    13 (2.53%): James
+    ...
+static_data:contributors:contributor:name:last_name
+  Count: 512 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    14 (2.73%): Holmes
+    14 (2.73%): Bennett
+    13 (2.54%): Dawson
+    12 (2.34%): SAHA
+    12 (2.34%): Hart
+    ...
+static_data:contributors:contributor:name:@r_id
+  Count: 500 (0.17%)
+  Types: string (100.00%)
+  Samples:
+    14 (2.80%): GVR-9499-2022
+    14 (2.80%): GXW-2488-2022
+    13 (2.60%): HDM-6702-2022
+    12 (2.40%): C-8072-2009
+    12 (2.40%): HCG-9334-2022
+    ...
+static_data:summary:names:name:@reprint
+  Count: 127 (0.04%)
+  Types: string (100.00%)
+  Samples:
+    127 (100.00%): Y
+static_data:fullrecord_metadata:addresses:address_name:names:@count
+  Count: 47 (0.02%)
+  Types: string (100.00%)
+  Samples:
+    28 (59.57%): 2
+    10 (21.28%): 1
+    9 (19.15%): 3
+static_data:fullrecord_metadata:addresses:address_name:names:name
+  Count: 37 (0.01%)
   Types: list (100.00%)
   Schema Entry:
-    962231 ENTRIES
+    83 ENTRIES
     @seq_no
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        466045 (48.43%): 1
-        466045 (48.43%): 2
-        25537 (2.65%): 3
-        3045 (0.32%): 4
-        940 (0.10%): 5
-        ...
+        37 (44.58%): 1
+        37 (44.58%): 2
+        9 (10.84%): 3
     @role
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        962231 (100.00%): author
+        83 (100.00%): author
     @reprint
-      Count: 962231 (100.00%)
+      Count: 37 (44.58%)
       Types: string (100.00%)
       Samples:
-        962231 (100.00%): Y
+        37 (100.00%): Y
     @addr_no
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        962231 (100.00%): 1
+        83 (100.00%): 1
+    @r_id
+      Count: 83 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        2 (2.41%): CIN-0415-2022
+        2 (2.41%): GND-3355-2022
+        1 (1.20%): ETS-2602-2022
+        1 (1.20%): DTE-6327-2022
+        1 (1.20%): CDM-5918-2022
+        ...
     display_name
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        398 (0.04%): Zhang, Jian
-        72 ( < 0.01%): Chen, Qi
-        13 ( < 0.01%): Tang, Jianjun
-        11 ( < 0.01%): Ma, Qi
-        10 ( < 0.01%): Li, Ge
+        2 (2.41%): Yost, Don M.
+        2 (2.41%): Miller, Gail Lorenz
+        1 (1.20%): Ellis, Joseph W.
+        1 (1.20%): Sorge, Barthold W.
+        1 (1.20%): Sumner, James B.
         ...
     full_name
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        398 (0.04%): Zhang, Jian
-        72 ( < 0.01%): Chen, Qi
-        13 ( < 0.01%): Tang, Jianjun
-        11 ( < 0.01%): Ma, Qi
-        10 ( < 0.01%): Li, Ge
+        2 (2.41%): Yost, Don M.
+        2 (2.41%): Miller, Gail Lorenz
+        1 (1.20%): Ellis, Joseph W.
+        1 (1.20%): Sorge, Barthold W.
+        1 (1.20%): Sumner, James B.
         ...
     wos_standard
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        1589 (0.17%): Zhang, J
-        357 (0.04%): Chen, Q
-        342 (0.04%): Wang, YJ
-        287 (0.03%): Li, G
-        99 (0.01%): Ma, ZY
+        2 (2.41%): Yost, DM
+        2 (2.41%): Miller, GL
+        1 (1.20%): Ellis, JW
+        1 (1.20%): Sorge, BW
+        1 (1.20%): Sumner, JB
         ...
     first_name
-      Count: 951258 (98.86%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        3532 (0.37%): Jian
-        2885 (0.30%): Tao
-        2454 (0.26%): M.
-        1503 (0.16%): Qi
-        1079 (0.11%): R.
+        2 (2.41%): T.
+        2 (2.41%): P.
+        2 (2.41%): Don M.
+        2 (2.41%): K.
+        2 (2.41%): M.
         ...
     last_name
-      Count: 962231 (100.00%)
+      Count: 83 (100.00%)
       Types: string (100.00%)
       Samples:
-        40425 (4.20%): Zhang
-        39739 (4.13%): Li
-        24696 (2.57%): Chen
-        10865 (1.13%): Huang
-        10338 (1.07%): Sun
-        ...
-    email_addr
-      Count: 485452 (50.45%)
-      Types: string (100.00%)
-      Samples:
-        8 ( < 0.01%): maria.gonzalez@uv.es
-        7 ( < 0.01%): leiby@szu.edu.cn
-        6 ( < 0.01%): lijing1984@scu.edu.cn
-        4 ( < 0.01%): ymzhao@cumt.edu.cn
-        4 ( < 0.01%): okumura.fumihiko@a.mbox.nagoya-u.ac.jp
+        3 (3.61%): Miller
+        2 (2.41%): Yost
+        2 (2.41%): Wilson
+        1 (1.20%): Ellis
+        1 (1.20%): Sorge
         ...
     suffix
-      Count: 1922 (0.20%)
+      Count: 2 (2.41%)
       Types: string (100.00%)
       Samples:
-        926 (48.18%): V
-        587 (30.54%): I
-        301 (15.66%): Jr.
-        86 (4.47%): III
-        20 (1.04%): II
-        ...
-static_data:summary:names:name:@orcid_id_tr
-  Count: 196738 (0.23%)
+        2 (100.00%): Jr.
+static_data:fullrecord_metadata:abstracts:@count
+  Count: 22 ( < 0.01%)
   Types: string (100.00%)
   Samples:
-    10 ( < 0.01%): 0000-0002-5528-4704
-    10 ( < 0.01%): 0000-0001-5800-1434
-    8 ( < 0.01%): 0000-0001-5040-9080
-    7 ( < 0.01%): 0000-0001-7275-9217
-    5 ( < 0.01%): 0000-0001-6823-3933
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:@orcid_id_tr
-  Count: 170895 (0.20%)
+    22 (100.00%): 1
+static_data:fullrecord_metadata:abstracts:abstract:abstract_text
+  Count: 22 ( < 0.01%)
   Types: string (100.00%)
   Samples:
-    17 ( < 0.01%): 0000-0001-9965-3535
-    10 ( < 0.01%): 0000-0001-5800-1434
-    6 ( < 0.01%): 0000-0001-7275-9217
-    5 ( < 0.01%): 0000-0001-6823-3933
-    5 ( < 0.01%): 0000-0001-5040-9080
-    ...
-static_data:summary:names:name:@r_id_tr
-  Count: 504 ( < 0.01%)
+    22 (100.00%): <ABSTRACT>
+static_data:summary:names:name:@addr_no
+  Count: 14 ( < 0.01%)
   Types: string (100.00%)
   Samples:
-    8 (1.59%): N-7562-2016
-    6 (1.19%): D-6981-2014
-    3 (0.60%): A-5985-2013
-    3 (0.60%): H-3447-2016
-    3 (0.60%): H-5062-2016
-    ...
-static_data:fullrecord_metadata:addresses:address_name:names:name:@r_id_tr
-  Count: 462 ( < 0.01%)
+    9 (64.29%): 1
+    4 (28.57%): 1 2
+    1 (7.14%): 2
+static_data:fullrecord_metadata:fund_ack:fund_text:p
+  Count: 8 ( < 0.01%)
   Types: string (100.00%)
   Samples:
-    9 (1.95%): N-7562-2016
-    4 (0.87%): H-4690-2015
-    4 (0.87%): H-5062-2016
-    4 (0.87%): H-3447-2016
-    3 (0.65%): D-6981-2014
+    2 (25.00%): The work described in this paper was done under a contract, recommended by the Committee on Medical Research, between the Office of Scientific Research and Development and The Rockefeller Institute for Medical Research.
+    1 (12.50%): Aided by grants from the Nobel, the Rockefeller, and the Wallenberg Foundations.
+    1 (12.50%): Communicated by the Authors. The expenses of this research have been partially covered by a Government Grant through the Royal Society. A preliminary announcement of the results of this investigation was made at the Congress of Radiology held in Brussels last year, bat a report has not yet been published.
+    1 (12.50%): Aided by a grant from The John and Mary R. Markle Foundation, The Ophthalmological Foundation, Inc., and the Dazian Foundation for Medical Research.
+    1 (12.50%): Aided by a grant from the Christine Breon Fund of the University of California Medical School, San Francisco.
     ...
-static_data:summary:pub_info:@early_access_date
-  Count: 1496269 (1.78%)
+static_data:fullrecord_metadata:fund_ack:grants:@count
+  Count: 8 ( < 0.01%)
   Types: string (100.00%)
   Samples:
-    69296 (4.63%): MAR 2021
-    67384 (4.50%): JUL 2021
-    66832 (4.47%): JUN 2021
-    65756 (4.39%): JAN 2021
-    65428 (4.37%): MAY 2021
-    ...
-static_data:summary:pub_info:@early_access_month
-  Count: 1496269 (1.78%)
-  Types: string (100.00%)
-  Samples:
-    148819 (9.95%): 07
-    145951 (9.75%): 11
-    143023 (9.56%): 10
-    140978 (9.42%): 08
-    134736 (9.00%): 09
-    ...
-static_data:summary:pub_info:@early_access_year
-  Count: 1496269 (1.78%)
-  Types: string (100.00%)
-  Samples:
-    720280 (48.14%): 2021
-    571647 (38.20%): 2020
-    199144 (13.31%): 2019
-    4190 (0.28%): 2018
-    918 (0.06%): 2017
-    ...
-static_data:fullrecord_metadata:references:reference:physicalSection:@physicalLocation
-  Count: 163 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    1 (0.61%): 0.248221803
-    1 (0.61%): 0.010165184
-    1 (0.61%): 0.827941866
-    1 (0.61%): 0.105812221
-    1 (0.61%): 0.559946417
-    ...
-static_data:fullrecord_metadata:references:reference:physicalSection:#text
-  Count: 67 ( < 0.01%)
-  Types: string (100.00%)
-  Samples:
-    8 (11.94%): FIGURE
-    6 (8.96%): Introduction
-    3 (4.48%): INTRODUCTION
-    2 (2.99%): DISCUSSION
-    2 (2.99%): Figure
-    ...
-static_data:fullrecord_metadata:references:reference:physicalSection
-  Count: 34 ( < 0.01%)
+    4 (50.00%): 3
+    4 (50.00%): 1
+static_data:fullrecord_metadata:fund_ack:grants:grant
+  Count: 4 ( < 0.01%)
   Types: list (100.00%)
   Schema Entry:
-    116 ENTRIES
-    @physicalLocation
-      Count: 116 (100.00%)
+    12 ENTRIES
+    grant_agency
+      Count: 12 (100.00%)
+      Types: string (91.67%), list (8.33%)
+      Samples:
+        2 (16.67%): Committee on Medical Research
+        2 (16.67%): Office of Scientific Research and Development
+        2 (16.67%): Rockefeller Institute for Medical Research
+        1 (8.33%): Nobel Foundation
+        1 (8.33%): Rockefeller Foundation
+        ...
+      List Samples:
+        1 (8.33%): Wallenberg Foundation
+      Schema Entry:
+        1 ENTRIES
+        @pref
+          Count: 1 (100.00%)
+          Types: string (100.00%)
+          Samples:
+            1 (100.00%): Y
+        #text
+          Count: 1 (100.00%)
+          Types: string (100.00%)
+          Samples:
+            1 (100.00%): European Commission
+static_data:fullrecord_metadata:normalized_languages:language:@status
+  Count: 11 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    11 (100.00%): U
+static_data:fullrecord_metadata:languages:language
+  Count: 19 ( < 0.01%)
+  Types: list (100.00%)
+  Schema Entry:
+    38 ENTRIES
+    @type
+      Count: 38 (100.00%)
       Types: string (100.00%)
       Samples:
-        1 (0.86%): 0.037410271
-        1 (0.86%): 0.1710381
-        1 (0.86%): 0.308945334
-        1 (0.86%): 0.433186085
-        1 (0.86%): 0.568194368
-        ...
+        19 (50.00%): primary
+        19 (50.00%): alt
     #text
-      Count: 71 (61.21%)
+      Count: 38 (100.00%)
       Types: string (100.00%)
       Samples:
-        8 (11.27%): Introduction
-        4 (5.63%): DISCUSSION
-        4 (5.63%): Discussion
-        3 (4.23%): On the result in [1]
-        3 (4.23%): Conclusion
+        18 (47.37%): English
+        16 (42.11%): Estonian
+        3 (7.89%): French
+        1 (2.63%): Serbian
+static_data:fullrecord_metadata:normalized_languages:language
+  Count: 19 ( < 0.01%)
+  Types: list (100.00%)
+  Schema Entry:
+    38 ENTRIES
+    @type
+      Count: 38 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        19 (50.00%): primary
+        19 (50.00%): alt
+    #text
+      Count: 38 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        18 (47.37%): English
+        16 (42.11%): Estonian
+        3 (7.89%): French
+        1 (2.63%): Serbian
+static_data:fullrecord_metadata:references:reference:patent_no
+  Count: 59 (0.02%)
+  Types: string (100.00%)
+  Samples:
+    1 (1.69%): DE 170111
+    1 (1.69%): DE 59121
+    1 (1.69%): US 1352322
+    1 (1.69%): DE 313200
+    1 (1.69%): JA 72552
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:@seq_no
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    10 (100.00%): 1
+static_data:fullrecord_metadata:addresses:address_name:names:name:@role
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    10 (100.00%): author
+static_data:fullrecord_metadata:addresses:address_name:names:name:@reprint
+  Count: 5 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    5 (100.00%): Y
+static_data:fullrecord_metadata:addresses:address_name:names:name:@addr_no
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    10 (100.00%): 1
+static_data:fullrecord_metadata:addresses:address_name:names:name:@r_id
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): ECM-7729-2022
+    1 (10.00%): EGI-3705-2022
+    1 (10.00%): CPM-5501-2022
+    1 (10.00%): CKB-0682-2022
+    1 (10.00%): EVB-3305-2022
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:display_name
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): Tauber, Henry
+    1 (10.00%): Walmsley, H. P.
+    1 (10.00%): Fenton, Norman
+    1 (10.00%): Casparis, Horton
+    1 (10.00%): Fleck, Alexander
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:full_name
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): Tauber, Henry
+    1 (10.00%): Walmsley, H. P.
+    1 (10.00%): Fenton, Norman
+    1 (10.00%): Casparis, Horton
+    1 (10.00%): Fleck, Alexander
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:wos_standard
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): Tauber, H
+    1 (10.00%): Walmsley, HP
+    1 (10.00%): Fenton, N
+    1 (10.00%): Casparis, H
+    1 (10.00%): Fleck, A
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:first_name
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): Henry
+    1 (10.00%): H. P.
+    1 (10.00%): Norman
+    1 (10.00%): Horton
+    1 (10.00%): Alexander
+    ...
+static_data:fullrecord_metadata:addresses:address_name:names:name:last_name
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): Tauber
+    1 (10.00%): Walmsley
+    1 (10.00%): Fenton
+    1 (10.00%): Casparis
+    1 (10.00%): Fleck
+    ...
+static_data:fullrecord_metadata:references:reference:doi
+  Count: 10 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (10.00%): 10.7326/0003-4819-13-1-161
+    1 (10.00%): 10.1063/1.1749478
+    1 (10.00%): 10.7326/0003-4819-12-5-699
+    1 (10.00%): 10.7326/0003-4819-13-11-2038
+    1 (10.00%): 10.1063/1.1749422
+    ...
+static_data:fullrecord_metadata:references:reference:assignee
+  Count: 13 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (7.69%): MAJERT
+    1 (7.69%): CHEM FABR GRIESHEIM
+    1 (7.69%): HOWARD H
+    1 (7.69%): LEFOREST
+    1 (7.69%): LAUTENSCHLAGER M
+    ...
+static_data:fullrecord_metadata:references:reference:citedTitle:i
+  Count: 3 ( < 0.01%)
+  Types: string (66.67%), list (33.33%)
+  Samples:
+    1 (33.33%): Macrocentrus ancylivorus
+    1 (33.33%): Bact. alkalescens
+  List Samples:
+    1 (33.33%): Ornithodoros turicata
+    1 (33.33%): Spirochaeta recurrentis
+static_data:fullrecord_metadata:references:reference:citedTitle:#text
+  Count: 3 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (33.33%): Longevity of the Tick 
+ and of 
+ within this Tick.
+    1 (33.33%): The Mass Production of 
+, a Parasite of the Oriental Fruit Moth, and its Distribution from southern New Jersey.
+    1 (33.33%): Factor Inhibiting the Agglutination of 
+ by Homologous Serum.
+static_data:contributors:contributor
+  Count: 15 ( < 0.01%)
+  Types: list (100.00%)
+  Schema Entry:
+    30 ENTRIES
+    name:@seq_no
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        15 (50.00%): 1
+        15 (50.00%): 2
+    name:@role
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        30 (100.00%): researcher_id
+    name:@r_id
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        3 (10.00%): HJB-2300-2022
+        3 (10.00%): GYJ-1302-2022
+        3 (10.00%): D-6234-2012
+        3 (10.00%): P-1623-2019
+        2 (6.67%): L-8102-2013
         ...
+    name:display_name
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        6 (20.00%): Smith, John
+        4 (13.33%): O'Brien, Terence
+        3 (10.00%): Job, Aldo
+        3 (10.00%): Job, Aldo Eloizo
+        2 (6.67%): Petersen, Claudia
+        ...
+    name:full_name
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        6 (20.00%): Smith, John
+        4 (13.33%): O'Brien, Terence
+        3 (10.00%): Job, Aldo
+        3 (10.00%): Job, Aldo Eloizo
+        2 (6.67%): Petersen, Claudia
+        ...
+    name:first_name
+      Count: 30 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        6 (20.00%): John
+        4 (13.33%): Terence
+        3 (10.00%): Aldo
+        3 (10.00%): Aldo Eloizo
+        2 (6.67%): Claudia
+        ...
+    name:last_name
+      Count: 29 (96.67%)
+      Types: string (100.00%)
+      Samples:
+        6 (20.69%): Smith
+        6 (20.69%): Job
+        4 (13.79%): O'Brien
+        2 (6.90%): Petersen
+        2 (6.90%): Ducreux
+        ...
+    name:@orcid_id
+      Count: 6 (20.00%)
+      Types: string (100.00%)
+      Samples:
+        2 (33.33%): 0000-0002-7198-8621
+        2 (33.33%): 0000-0002-2890-5384
+        1 (16.67%): 0000-0001-8649-7449
+        1 (16.67%): 0000-0003-2187-2708
+static_data:fullrecord_metadata:reprint_addresses:address_name:address_spec:street
+  Count: 2 ( < 0.01%)
+  Types: string (100.00%)
+  Samples:
+    1 (50.00%): 80 St George St
+    1 (50.00%): 5841 S Maryland Ave
+static_data:fullrecord_metadata:fund_ack:grants:grant:grant_agency
+  Count: 4 ( < 0.01%)
+  Types: string (75.00%), list (25.00%)
+  Samples:
+    1 (25.00%): Government Grant through the Royal Society
+    1 (25.00%): University of California Medical School, San Francisco
+    1 (25.00%): Commonwealth Fund
+  List Samples:
+    1 (25.00%): University of Chicago
+  Schema Entry:
+    1 ENTRIES
+    @pref
+      Count: 1 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        1 (100.00%): Y
+    #text
+      Count: 1 (100.00%)
+      Types: string (100.00%)
+      Samples:
+        1 (100.00%): University of Chicago

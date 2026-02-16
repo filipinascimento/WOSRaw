@@ -4,14 +4,14 @@ from tqdm.auto import tqdm
 import WOSRaw as wos
 import ujson
 
-WOSArchivePath = Path("//home/filsilva/WOS/WoS_2022_All.dbgz")
+WOSArchivePath = Path("/mnt/sciencegenome/WOS_DBGZ/WoS_2023_All.dbgz")
 
 
 
-WOSTSVPath = Path("/gpfs/sciencegenome/WOS/WoS_2022.tsv")
-WOSTSVExtraDataPath = Path("/gpfs/sciencegenome/WOS/WoS_2022_extra.tsv")
-WOSTSVAbstractPath = Path("/gpfs/sciencegenome/WOS/WoS_2022_abstract.tsv")
-WOSTSVReferencesPath = Path("/gpfs/sciencegenome/WOS/WoS_2022_references.tsv")
+WOSTSVPath = Path("/mnt/sciencegenome/WOS_TSV_2023/WoS_2023.tsv")
+WOSTSVExtraDataPath = Path("/mnt/sciencegenome/WOS_TSV_2023/WoS_2023_extra.tsv")
+WOSTSVAbstractPath = Path("/mnt/sciencegenome/WOS_TSV_2023/WoS_2023_abstract.tsv")
+WOSTSVReferencesPath = Path("/mnt/sciencegenome/WOS_TSV_2023/WoS_2023_references.tsv")
 
 errorFilePath = Path("errors.log")
 
@@ -62,8 +62,6 @@ with dbgz.DBGZReader(WOSArchivePath) as fd:
         except Exception as e:
             print(str(e))
             errorFile.write(str(wosEntry["UID"])+"\t"+str(e).replace("\n","  ")+"\n")
-        
-            
 
 
 

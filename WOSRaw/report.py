@@ -8,7 +8,12 @@ import ujson
 
 from collections import OrderedDict
 from collections import Counter
-import collections
+import collections 
+if sys.version_info.major == 3 and sys.version_info.minor >= 10:
+
+    from collections.abc import MutableMapping
+else:
+    from collections import MutableMapping
 
 
 # WOSArchivePath = Path("//home/filsilva/WOS/WoS_2022_All.dbgz")
@@ -98,7 +103,7 @@ def createSchemaAndReportFile(WOSArchivePath, schemaPath=Path("Schema"), reports
                 v = "<ABSTRACT>"  # avoid large abstracts in the schema when not null
             k = k.replace(":", "_")  # no ":" allowed in keys
             new_key = parent_key+":"+str(k) if parent_key else str(k)
-            if isinstance(v, collections.MutableMapping):
+            if isinstance(v, MutableMapping):
                 items.extend(_flatten(v, new_key).items())
             else:
                 items.append((new_key, v))

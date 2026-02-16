@@ -14,8 +14,6 @@ WOSIndexPath = Path("/mnt/sciencegenome/WOS_DBGZ/WoS_2023_All_byUID.idbgz")
 
 if __name__ == "__main__":
     wos.archive.create(WOSPath, WOSArchivePath)
-
-
     # This may take several hours to complete
     wos.archive.createIndexByUID(WOSArchivePath, WOSIndexPath)
 
