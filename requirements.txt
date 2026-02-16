@@ -2,3 +2,5 @@ tqdm
 ujson
 dbgz
 xmltodict
+pandas
+parcake

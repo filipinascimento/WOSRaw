@@ -33,6 +33,20 @@ WOSArchivePath = Path("/gpfs/sciencegenome/WOS/WoS_2022_All.dbgz")
 wos.archive.create(WOSPath, WOSArchivePath)
 ```
 
+You can now also save parquet files (via `parcake`) and choose output mode:
+
+```python
+result = wos.archive.create(
+    WOSPath,
+    WOSArchivePath,
+    outputFormat="both",  # "dbgz" | "parquet" | "both"
+    parquetPath=Path("/gpfs/sciencegenome/WOS/WoS_2022_All.parquet"),
+    ncpu=8,
+    maxPieceSize=100_000,
+)
+print(result)
+```
+
 # Usage
 The utilities functions in `WOSRaw.utilities` can be used to get certain properties from the entries in the dbgz files. For instance:
 
@@ -59,6 +73,14 @@ with dbgz.DBGZReader(WOSArchivePath) as fd:
         entryData = wosEntry["data"] # XML records data
         wos.utilities.getTitle(wosEntry) # Extracting the title
         ... # do something with the data
+```
+
+For chunked reading with list/dict/dataframe output modes:
+
+```python
+reader = wos.archive.readDBGZ(WOSArchivePath, chunksize=5000, output="dataframe")
+for chunk in reader.chunks:
+    ...
 ```
 
 
