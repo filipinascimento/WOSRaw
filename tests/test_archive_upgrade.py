@@ -84,3 +84,40 @@ def test_wos_create_both_dbgz_and_parquet(tmp_path: Path):
     frame = pd.read_parquet(out_parquet)
     assert frame.shape[0] == 2
     assert set(frame.columns) == {"UID", "data"}
+
+
+def test_wos_create_uses_parallel_iterator_when_ncpu_gt_one(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    raw_dir = tmp_path / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    _create_wos_zip(raw_dir / "WoS_sample_parallel.zip")
+
+    out_dbgz = tmp_path / "wos_parallel.dbgz"
+    branch_calls = {"parallel": 0, "stream": 0}
+
+    def fake_iter_wos_entries(*args, **kwargs):
+        branch_calls["parallel"] += 1
+        yield {"UID": "WOS:parallel-1", "title": "Parallel Paper", "origin": "WoS_sample_parallel"}
+
+    def fail_stream(*args, **kwargs):
+        branch_calls["stream"] += 1
+        raise AssertionError("streaming path should not be used when ncpu > 1")
+
+    monkeypatch.setattr(wos.archive, "_iter_wos_entries", fake_iter_wos_entries)
+    monkeypatch.setattr(wos.archive, "_streamWOSXMLRecords", fail_stream)
+
+    result = wos.archive.create(
+        raw_dir,
+        out_dbgz,
+        outputFormat="dbgz",
+        ncpu=2,
+        showProgressbar=False,
+        maxPieceSize=2,
+    )
+
+    assert result["dbgz"] is not None
+    assert branch_calls == {"parallel": 1, "stream": 0}
+
+    with dbgz.DBGZReader(str(out_dbgz)) as reader:
+        entries = list(reader.entries)
+    assert len(entries) == 1
+    assert entries[0]["UID"] == "WOS:parallel-1"

@@ -7,7 +7,6 @@ import time
 import os
 import traceback
 from datetime import datetime
-import warnings
 
 import dbgz
 import xmltodict
@@ -322,8 +321,10 @@ def create(WOSPath,
 
     Notes
     -----
-    This function uses multiprocessing to speed up the process. Thus,
-    it is critical to include the check for main in the code:
+    When ``ncpu`` is greater than 1 the function uses multiprocessing for XML
+    parsing. For ``ncpu`` equal to 1 it falls back to in-process streaming to
+    reduce peak memory. In multiprocessing mode, it is critical to include the
+    check for main in the code:
 
     if __name__ == "__main__":
         WOSRaw.create(WOSPath, WOSArchivePath)
@@ -374,48 +375,57 @@ def create(WOSPath,
                 max_piece_size=maxPieceSize,
             )
 
-        if ncpu not in (None, 0, 1):
-            warnings.warn(
-                "create() now enforces streaming XML parsing in-process to avoid memory spikes; "
-                "ncpu is ignored in this mode.",
-                RuntimeWarning,
-            )
-
         WOSPath = Path(WOSPath)
-        WOSZipPaths = sorted(list(WOSPath.glob("*.zip")))
+        if ncpu not in (None, 0, 1):
+            entryIterator = _iter_wos_entries(
+                WOSPath,
+                ncpu=ncpu,
+                showProgressbar=showProgressbar,
+                xmlTimeoutSeconds=xmlTimeoutSeconds,
+                heartbeatSeconds=heartbeatSeconds,
+                workerLogDir=workerLogDir,
+            )
+            for entry in entryIterator:
+                uid = entry.get("UID", "")
+                if dbgzSaver is not None:
+                    dbgzSaver.add(UID=uid, data=entry)
+                if parquetSaver is not None:
+                    parquetSaver.add(UID=uid, data=ujson.dumps(entry))
+        else:
+            WOSZipPaths = sorted(list(WOSPath.glob("*.zip")))
 
-        zipIterator = WOSZipPaths
-        if showProgressbar:
-            zipIterator = tqdm(zipIterator, desc="Zip files")
-
-        for WOSZipPath in zipIterator:
-            baseName = WOSZipPath.stem
-            with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
-                xmlFiles = [
-                    filename
-                    for filename in zipfd.namelist()
-                    if filename.endswith(".xml.gz")
-                ]
-
-            xmlIterator = xmlFiles
+            zipIterator = WOSZipPaths
             if showProgressbar:
-                xmlIterator = tqdm(xmlFiles, desc="Parsing %s" % baseName, leave=False)
+                zipIterator = tqdm(zipIterator, desc="Zip files")
 
-            for xmlFileName in xmlIterator:
+            for WOSZipPath in zipIterator:
+                baseName = WOSZipPath.stem
+                with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
+                    xmlFiles = [
+                        filename
+                        for filename in zipfd.namelist()
+                        if filename.endswith(".xml.gz")
+                    ]
 
-                def onRecord(entry):
-                    uid = entry.get("UID", "")
-                    if dbgzSaver is not None:
-                        dbgzSaver.add(UID=uid, data=entry)
-                    if parquetSaver is not None:
-                        parquetSaver.add(UID=uid, data=ujson.dumps(entry))
+                xmlIterator = xmlFiles
+                if showProgressbar:
+                    xmlIterator = tqdm(xmlFiles, desc="Parsing %s" % baseName, leave=False)
 
-                _streamWOSXMLRecords(
-                    xmlFileName,
-                    WOSZipPath,
-                    onRecord=onRecord,
-                    workerLogDir=workerLogDir,
-                )
+                for xmlFileName in xmlIterator:
+
+                    def onRecord(entry):
+                        uid = entry.get("UID", "")
+                        if dbgzSaver is not None:
+                            dbgzSaver.add(UID=uid, data=entry)
+                        if parquetSaver is not None:
+                            parquetSaver.add(UID=uid, data=ujson.dumps(entry))
+
+                    _streamWOSXMLRecords(
+                        xmlFileName,
+                        WOSZipPath,
+                        onRecord=onRecord,
+                        workerLogDir=workerLogDir,
+                    )
     finally:
         if dbgzSaver is not None:
             dbgzSaver.close()
