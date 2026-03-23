@@ -165,6 +165,7 @@ Tags with three letters (also marked by a *) are new to WoS and include complete
 | PIR* | Publication Info (JSON) | `getPublicationInfo(wosEntry)` |
 | PT | Publication Type: Journal, Book in series, Book, Conference | `getPublicationType(publicationInfo)` |
 | ADR* | Author Data (JSON) | `getAuthors(wosEntry)` |
+| AUR* | Enriched Author Records (JSON with `seq_no`, `addr_no`, affiliations, countries) | `getAuthorsDetailed(wosEntry)` |
 | AU | Authors | `getAuthorNames(authorData,"wos_standard")` |
 | BA |  Book Authors | `# TODO Not sure how to get it should be the same as AU` |
 | BE | Book Editors | `getAuthorNames(getAuthors(wosEntry,roles={"book_editor"}),"wos_standard")` |
@@ -237,14 +238,25 @@ Tags with three letters (also marked by a *) are new to WoS and include complete
 | OA | Open Access | `getOpenAccess(wosEntry)` |
 | UT | UID | `wosEntry["UID"]` |
 
-# TSV files
-The script `Examples/extractTSV.py` can be used to generate TSV files from the WOS data. The columns correspond to the above table.
+# Processed tables (`tsv`/`csv`/`parquet`/`dbgz`)
+The script `Examples/extractTSV.py` can generate processed tables from a raw WoS `.dbgz` archive in one or more formats (`tsv`, `csv`, `parquet`, `dbgz`).
+
+Example:
+
+```bash
+python Examples/extractTSV.py \
+    --archive /path/to/WoS_2023_All.dbgz \
+    --output-dir /path/to/WoS_2023_tables \
+    --base-name WoS_2023 \
+    --formats tsv parquet dbgz
+```
 
 Files description:
- - `WoS_2022.tsv` contains fields organized in the same fashion as the output of the web of science web interface. These fields are described in https://images.webofknowledge.com/images/help/WOS/hs_wos_fieldtags.html
- - `WoS_2022_extra.tsv` contains fields with complete data in fields (such as complete authors, publisher or addresses data) each entry is in JSON format
- - `WoS_2022_abstract.tsv` contains the abstracts and respective `UID`
- - `WoS_2022_references.tsv` pairs of citing and cited UIDs
+ - `WoS_2023_main.*` contains standard WoS-like fields (2-letter tags).
+ - `WoS_2023_extra.*` contains complete JSON-like fields (3-letter tags).
+ - `WoS_2023_abstract.*` contains abstracts and their `UID`.
+ - `WoS_2023_references.*` contains citing/cited UID pairs.
+ - `WoS_2023_authors.*` contains one row per author with explicit `author_seq_no` order, linked affiliations, and countries.
 
 ## Loading the TSV files
 The TSV files can be loaded by chunks using pandas. The following example shows how to load the `WoS_2022.tsv` file in chunks of 5000 entries.

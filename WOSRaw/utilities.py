@@ -270,6 +270,128 @@ def getAddressesAndAuthors(wosEntry, forceReprint = False):
             address["authors_seqs"].append(authorSequence)
     return {"addresses":addresses,"authors":authors}
 
+
+def _parse_addr_numbers(addrNoValue):
+    if not addrNoValue:
+        return []
+    if isinstance(addrNoValue, (list, tuple)):
+        values = []
+        for entry in addrNoValue:
+            values.extend(_parse_addr_numbers(entry))
+        return values
+    tokens = str(addrNoValue).replace(",", " ").split()
+    result = []
+    for token in tokens:
+        cleaned = token.strip()
+        if cleaned:
+            result.append(cleaned)
+    return result
+
+
+def getAuthorsDetailed(wosEntry, roles={"author"}):
+    """
+    Return author entries enriched with linked affiliations and countries.
+
+    The resulting list keeps source author order using ``@seq_no``.
+    """
+    summaryAuthors = getFlat(
+        wosEntry["data"], ["static_data", "summary", "names", "name"], forceList=True
+    )
+
+    filteredAuthors = [
+        author
+        for author in summaryAuthors
+        if author.get("@role") in roles
+    ]
+    filteredAuthors = sorted(
+        filteredAuthors,
+        key=lambda item: int(item.get("@seq_no", 0) or 0),
+    )
+
+    addressesData = getFlat(
+        wosEntry["data"],
+        ["static_data", "fullrecord_metadata", "addresses", "address_name"],
+        forceList=True,
+    )
+
+    addressByNo = {}
+    authorSeqToAddrNos = {}
+    for addressEntry in addressesData:
+        addressSpec = getFlat(addressEntry, ["address_spec"], forceList=False)
+        if not addressSpec:
+            continue
+
+        addrNo = str(addressSpec.get("@addr_no", "")).strip()
+        if addrNo:
+            organizations = getFlat(addressSpec, ["organizations", "organization"], forceList=True)
+            suborganizations = getFlat(
+                addressSpec, ["suborganizations", "suborganization"], forceList=True
+            )
+            addressByNo[addrNo] = {
+                "addr_no": addrNo,
+                "full_address": getFlat(addressSpec, ["full_address"], forceString=True),
+                "organizations": organizations,
+                "suborganizations": suborganizations,
+                "city": getFlat(addressSpec, ["city"], forceString=True),
+                "state": getFlat(addressSpec, ["state"], forceString=True),
+                "country": getFlat(addressSpec, ["country"], forceString=True),
+                "zip": getFlat(addressSpec, ["zip", "#text"], forceString=True)
+                or getFlat(addressSpec, ["zip"], forceString=True),
+            }
+
+        linkedNames = getFlat(addressEntry, ["names", "name"], forceList=True)
+        for linkedAuthor in linkedNames:
+            seqNo = str(linkedAuthor.get("@seq_no", "")).strip()
+            if not seqNo:
+                continue
+            seqAddresses = authorSeqToAddrNos.get(seqNo, [])
+            if addrNo and addrNo not in seqAddresses:
+                seqAddresses.append(addrNo)
+            authorSeqToAddrNos[seqNo] = seqAddresses
+
+    enrichedAuthors = []
+    for author in filteredAuthors:
+        seqNo = str(author.get("@seq_no", "")).strip()
+        addrNos = _parse_addr_numbers(author.get("@addr_no", ""))
+        if not addrNos and seqNo in authorSeqToAddrNos:
+            addrNos = list(authorSeqToAddrNos[seqNo])
+
+        linkedAddresses = [addressByNo[addrNo] for addrNo in addrNos if addrNo in addressByNo]
+        linkedCountries = sorted(
+            list(
+                {
+                    address.get("country", "")
+                    for address in linkedAddresses
+                    if address.get("country", "")
+                }
+            )
+        )
+
+        enrichedAuthors.append(
+            {
+                "seq_no": int(author.get("@seq_no", 0) or 0),
+                "role": author.get("@role", ""),
+                "reprint": author.get("@reprint", ""),
+                "addr_no": addrNos,
+                "display_name": author.get("display_name", ""),
+                "full_name": author.get("full_name", ""),
+                "wos_standard": author.get("wos_standard", ""),
+                "first_name": author.get("first_name", ""),
+                "last_name": author.get("last_name", ""),
+                "suffix": author.get("suffix", ""),
+                "email_addr": author.get("email_addr", ""),
+                "r_id": author.get("@r_id", ""),
+                "orcid_id": author.get("@orcid_id", ""),
+                "claim_status": author.get("@claim_status", ""),
+                "orcid_id_tr": author.get("@orcid_id_tr", ""),
+                "r_id_tr": author.get("@r_id_tr", ""),
+                "addresses": linkedAddresses,
+                "countries": linkedCountries,
+            }
+        )
+
+    return enrichedAuthors
+
 def formatAddressesWOS(addressesData):
     formattedAddresses = []
     authors = addressesData["authors"]
@@ -561,6 +683,7 @@ def getAllFields(wosEntry):
     fieldData["PIR"] =  publicationInfo = getPublicationInfo(wosEntry)
     fieldData["PT"]  =  publicationType = getPublicationType(publicationInfo) # Journal, Book in series, Book, Conference ...
     fieldData["ADR"] =  authorData = getAuthors(wosEntry)
+    fieldData["AUR"] =  authorRecords = getAuthorsDetailed(wosEntry)
     fieldData["AU"]  =  authors = getAuthorNames(authorData)
     # fieldData["BA"]  =  # bookAuthors # TODO Not sure how to get it should be the same as AU
     fieldData["BE"]  =  bookEditors = getAuthorNames(getAuthors(wosEntry,roles={"book_editor"}))
@@ -645,6 +768,7 @@ def getScheme(valid=None,invalid=None):
     schemeFields["PIR"] = ("publicationInfo","a")
     schemeFields["PT"] = ("publicationType","s")
     schemeFields["ADR"] = ("authorData","a")
+    schemeFields["AUR"] = ("authorRecords","a")
     schemeFields["AU"] = ("authorNames","S")
     schemeFields["BE"] = ("bookEditors","S")
     schemeFields["TI"] = ("Title","s")
