@@ -11,7 +11,7 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="WOSRaw",
-    version="0.1.1",
+    version="0.1.2",
     author="Filipi N. Silva",
     author_email="filipi@iu.edu",
     description="Collection of utilities to process raw XML data from the Web of Science",
@@ -20,6 +20,12 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/filipinascimento/WOSRaw",
     packages=setuptools.find_packages(),
+    entry_points={
+        "console_scripts": [
+            "wosraw-pipeline=WOSRaw.cli:main",
+            "wosraw-extract=WOSRaw.processed:main",
+        ],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

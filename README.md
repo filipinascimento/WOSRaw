@@ -14,6 +14,15 @@ pip install -U dbgz
 
 Check the examples in https://github.com/filipinascimento/WOSRaw/tree/main/Examples
 
+The package now also exposes CLIs for the full pipeline and processed-table export:
+
+```bash
+wosraw-pipeline /raw/WoS_2023 --output-dir /data/WOS_Processed
+wosraw-extract --archive /data/WOS_Processed/WoS_2023_All.dbgz --output-dir /data/WOS_Processed --base-name WoS_2023 --formats parquet
+```
+
+`wosraw-pipeline` defaults to creating a raw `.dbgz` archive plus processed `parquet` tables. If you want raw parquet too, pass `--raw-output-format both` and optionally `--raw-parquet /path/to/file.parquet`.
+
 # DBGZ file
  [DBGZ](https://github.com/filipinascimento/dbgz) version provides a fast way to access the raw data. About 2 hours are needed to iterate over all the entries in sequence. The framework also provides a way to access the entries in a random order based on the `WOS ID`(UID).
 
@@ -46,6 +55,21 @@ result = wos.archive.create(
 )
 print(result)
 ```
+
+For the end-to-end package CLI, provide only the raw WoS directory and optionally override defaults:
+
+```bash
+wosraw-pipeline /raw/WoS_2023 \
+    --output-dir /gpfs/sciencegenome/WOS \
+    --ncpu 16 \
+    --max-piece-size 60000 \
+    --xml-timeout-seconds 20000 \
+    --heartbeat-seconds 60 \
+    --worker-log-dir /gpfs/sciencegenome/WOS/worker_logs \
+    --processed-formats parquet
+```
+
+This writes `/gpfs/sciencegenome/WOS/WoS_2023_All.dbgz` plus processed `parquet` tables such as `/gpfs/sciencegenome/WOS/WoS_2023_main.parquet`.
 
 # Usage
 The utilities functions in `WOSRaw.utilities` can be used to get certain properties from the entries in the dbgz files. For instance:

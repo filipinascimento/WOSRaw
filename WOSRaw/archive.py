@@ -7,6 +7,7 @@ import time
 import os
 import traceback
 from datetime import datetime
+from queue import Empty
 
 import dbgz
 import xmltodict
@@ -28,6 +29,26 @@ except Exception:  # pragma: no cover
 # #Path to the WoS dbgz archive
 # WOSSavePath = Path("/raw/WoS_2022_DBGZ/WoS_2022_All.dbgz")
 
+_QUEUE_KIND_DATA = "data"
+_QUEUE_KIND_DONE = "done"
+_QUEUE_KIND_ERROR = "error"
+_XML_BATCH_SIZE = 256
+
+
+def _write_worker_log(workerLogDir, message):
+    if not workerLogDir:
+        return
+    try:
+        logDirPath = Path(workerLogDir)
+        logDirPath.mkdir(parents=True, exist_ok=True)
+        pid = os.getpid()
+        logPath = logDirPath / f"worker_{pid}.log"
+        timestamp = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+        with open(logPath, "a", encoding="utf-8") as logfd:
+            logfd.write(f"[{timestamp}] {message}\n")
+    except Exception:
+        pass
+
 def parseWOSXML(arguments):
     if len(arguments) == 2:
         xmlFileName, WOSZipPath = arguments
@@ -36,27 +57,14 @@ def parseWOSXML(arguments):
         xmlFileName, WOSZipPath, workerLogDir = arguments
     baseName = WOSZipPath.stem
 
-    def workerLog(message):
-        if not workerLogDir:
-            return
-        try:
-            logDirPath = Path(workerLogDir)
-            logDirPath.mkdir(parents=True, exist_ok=True)
-            pid = os.getpid()
-            logPath = logDirPath / f"worker_{pid}.log"
-            timestamp = datetime.utcnow().isoformat(timespec="seconds") + "Z"
-            with open(logPath, "a", encoding="utf-8") as logfd:
-                logfd.write(f"[{timestamp}] {message}\n")
-        except Exception:
-            pass
-
-    workerLog(f"START zip={WOSZipPath.name} xml={xmlFileName}")
+    _write_worker_log(workerLogDir, f"START zip={WOSZipPath.name} xml={xmlFileName}")
     try:
         with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
             with zipfd.open(xmlFileName) as xmlgzfd:
                 with gzip.GzipFile(fileobj=xmlgzfd, mode="r") as xmlfd:
                     dataDict = xmltodict.parse(xmlfd, dict_constructor=dict)["records"]["REC"]
-        workerLog(
+        _write_worker_log(
+            workerLogDir,
             "READ_DONE zip=%s xml=%s"
             % (WOSZipPath.name, xmlFileName)
         )
@@ -64,16 +72,18 @@ def parseWOSXML(arguments):
             dataDict = [dataDict]
         for rec in dataDict:
             rec["origin"] = baseName
-        workerLog(
+        _write_worker_log(
+            workerLogDir,
             "DONE zip=%s xml=%s records=%d"
             % (WOSZipPath.name, xmlFileName, len(dataDict))
         )
         return dataDict
     except KeyboardInterrupt:
-        workerLog(f"INTERRUPTED zip={WOSZipPath.name} xml={xmlFileName}")
+        _write_worker_log(workerLogDir, f"INTERRUPTED zip={WOSZipPath.name} xml={xmlFileName}")
         raise
     except Exception as exc:
-        workerLog(
+        _write_worker_log(
+            workerLogDir,
             "ERROR zip=%s xml=%s error=%s\n%s"
             % (WOSZipPath.name, xmlFileName, str(exc), traceback.format_exc())
         )
@@ -104,22 +114,8 @@ def _streamWOSXMLRecords(xmlFileName, WOSZipPath, onRecord, workerLogDir=None):
     """
     baseName = Path(WOSZipPath).stem
 
-    def workerLog(message):
-        if not workerLogDir:
-            return
-        try:
-            logDirPath = Path(workerLogDir)
-            logDirPath.mkdir(parents=True, exist_ok=True)
-            pid = os.getpid()
-            logPath = logDirPath / f"worker_{pid}.log"
-            timestamp = datetime.utcnow().isoformat(timespec="seconds") + "Z"
-            with open(logPath, "a", encoding="utf-8") as logfd:
-                logfd.write(f"[{timestamp}] {message}\n")
-        except Exception:
-            pass
-
     recordCount = 0
-    workerLog(f"STREAM_START zip={Path(WOSZipPath).name} xml={xmlFileName}")
+    _write_worker_log(workerLogDir, f"STREAM_START zip={Path(WOSZipPath).name} xml={xmlFileName}")
     try:
         with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
             with zipfd.open(xmlFileName) as xmlgzfd:
@@ -139,12 +135,14 @@ def _streamWOSXMLRecords(xmlFileName, WOSZipPath, onRecord, workerLogDir=None):
                         item_depth=2,
                         item_callback=callback,
                     )
-        workerLog(
+        _write_worker_log(
+            workerLogDir,
             "STREAM_DONE zip=%s xml=%s records=%d"
             % (Path(WOSZipPath).name, xmlFileName, recordCount)
         )
     except Exception as exc:
-        workerLog(
+        _write_worker_log(
+            workerLogDir,
             "STREAM_ERROR zip=%s xml=%s error=%s\n%s"
             % (Path(WOSZipPath).name, xmlFileName, str(exc), traceback.format_exc())
         )
@@ -154,6 +152,84 @@ def _streamWOSXMLRecords(xmlFileName, WOSZipPath, onRecord, workerLogDir=None):
         ) from exc
 
     return recordCount
+
+
+def _streamWOSXMLRecordsToQueue(xmlFileName, WOSZipPath, resultQueue, workerLogDir=None, batchSize=_XML_BATCH_SIZE):
+    baseName = Path(WOSZipPath).stem
+    recordCount = 0
+    batch = []
+
+    def flush_batch():
+        nonlocal batch
+        if batch:
+            resultQueue.put((_QUEUE_KIND_DATA, xmlFileName, batch))
+            batch = []
+
+    _write_worker_log(workerLogDir, f"START zip={Path(WOSZipPath).name} xml={xmlFileName}")
+    try:
+        with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
+            with zipfd.open(xmlFileName) as xmlgzfd:
+                with gzip.GzipFile(fileobj=xmlgzfd, mode="r") as xmlfd:
+
+                    def callback(_, record):
+                        nonlocal recordCount
+                        if isinstance(record, dict):
+                            record["origin"] = baseName
+                            batch.append(record)
+                            recordCount += 1
+                            if len(batch) >= batchSize:
+                                flush_batch()
+                        return True
+
+                    xmltodict.parse(
+                        xmlfd,
+                        dict_constructor=dict,
+                        item_depth=2,
+                        item_callback=callback,
+                    )
+        flush_batch()
+        _write_worker_log(
+            workerLogDir,
+            "READ_DONE zip=%s xml=%s"
+            % (Path(WOSZipPath).name, xmlFileName)
+        )
+        resultQueue.put((_QUEUE_KIND_DONE, xmlFileName, recordCount))
+        _write_worker_log(
+            workerLogDir,
+            "DONE zip=%s xml=%s records=%d"
+            % (Path(WOSZipPath).name, xmlFileName, recordCount)
+        )
+    except KeyboardInterrupt:
+        raise
+    except Exception as exc:
+        _write_worker_log(
+            workerLogDir,
+            "ERROR zip=%s xml=%s error=%s\n%s"
+            % (Path(WOSZipPath).name, xmlFileName, str(exc), traceback.format_exc())
+        )
+        resultQueue.put(
+            (
+                _QUEUE_KIND_ERROR,
+                xmlFileName,
+                "stream parser pid=%s zip=%s xml=%s error=%s\n%s"
+                % (os.getpid(), Path(WOSZipPath).name, xmlFileName, str(exc), traceback.format_exc()),
+            )
+        )
+
+
+def _streamWOSXMLWorker(taskQueue, resultQueue, workerLogDir=None, batchSize=_XML_BATCH_SIZE):
+    while True:
+        task = taskQueue.get()
+        if task is None:
+            return
+        xmlFileName, WOSZipPath = task
+        _streamWOSXMLRecordsToQueue(
+            xmlFileName,
+            WOSZipPath,
+            resultQueue,
+            workerLogDir=workerLogDir,
+            batchSize=batchSize,
+        )
 
 
 def _iter_wos_entries(
@@ -178,107 +254,144 @@ def _iter_wos_entries(
         heartbeatSeconds = 120
     heartbeatSeconds = max(5, int(heartbeatSeconds))
 
-    with mp.Pool(processes=ncpu) as pool:
+    workerCount = max(1, ncpu)
+    taskQueue = mp.Queue(maxsize=max(1, workerCount * 2))
+    resultQueue = mp.Queue(maxsize=max(1, workerCount * 4))
+    workers = [
+        mp.Process(
+            target=_streamWOSXMLWorker,
+            args=(taskQueue, resultQueue, workerLogDir, _XML_BATCH_SIZE),
+        )
+        for _ in range(workerCount)
+    ]
+
+    for worker in workers:
+        worker.start()
+
+    try:
         zipIterator = WOSZipPaths
         if showProgressbar:
             zipIterator = tqdm(zipIterator, desc="Zip files")
         for WOSZipPath in zipIterator:
             baseName = WOSZipPath.stem
             with zipfile.ZipFile(WOSZipPath, 'r') as zipfd:
-                xmlParameters = [
-                    (filename, WOSZipPath, workerLogDir)
+                xmlFiles = [
+                    filename
                     for filename in zipfd.namelist()
                     if filename.endswith(".xml.gz")
                 ]
 
-            asyncResults = {
-                xmlParams[0]: pool.apply_async(parseWOSXML, (xmlParams,))
-                for xmlParams in xmlParameters
-            }
-            startedAt = {xmlParams[0]: time.monotonic() for xmlParams in xmlParameters}
-            pending = set(asyncResults.keys())
-
             xmlProgress = None
             if showProgressbar:
                 xmlProgress = tqdm(
-                    total=len(xmlParameters),
+                    total=len(xmlFiles),
                     desc="Parsing %s" % baseName,
                     leave=False,
                 )
 
-            lastHeartbeat = 0.0
-            while pending:
-                completedNow = []
-                for filename in list(pending):
-                    task = asyncResults[filename]
-                    if task.ready():
-                        completedNow.append(filename)
+            pendingQueue = list(xmlFiles)
+            inflight = set()
+            lastProgressAt = {}
 
-                if completedNow:
-                    for filename in completedNow:
-                        task = asyncResults[filename]
-                        pending.remove(filename)
-                        try:
-                            dataDict = task.get()
-                        except KeyboardInterrupt:
-                            raise
-                        except Exception as exc:
-                            raise RuntimeError(
-                                "Failed parsing XML '%s' inside '%s': %s"
-                                % (filename, baseName, str(exc))
-                            ) from exc
-                        if xmlProgress is not None:
-                            xmlProgress.update(1)
-                        for entry in dataDict:
-                            yield entry
+            def schedule_more():
+                while pendingQueue and len(inflight) < workerCount:
+                    filename = pendingQueue.pop(0)
+                    taskQueue.put((filename, WOSZipPath))
+                    inflight.add(filename)
+                    lastProgressAt[filename] = time.monotonic()
+
+            schedule_more()
+            lastHeartbeat = 0.0
+
+            while inflight or pendingQueue:
+                try:
+                    messageKind, filename, payload = resultQueue.get(timeout=0.5)
+                except Empty:
+                    now = time.monotonic()
+                    if xmlTimeoutSeconds is not None and inflight:
+                        oldestFile = None
+                        oldestElapsed = -1.0
+                        for currentFile in inflight:
+                            elapsed = now - lastProgressAt[currentFile]
+                            if elapsed > oldestElapsed:
+                                oldestElapsed = elapsed
+                                oldestFile = currentFile
+                        if oldestElapsed > float(xmlTimeoutSeconds):
+                            raise TimeoutError(
+                                "Timeout while parsing XML '%s' in '%s' (no progress for %.1fs > %.1fs). "
+                                "Use --xml-timeout-seconds to increase/disable timeout."
+                                % (
+                                    oldestFile,
+                                    baseName,
+                                    oldestElapsed,
+                                    float(xmlTimeoutSeconds),
+                                )
+                            )
+
+                    if now - lastHeartbeat >= heartbeatSeconds:
+                        oldestFile = None
+                        oldestElapsed = -1.0
+                        for currentFile in inflight:
+                            elapsed = now - lastProgressAt[currentFile]
+                            if elapsed > oldestElapsed:
+                                oldestElapsed = elapsed
+                                oldestFile = currentFile
+                        print(
+                            "[archive] %s pending_xml=%d/%d inflight=%d oldest=%s idle=%.1fs"
+                            % (
+                                baseName,
+                                len(inflight) + len(pendingQueue),
+                                len(xmlFiles),
+                                len(inflight),
+                                oldestFile,
+                                max(0.0, oldestElapsed),
+                            ),
+                            flush=True,
+                        )
+                        lastHeartbeat = now
+
+                    if inflight and not any(worker.is_alive() for worker in workers):
+                        raise RuntimeError(
+                            "All XML workers exited while parsing '%s' with %d XML files still pending"
+                            % (baseName, len(inflight) + len(pendingQueue))
+                        )
                     continue
 
-                now = time.monotonic()
-                if xmlTimeoutSeconds is not None:
-                    oldestFile = None
-                    oldestElapsed = -1.0
-                    for filename in pending:
-                        elapsed = now - startedAt[filename]
-                        if elapsed > oldestElapsed:
-                            oldestElapsed = elapsed
-                            oldestFile = filename
-                    if oldestElapsed > float(xmlTimeoutSeconds):
-                        raise TimeoutError(
-                            "Timeout while parsing XML '%s' in '%s' (%.1fs > %.1fs). "
-                            "Use --xml-timeout-seconds to increase/disable timeout."
-                            % (
-                                oldestFile,
-                                baseName,
-                                oldestElapsed,
-                                float(xmlTimeoutSeconds),
-                            )
-                        )
+                if messageKind == _QUEUE_KIND_DATA:
+                    lastProgressAt[filename] = time.monotonic()
+                    for entry in payload:
+                        yield entry
+                    continue
 
-                if now - lastHeartbeat >= heartbeatSeconds:
-                    oldestFile = None
-                    oldestElapsed = -1.0
-                    for filename in pending:
-                        elapsed = now - startedAt[filename]
-                        if elapsed > oldestElapsed:
-                            oldestElapsed = elapsed
-                            oldestFile = filename
-                    print(
-                        "[archive] %s pending_xml=%d/%d oldest=%s elapsed=%.1fs"
-                        % (
-                            baseName,
-                            len(pending),
-                            len(xmlParameters),
-                            oldestFile,
-                            oldestElapsed,
-                        ),
-                        flush=True,
+                if messageKind == _QUEUE_KIND_DONE:
+                    lastProgressAt.pop(filename, None)
+                    if filename in inflight:
+                        inflight.remove(filename)
+                    if xmlProgress is not None:
+                        xmlProgress.update(1)
+                    schedule_more()
+                    continue
+
+                if messageKind == _QUEUE_KIND_ERROR:
+                    raise RuntimeError(
+                        "Failed parsing XML '%s' inside '%s': %s"
+                        % (filename, baseName, payload)
                     )
-                    lastHeartbeat = now
 
-                time.sleep(0.5)
+                raise RuntimeError("Unexpected worker message kind %r for XML '%s'" % (messageKind, filename))
 
             if xmlProgress is not None:
                 xmlProgress.close()
+    finally:
+        for _ in workers:
+            taskQueue.put(None)
+        for worker in workers:
+            worker.join(timeout=5)
+            if worker.is_alive():
+                worker.terminate()
+                worker.join(timeout=5)
+        taskQueue.close()
+        resultQueue.close()
 
 
 def create(WOSPath,
